@@ -1,0 +1,180 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Inter, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: Poppins, sans-serif;
+}
+
+.hero-bg {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 78% 45%,
+      rgba(255, 174, 35, 0.35),
+      transparent 24%
+    ),
+    radial-gradient(circle at 88% 72%, rgba(61, 174, 43, 0.2), transparent 20%),
+    linear-gradient(120deg, #fffdf6 0%, #fff6df 55%, #eaf7e7 100%);
+}
+.hero-bg img {
+  user-select: none;
+}
+
+.fruit-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(0.2px);
+  opacity: 0.9;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(5deg);
+  }
+}
+
+.vision-card {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(61, 174, 43, 0.12);
+  box-shadow: 0 30px 50px rgba(15, 45, 20, 0.08);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.vision-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(61, 174, 43, 0.22);
+  box-shadow: 0 40px 70px rgba(15, 45, 20, 0.12);
+}
+.vision-card img {
+  object-fit: cover;
+}
+.shadow-soft {
+  box-shadow: 0 18px 60px rgba(17, 17, 17, 0.1);
+}
+.bottle {
+  border-radius: 38px 38px 24px 24px;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0 30px 55px rgba(0, 0, 0, 0.18); */
+  transition: transform 0.4s ease;
+}
+.bottle:hover {
+  transform: translateY(-12px) rotate(1deg);
+}
+
+.bottle-label {
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  top: 35%;
+  min-height: 29%;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.93);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Floating Icons */
+#backToTop {
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #3dae2b;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.gallery-card img {
+  transition: transform 0.5s ease;
+}
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.star {
+  color: #f7a51a;
+}
+
+/* Infinite products carousel */
+.carousel {
+  overflow: hidden;
+}
+.carousel .carousel-track {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  white-space: nowrap;
+  width: max-content; /* let content define width */
+}
+.carousel .carousel-track {
+  animation: scroll-left 24s linear infinite;
+  will-change: transform;
+}
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+.carousel-item img {
+  display: block;
+  max-height: 80px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
