@@ -1,0 +1,1459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About BIB's Beverages — our story, mission, and passion for refreshing drinks."
+    />
+    <title>About | BIB's Beverages</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bib: {
+                green: "#3DAE2B",
+                dark: "#111111",
+                lime: "#B8DF5A",
+                cream: "#FFF9EA",
+                orange: "#F7A51A",
+              },
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 18px 60px rgba(17,17,17,.10)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-white text-bib-dark">
+    <!-- HEADER -->
+    <header
+      id="header"
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-black/5"
+    >
+      <div class="w-full px-5 lg:px-8 h-20 flex items-center justify-between">
+        <div class="leading-none">
+          <div class="font-display font-black text-3xl tracking-tight">
+            <a href="#home" class="flex items-center">
+              <img
+                src="./assets/logo.png"
+                alt="Logo"
+                class="h-14 w-auto object-contain"
+              />
+              <span class="text-bib-green">Bibagry</span>
+              Limited
+            </a>
+          </div>
+          <!-- <div
+              class="text-[9px] font-bold tracking-[.35em] text-gray-500 ml-1"
+            >
+              BEVERAGES
+            </div> -->
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+          <a class="nav-link" href="index.html#home">Home</a>
+          <a class="nav-link" href="index.html#products">Products</a>
+          <a class="nav-link" href="index.html#gallery">Gallery</a>
+          <a class="nav-link" href="index.html#reviews">Reviews</a>
+          <a class="nav-link" href="index.html#company">Company</a>
+          <a class="nav-link" href="index.html#leadership">Leadership</a>
+          <a class="nav-link" href="index.html#clients">Client </a>
+          <a class="nav-link" href="about.html">About</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a
+            href="index.html#contact"
+            class="px-5 py-3 rounded-full bg-bib-green text-white text-sm font-bold hover:bg-green-700 transition"
+            >Contact Us</a
+          >
+        </div>
+
+        <button
+          id="menuBtn"
+          class="lg:hidden w-11 h-11 rounded-xl border border-gray-200 flex items-center justify-center"
+          aria-label="Open menu"
+        >
+          <span class="text-xl">☰</span>
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="hidden lg:hidden border-t bg-white">
+        <div class="px-5 py-5 flex flex-col gap-4 text-sm font-semibold">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#products">Products</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="index.html#reviews">Reviews</a>
+          <a href="index.html#company">Company</a>
+          <a href="index.html#leadership">Leadership</a>
+          <a href="#clients">Client </a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT HERO SECTION -->
+      <section
+        class="hero-bg min-h-[660px] pt-28 lg:pt-20 overflow-hidden relative"
+      >
+        <img
+          src="./assets/img-slider.jpeg"
+          alt="Beverage lineup background"
+          class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-10"
+        />
+
+        <span class="fruit-orb w-8 h-8 bg-green-500 left-[5%] top-[22%]"></span>
+        <span
+          class="fruit-orb w-5 h-5 bg-orange-400 left-[42%] top-[24%]"
+          style="animation-delay: 1s"
+        ></span>
+        <span
+          class="fruit-orb w-10 h-10 bg-yellow-300 right-[8%] top-[18%]"
+          style="animation-delay: 2s"
+        ></span>
+
+        <div
+          class="max-w-7xl mx-auto px-5 lg:px-8 min-h-[600px] flex items-center relative z-10"
+        >
+          <div class="w-full text-center reveal">
+            <span
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm text-bib-green text-xs font-extrabold uppercase tracking-widest"
+            >
+              <span class="w-2 h-2 rounded-full bg-bib-green"></span>
+              Our Story
+            </span>
+
+            <h1
+              class="mt-7 text-5xl sm:text-6xl lg:text-7xl font-black leading-[.98] tracking-tight"
+            >
+              About
+              <span class="block text-bib-green">Bibagry Limited</span>
+            </h1>
+
+            <p
+              class="mt-6 mb-7 text-lg font-semibold text-gray-800 max-w-3xl mx-auto lg:mb-0"
+            >
+              Bibagry Ltd. is a dynamic and innovative manufacturer of
+              non-alcoholic beverages and maize meal, dedicated to providing
+              high-quality products that cater to the diverse needs of our
+              customers in Zambia and beyond. Established in December 2018, our
+              company has quickly emerged as a leader in the beverage industry,
+              offering a wide range of products, including bottled water,
+              carbonated soft drinks, and various juices. Additionally, we
+              produce premium maize meal, ensuring that we meet the nutritional
+              needs of our consumers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR MISSION SECTION -->
+      <section class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="reveal">
+              <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+                Our <span class="text-bib-green">Mission</span>
+              </h2>
+              <p class="mt-6 text-lg text-gray-700 leading-8">
+                We will entrench Bibagry as Zambia’s beverages of Choice by
+                offering a dynamic portfolio of brands that Refreshes the nation
+                and inspires Moments of optimism and happiness
+              </p>
+              <p class="mt-4 text-lg text-gray-700 leading-8">
+                We're committed to using only the finest ingredients,
+                sustainable practices, and innovative flavors to create
+                beverages that matter—beverages that refresh, energize, and
+                delight.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-2 gap-6 reveal"
+              style="animation-delay: 0.2s"
+            >
+              <div
+                class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border border-bib-lime/20"
+              >
+                <div class="text-4xl font-black text-bib-green">100%</div>
+                <p class="mt-3 text-sm font-semibold text-gray-700">
+                  Natural Ingredients
+                </p>
+              </div>
+              <div
+                class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border border-bib-lime/20"
+              >
+                <div class="text-4xl font-black text-bib-green">5+</div>
+                <p class="mt-3 text-sm font-semibold text-gray-700">
+                  Flavors Available
+                </p>
+              </div>
+              <div
+                class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border border-bib-lime/20"
+              >
+                <div class="text-4xl font-black text-bib-green">50K+</div>
+                <p class="mt-3 text-sm font-semibold text-gray-700">
+                  Happy Customers
+                </p>
+              </div>
+              <div
+                class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border border-bib-lime/20"
+              >
+                <div class="text-4xl font-black text-bib-green">5+yrs</div>
+                <p class="mt-3 text-sm font-semibold text-gray-700">
+                  Industry Experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- VISION, CARD, SECTION -->
+
+      <section class="py-20 lg:py-28 bg-bib-cream/90">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="text-center mb-14 reveal">
+            <p
+              class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+            >
+              Our Vision
+            </p>
+            <h2 class="mt-3 text-4xl lg:text-5xl font-black text-bib-dark">
+              Vision, Values & Goals
+            </h2>
+            <p class="mt-6 text-gray-600 max-w-3xl mx-auto leading-8">
+              We will entrench Bibagry as Zambia’s beverages of Choice by
+              offering a dynamic portfolio of brands that Refreshes the nation
+              and inspires Moments of optimism and happiness
+            </p>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-3">
+            <article
+              class="rounded-[2rem] bg-white p-8 shadow-soft border border-bib-green/10 reveal"
+            >
+              <div class="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-2xl font-black text-bib-green">OUR VISION</h3>
+                  <p class="text-gray-700 leading-7">
+                    Vision For Sustainable Growth
+                  </p>
+                </div>
+                <div
+                  class="mb-5 flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl bg-[#dcdcdc] text-2xl font-bold text-white sm:mb-6"
+                >
+                  <span class="text-xl">🌟</span>
+                </div>
+              </div>
+
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  We commit to the vision of our Company and in so doing, we
+                  will control our own destiny.
+                </li>
+                <li>
+                  We will jealously guard the image and reputation of our
+                  Company in all our dealings.
+                </li>
+                <li>
+                  We will be persistent in our pursuit of competitive advantage,
+                  acting always with the highest integrity in so doing.
+                </li>
+                <li>
+                  We will take responsibility for our personal actions thereby
+                  ensuring that our commitments are met.
+                </li>
+                <li>
+                  We will at all times manage our company's business, its assets
+                  and resources responsibly as our own.
+                </li>
+                <li>We will have fun while striving to excel.</li>
+              </ul>
+            </article>
+
+            <article
+              class="rounded-[2rem] bg-white p-8 shadow-soft border border-bib-green/10 reveal"
+            >
+              <div class="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-2xl font-black text-bib-orange">OUR VALUE</h3>
+                </div>
+                <div
+                  class="h-14 w-14 shrink-0 rounded-3xl border border-bib-orange/20 bg-bib-orange/10 flex items-center justify-center sm:h-16 sm:w-16"
+                >
+                  <span class="text-xl">💚</span>
+                </div>
+              </div>
+
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  <span class="font-bold">People:</span> Will be inspired to be
+                  the best they can be.
+                </li>
+                <li>
+                  <span class="font-bold">Productivity:</span> Be a highly
+                  efficient, lean and progressive company.
+                </li>
+                <li>
+                  <span class="font-bold">Portfolio:</span> Offer our consumers
+                  a refreshing and affordable experience.
+                </li>
+                <li>
+                  <span class="font-bold">Partners:</span> Nurture a winning
+                  network of partners and build mutual loyalty.
+                </li>
+                <li>
+                  <span class="font-bold">Planet:</span> Be a responsible
+                  corporate citizen respectful of our environment.
+                </li>
+              </ul>
+            </article>
+
+            <article
+              class="rounded-[2rem] bg-white p-8 shadow-soft border border-bib-green/10 reveal"
+            >
+              <div class="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-2xl font-black text-bib-dark">GOALS</h3>
+                </div>
+                <div
+                  class="h-16 w-16 shrink-0 rounded-3xl bg-bib-dark/10 border border-bib-dark/15 flex items-center justify-center"
+                >
+                  <span class="text-xl">🎯</span>
+                </div>
+              </div>
+
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  Our goal is to be the biggest FMCG company in Southern Africa,
+                  known not only for our size of our business but also the
+                  quality of the products that we produce.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DISTRIBUTION NETWORK SECTION -->
+      <section class="py-20 lg:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+            <div class="reveal">
+              <p
+                class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+              >
+                Our Reach
+              </p>
+              <h2 class="mt-3 text-4xl lg:text-5xl font-black leading-tight">
+                Our Distribution Network
+              </h2>
+              <p class="mt-6 text-gray-700 leading-8 max-w-2xl">
+                BIB's Beverages delivers freshness across Southern Africa
+                through a strong network of partners and nationwide logistics.
+                From our Zambia headquarters to retail shelves in DRC, Malawi,
+                Namibia, and Botswana, we make sure every bottle arrives cold
+                and ready to enjoy.
+              </p>
+
+              <div class="mt-10 grid gap-4 sm:grid-cols-2">
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-soft border border-gray-200"
+                >
+                  <h3 class="text-lg font-black">Zambia HQ</h3>
+                  <p class="mt-3 text-gray-600 text-sm leading-6">
+                    Central logistics and operations hub serving the region with
+                    fast, reliable delivery.
+                  </p>
+                </div>
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-soft border border-gray-200"
+                >
+                  <h3 class="text-lg font-black">Regional Markets</h3>
+                  <p class="mt-3 text-gray-600 text-sm leading-6">
+                    Growing retail presence in DRC, Malawi, Namibia, and
+                    Botswana with consistent shelf availability.
+                  </p>
+                </div>
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-soft border border-gray-200"
+                >
+                  <h3 class="text-lg font-black">Fresh Delivery</h3>
+                  <p class="mt-3 text-gray-600 text-sm leading-6">
+                    Daily shipments and temperature-controlled handling keep our
+                    beverages tasting crisp and delicious.
+                  </p>
+                </div>
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-soft border border-gray-200"
+                >
+                  <h3 class="text-lg font-black">Partner Network</h3>
+                  <p class="mt-3 text-gray-600 text-sm leading-6">
+                    Strong partnerships with distributors, wholesalers, and
+                    retailers ensure fast expansion and local support.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative reveal">
+              <div
+                class="overflow-hidden rounded-[2.5rem] bg-white shadow-soft h-[280px] sm:h-[350px] md:h-[400px] lg:h-auto"
+              >
+                <img
+                  src="./assets/map.png"
+                  alt="Distribution network map"
+                  class="h-full w-full object-cover lg:min-h-[460px] lg:object-cover"
+                />
+              </div>
+              <!-- <div
+                class="absolute inset-x-0 top-10 mx-auto flex flex-wrap justify-center gap-3 px-5"
+              >
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-bib-green/10 text-xl"
+                    >🇿🇲</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">Zambia</p>
+                    <p class="text-xs text-gray-500">Headquarters</p>
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-orange-100 text-xl"
+                    >🇨🇩</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">DRC</p>
+                    <p class="text-xs text-gray-500">Distribution</p>
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-yellow-100 text-xl"
+                    >🇲🇼</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">Malawi</p>
+                    <p class="text-xs text-gray-500">Retail partners</p>
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-sky-100 text-xl"
+                    >🇳🇦</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">Namibia</p>
+                    <p class="text-xs text-gray-500">Market reach</p>
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-cyan-100 text-xl"
+                    >🇧🇼</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">Botswana</p>
+                    <p class="text-xs text-gray-500">Supply network</p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR VALUES SECTION -->
+      <section class="py-20 lg:py-28 bg-bib-cream/30">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+              Our <span class="text-bib-green">Values</span>
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              These principles guide everything we do
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- <div
+              class="p-10 rounded-2xl bg-white shadow-soft reveal hover:shadow-lg transition"
+              style="animation-delay: 0.1s"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-bib-green to-bib-lime flex items-center justify-center text-2xl font-bold text-white mb-6"
+              >
+                🌿
+              </div>
+              <h3 class="text-2xl font-black mb-3">Quality</h3>
+              <p class="text-gray-700 leading-7">
+                We use only premium, natural ingredients sourced from trusted
+                suppliers to ensure exceptional taste and nutrition in every
+                bottle.
+              </p>
+            </div> -->
+
+            <div
+              class="p-10 rounded-2xl bg-white shadow-soft reveal hover:shadow-lg transition"
+              style="animation-delay: 0.2s"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-2xl font-black mb-3">CORE VALUES:</h3>
+                <div
+                  class="mb-5 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#dcdcdc] text-xl font-bold text-white sm:mb-6 sm:h-16 sm:w-16 sm:text-2xl"
+                >
+                  ❤️
+                </div>
+              </div>
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  <span class="font-bold">1. Commitment to Vision:</span> We are
+                  dedicated to our company's vision, taking proactive steps to
+                  control our destiny and achieve our goals.
+                </li>
+                <li>
+                  <span class="font-bold">2. Integrity and Reputation:</span> We
+                  prioritize the image and reputation of our company, ensuring
+                  that all dealings are conducted with the utmost integrity.
+                </li>
+                <li>
+                  <span class="font-bold">3. Pursuit of Excellence:</span> We
+                  are relentless in our pursuit of competitive advantage, always
+                  striving to improve and innovate.
+                </li>
+                <li>
+                  <span class="font-bold">4. Accountability:</span> We take
+                  personal responsibility for our actions, ensuring that our
+                  commitments are met and our objectives achieved.
+                </li>
+                <li>
+                  <span class="font-bold">5. Resource Management:</span> We
+                  manage our business, assets, and resources responsibly,
+                  treating them as our own.
+                </li>
+                <li>
+                  <span class="font-bold">6. Enjoyment in Excellence:</span> We
+                  believe in fostering a positive work environment where we can
+                  have fun while striving for excellence.
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="p-10 rounded-2xl bg-white shadow-soft reveal hover:shadow-lg transition"
+              style="animation-delay: 0.3s"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-2xl font-black mb-3">CUSTOMER VALUES</h3>
+                <div
+                  class="mb-5 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#00757c] text-xl font-bold text-white sm:mb-6 sm:h-16 sm:w-16 sm:text-2xl lg:h-16 lg:w-16"
+                >
+                  🤝
+                </div>
+              </div>
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  <span class="font-bold"
+                    >1. Understanding Customer Needs:</span
+                  >
+                  We continually enhance our knowledge of our customers'
+                  businesses and aspirations to better serve them.
+                </li>
+                <li>
+                  <span class="font-bold"
+                    >2. Competitive Value Proposition:</span
+                  >
+                  We ensure that our offerings remain competitive within the
+                  industry, providing our customers with the best value.
+                </li>
+                <li>
+                  <span class="font-bold">3. Delightful Service:</span>
+                  We are committed to delivering exceptional service that
+                  delights our customers, ensuring mutual success.
+                </li>
+                <li>
+                  <span class="font-bold">4. Maximizing Opportunities:</span>
+                  We leverage our relationships with customers to maximize
+                  marketing opportunities and enhance brand visibility.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  SUPPLIER VALUES SECTION -->
+      <section
+        class="relative isolate overflow-hidden bg-gradient-to-br from-[#063F43] via-[#07575A] to-[#063B50] py-20 sm:py-24 lg:py-28"
+      >
+        <!-- Decorative Background -->
+        <div class="pointer-events-none absolute inset-0 overflow-hidden">
+          <div
+            class="absolute -left-40 top-28 h-[520px] w-[520px] rounded-full border-[95px] border-[#47757B]/40 sm:-left-48 sm:h-[650px] sm:w-[650px]"
+          ></div>
+
+          <div
+            class="absolute -left-52 top-44 h-[480px] w-[480px] rounded-full bg-[#164D6B]/60 sm:-left-60 sm:top-52 sm:h-[600px] sm:w-[600px]"
+          ></div>
+
+          <div
+            class="absolute -right-56 -top-72 h-[620px] w-[620px] rounded-full border-[85px] border-[#1F696D]/45 sm:-right-72 sm:-top-80 sm:h-[760px] sm:w-[760px]"
+          ></div>
+
+          <div
+            class="absolute -bottom-40 right-[-120px] h-[400px] w-[400px] rounded-full bg-[#0D7778]/25 blur-3xl"
+          ></div>
+        </div>
+        <!-- Bottom Decorative Background -->
+        <div class="pointer-events-none absolute inset-0 overflow-hidden">
+          <div class="absolute -right-64 -bottom-64">
+            <div
+              class="h-[620px] w-[620px] rounded-full bg-gradient-to-br from-[#164D6B]/70 via-[#1F696D]/40 to-transparent blur-sm sm:h-[760px] sm:w-[760px]"
+            ></div>
+
+            <div
+              class="absolute inset-20 rounded-full border-[70px] border-[#47757B]/20 sm:inset-24 sm:border-[90px]"
+            ></div>
+          </div>
+        </div>
+
+        <!-- SUPPLIER VALUES Content -->
+        <div
+          class="relative z-10 mx-auto max-w-7xl px-5 text-left lg:px-8 text-white"
+        >
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+            SUPPLIER <span class="text-bib-green">VALUES</span>
+          </h2>
+
+          <ul class="space-y-3 text-white text-sm leading-7 mt-6">
+            <li>
+              <span class="font-bold">Long-Term Relationships:</span>We aim to
+              build long-term, mutually beneficial relationships with our
+              suppliers.
+            </li>
+            <li>
+              <span class="font-bold">Preferential Treatment:</span>We leverage
+              our relationships to secure preferential treatment in cost,
+              service, quality, and innovation.
+            </li>
+            <li>
+              <span class="font-bold">Timely Payments:</span>We commit to paying
+              our suppliers on time, every time, to maintain trust and
+              reliability.
+            </li>
+          </ul>
+        </div>
+        <!-- COMMUNITY & GOVERNMENT VALUES Content -->
+        <div
+          class="relative z-10 mx-auto max-w-7xl px-5 text-left lg:px-8 text-right text-white mt-20"
+        >
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+            COMMUNITY & GOVERNMENT <span class="text-bib-green">VALUES</span>
+          </h2>
+
+          <ul class="space-y-3 text-white text-sm leading-7 mt-6">
+            <li>
+              <span class="font-bold">Corporate Citizenship:</span>We strive to
+              be a trusted corporate citizen in the communities we serve,
+              contributing positively to their development.
+            </li>
+            <li>
+              <span class="font-bold">Enduring Relationships:</span>We develop
+              lasting relationships with the community, supporting their
+              aspirations whenever possible.
+            </li>
+            <li>
+              <span class="font-bold">Positive Economic Impact:</span>We work to
+              ensure that the government recognizes the positive impact of our
+              business on the economy.
+            </li>
+            <li>
+              <span class="font-bold">Environmental Responsibility:</span>We
+              conduct our business in ways that protect and preserve the
+              environment for future generations
+            </li>
+          </ul>
+        </div>
+        <!-- QUALITY ASSURANCE Content -->
+        <div
+          class="relative z-10 mx-auto max-w-7xl px-5 text-left lg:px-8 text-white mt-20"
+        >
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+            QUALITY <span class="text-bib-green">ASSURANCE</span>
+          </h2>
+
+          <ul class="space-y-3 text-white text-sm leading-7 mt-6">
+            <li>
+              Quality is the cornerstone of Bibagry Ltd. Our rigorous quality
+              control processes ensure that every product leaving our facility
+              meets the highest safety and quality standards. We adhere to
+              international food safety regulations and continuously invest in
+              training our staff to uphold these standards, ensuring our
+              customers receive only the best.
+            </li>
+          </ul>
+        </div>
+        <!-- QUALITY ASSURANCE Content -->
+        <div
+          class="relative z-10 mx-auto max-w-7xl px-5 text-left lg:px-8 text-right text-white mt-20"
+        >
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+            SUSTAINABILITY <span class="text-bib-green">COMMITMENT</span>
+          </h2>
+
+          <ul class="space-y-3 text-white text-sm leading-7 mt-6">
+            <li>
+              Bibagry Ltd. is dedicated to sustainable practices in our
+              manufacturing processes. We prioritize environmentally friendly
+              methods, from sourcing raw materials to packaging our products.
+              Our goal is to minimize our carbon footprint while contributing
+              positively to the communities we serve.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ASSOCIATE VALUES -->
+      <section class="bg-bib-cream py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <!-- Section Heading -->
+          <div class="max-w-4xl">
+            <!-- <p
+              class="mb-4 font-body text-sm font-semibold uppercase tracking-[0.2em] text-bib-green"
+            >
+              Advanced Features
+            </p> -->
+
+            <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+              ASSOCIATE <span class="text-bib-green">VALUES</span>
+            </h2>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="mt-16 grid gap-x-16 gap-y-12 md:grid-cols-2 lg:mt-20">
+            <!-- Feature 01 -->
+            <div class="group relative">
+              <div class="mb-5 flex items-center gap-4">
+                <span
+                  class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+                >
+                  01
+                </span>
+
+                <div class="h-px flex-1 bg-bib-dark/10"></div>
+              </div>
+
+              <h3
+                class="font-display text-xl font-bold text-bib-dark lg:text-2xl"
+              >
+                Preferred Employer
+              </h3>
+
+              <p
+                class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base"
+              >
+                We strive to be the preferred employer in our industry,
+                embracing diversity and rewarding performance with competitive
+                compensation.
+              </p>
+            </div>
+
+            <!-- Feature 02 -->
+            <div class="group relative">
+              <div class="mb-5 flex items-center gap-4">
+                <span
+                  class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+                >
+                  02
+                </span>
+
+                <div class="h-px flex-1 bg-bib-dark/10"></div>
+              </div>
+
+              <h3
+                class="font-display text-xl font-bold text-bib-dark lg:text-2xl"
+              >
+                Team Collaboration
+              </h3>
+
+              <p
+                class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base"
+              >
+                We work together as a team, treating each other with dignity and
+                respect, valuing everyone’s ideas and contributions.
+              </p>
+            </div>
+
+            <!-- Feature 03 -->
+            <div class="group relative">
+              <div class="mb-5 flex items-center gap-4">
+                <span
+                  class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+                >
+                  03
+                </span>
+
+                <div class="h-px flex-1 bg-bib-dark/10"></div>
+              </div>
+
+              <h3
+                class="font-display text-xl font-bold text-bib-dark lg:text-2xl"
+              >
+                Empowerment
+              </h3>
+
+              <p
+                class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base"
+              >
+                We empower our managers to lead effectively while providing the
+                necessary support and assistance.
+              </p>
+            </div>
+
+            <!-- Feature 04 -->
+            <div class="group relative">
+              <div class="mb-5 flex items-center gap-4">
+                <span
+                  class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+                >
+                  04
+                </span>
+
+                <div class="h-px flex-1 bg-bib-dark/10"></div>
+              </div>
+
+              <h3
+                class="font-display text-xl font-bold text-bib-dark lg:text-2xl"
+              >
+                Role Modeling
+              </h3>
+
+              <p
+                class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base"
+              >
+                We lead by example, striving to be role models in all our
+                actions and decisions.
+              </p>
+            </div>
+
+            <!-- Feature 05 -->
+            <div class="group relative">
+              <div class="mb-5 flex items-center gap-4">
+                <span
+                  class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+                >
+                  05
+                </span>
+
+                <div class="h-px flex-1 bg-bib-dark/10"></div>
+              </div>
+
+              <h3
+                class="font-display text-xl font-bold text-bib-dark lg:text-2xl"
+              >
+                High Standards
+              </h3>
+
+              <p
+                class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base"
+              >
+                We demand high performance standards and maintain transparent
+                communication at all times.
+              </p>
+            </div>
+
+            <!-- Feature 06 -->
+            <div class="group relative">
+              <div class="mb-5 flex items-center gap-4">
+                <span
+                  class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+                >
+                  06
+                </span>
+
+                <div class="h-px flex-1 bg-bib-dark/10"></div>
+              </div>
+
+              <h3
+                class="font-display text-xl font-bold text-bib-dark lg:text-2xl"
+              >
+                Safe Learning Environment
+              </h3>
+
+              <p
+                class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base"
+              >
+                We foster a safe learning environment, encouraging growth and
+                learning from mistakes without penalization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="relative overflow-hidden bg-bib-dark py-20 sm:py-24 lg:py-28"
+      >
+        <!-- Background Glow -->
+        <div
+          class="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-bib-orange/10 blur-[120px]"
+        ></div>
+        <div
+          class="pointer-events-none absolute -right-40 top-10 h-96 w-96 rounded-full bg-bib-green/10 blur-[120px]"
+        ></div>
+
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          <!-- Section Heading -->
+
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="mt-3 text-4xl lg:text-5xl font-black text-white">
+              Our Guiding <span class="text-bib-green">Principles</span>
+            </h2>
+            <p class="mt-6 text-slate-400 max-w-2xl mx-auto leading-8">
+              Whilst growing at an exponential rate our integrity and
+              responsibility to our suppliers, customers and consumers are never
+              allowed to falter. We are committed to the following:
+            </p>
+          </div>
+
+          <!-- Steps -->
+          <div class="relative mt-20 lg:mt-24">
+            <!-- Connecting Line -->
+            <div
+              class="absolute left-[10%] right-[10%] top-[53px] hidden h-px bg-gradient-to-r from-bib-green/30 via-white/20 to-bib-orange/40 lg:block"
+            ></div>
+
+            <div
+              class="grid grid-cols-1 gap-14 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5"
+            >
+              <!-- STEP 1 -->
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="5"
+                      y="4"
+                      width="14"
+                      height="17"
+                      rx="2"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                    />
+
+                    <path
+                      d="M9 4.5V3.5C9 2.95 9.45 2.5 10 2.5H14C14.55 2.5 15 2.95 15 3.5V4.5"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+
+                    <path
+                      d="M8 9H16"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+
+                    <path
+                      d="M8 12.5H11"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+
+                    <path
+                      d="M10 16L11.8 17.8L16 13.6"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    1
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Quality control
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+
+              <!-- STEP 2 -->
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 21V19C16 16.79 14.21 15 12 15H6C3.79 15 2 16.79 2 19V21"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="9"
+                      cy="8"
+                      r="3.5"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                    />
+                    <path
+                      d="M17 11L19 13L22 9.5"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    2
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Leadership and Accountability
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam
+                </p>
+              </div>
+
+              <!-- STEP 3 -->
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2.5L14.5 7.5L20 8.3L16 12.2L17 17.7L12 15.1L7 17.7L8 12.2L4 8.3L9.5 7.5L12 2.5Z"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 6.5L12.8 9L15.5 9.1L13.4 10.7L14.1 13.2L12 11.8L9.9 13.2L10.6 10.7L8.5 9.1L11.2 9L12 6.5Z"
+                      fill="#FFFFFF"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    3
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Commitment to service excellence
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam
+                </p>
+              </div>
+
+              <!-- STEP 4 -->
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5.5C4 4.67 4.67 4 5.5 4H18.5C19.33 4 20 4.67 20 5.5V14.5C20 15.33 19.33 16 18.5 16H11L7 20V16H5.5C4.67 16 4 15.33 4 14.5V5.5Z"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 9.5H16M8 12H13"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    4
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Listening to our customers
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam
+                </p>
+              </div>
+
+              <!-- STEP 5 -->
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3L20 6V11.5C20 16.5 16.8 20 12 21C7.2 20 4 16.5 4 11.5V6L12 3Z"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.5 12L10.8 14.3L15.5 9.6"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    5
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Safety
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- JOURNEY SECTION -->
+      <section class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+              Our <span class="text-bib-green">Journey</span>
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              From a small dream to a beloved brand
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border-2 border-bib-green/20 reveal"
+              style="animation-delay: 0.1s"
+            >
+              <div class="text-5xl font-black text-bib-green mb-3">2018</div>
+              <h4 class="font-bold text-lg mb-2">Founded</h4>
+              <p class="text-gray-600 text-sm leading-6">
+                BIB's Beverages was born with a vision to revolutionize the
+                beverage industry.
+              </p>
+            </div>
+
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border-2 border-bib-green/20 reveal"
+              style="animation-delay: 0.2s"
+            >
+              <div class="text-5xl font-black text-bib-green mb-3">2022</div>
+              <h4 class="font-bold text-lg mb-2">Expansion</h4>
+              <p class="text-gray-600 text-sm leading-6">
+                We expanded our product line to 5+ unique flavors loved by
+                customers.
+              </p>
+            </div>
+
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border-2 border-bib-green/20 reveal"
+              style="animation-delay: 0.3s"
+            >
+              <div class="text-5xl font-black text-bib-green mb-3">2024</div>
+              <h4 class="font-bold text-lg mb-2">Milestone</h4>
+              <p class="text-gray-600 text-sm leading-6">
+                Reached 50,000+ happy customers across multiple regions.
+              </p>
+            </div>
+
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border-2 border-bib-green/20 reveal"
+              style="animation-delay: 0.4s"
+            >
+              <div class="text-5xl font-black text-bib-green mb-3">2026</div>
+              <h4 class="font-bold text-lg mb-2">Today</h4>
+              <p class="text-gray-600 text-sm leading-6">
+                Continuing to innovate and refresh moments worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section
+        class="py-20 lg:py-28 bg-gradient-to-r from-bib-green to-green-600"
+      >
+        <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center reveal">
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight text-white">
+            Join Our Community
+          </h2>
+          <p class="mt-6 text-xl text-white/90 max-w-2xl mx-auto">
+            Discover why thousands love BIB's Beverages. Experience the
+            difference of real taste and genuine refreshment.
+          </p>
+          <div
+            class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <a
+              href="index.html#products"
+              class="px-8 py-4 rounded-full bg-white text-bib-green font-bold hover:bg-bib-cream transition"
+            >
+              Explore Products
+            </a>
+            <a
+              href="index.html#contact"
+              class="px-8 py-4 rounded-full border-2 border-white text-white font-bold hover:bg-white/10 transition"
+            >
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-white">
+      <div
+        class="max-w-7xl mx-auto px-5 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] gap-12"
+      >
+        <div>
+          <div class="text-4xl font-black">
+            BIB<span class="text-bib-green">'s</span>
+          </div>
+          <div class="tracking-[.35em] text-[10px] text-gray-400 font-bold">
+            BEVERAGES
+          </div>
+          <p class="mt-5 text-gray-400 text-sm leading-6">
+            Bibagry Limited was founded in 2018 and is wholly owned by Kassco
+            Limited.With a multi-million dollar investment into state-of-the-art
+            machinery and technology and extensive technical expertise,
+            Bibagry’s high-performance plant in Kamfinsa is capable of producing
+            more than 36,000 bottles per hour.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-bib-green transition"
+              >f</a
+            >
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-bib-green transition"
+              >◎</a
+            >
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-bib-green transition"
+              >▶</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold">Quick Links</h4>
+          <div class="mt-5 space-y-3 text-sm text-gray-400">
+            <a class="block hover:text-white" href="#home">Home</a>
+            <a class="block hover:text-white" href="#products">Products</a>
+            <a class="block hover:text-white" href="#gallery">Gallery</a>
+            <a class="block hover:text-white" href="#company">About Company</a>
+            <a class="block hover:text-white" href="#leadership">Leadership</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold">Our Products</h4>
+          <div class="mt-5 space-y-3 text-sm text-gray-400">
+            <p>Skweezy Juices</p>
+            <p>Smoove Drinks</p>
+            <p>HydroPure Water</p>
+            <p>Bib's Cola</p>
+            <p>Energyza Energy Drink</p>
+            <p>Tangawizi Ginger Drink</p>
+            <p>Sembe Mealie Meal</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold">Contact Us</h4>
+          <div class="mt-5 space-y-3 text-sm text-gray-400">
+            <p>📞 +260 972229868</p>
+            <p>📞 +260 779728877</p>
+            <p>✉ welcome@bibagary.com</p>
+            <p>📍 Plot 6028, Kamfinsa Road, Kitwe, Zambia</p>
+          </div>
+
+          <div class="mt-7">
+            <p class="text-sm font-semibold">Subscribe for updates</p>
+            <div class="mt-3 flex gap-2">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="min-w-0 flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm outline-none focus:border-bib-green"
+              />
+              <button
+                class="px-4 py-3 rounded-xl bg-bib-green font-bold text-sm hover:bg-green-700 transition"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10">
+        <div
+          class="max-w-7xl mx-auto px-5 lg:px-8 py-6 flex flex-col sm:flex-row gap-3 justify-between text-xs text-gray-500"
+        >
+          <p>© 2026 BIB's Beverages. All Rights Reserved.</p>
+          <div class="flex gap-5">
+            <a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING ICONS -->
+    <!-- Back to Top Button (Left) -->
+    <button
+      id="backToTop"
+      class="fixed left-6 bottom-6 lg:left-8 lg:bottom-8 w-12 h-12 lg:w-14 lg:h-14 bg-bib-green text-white rounded-full shadow-soft flex items-center justify-center hover:bg-green-700 transition opacity-0 invisible transform scale-0"
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      <svg
+        class="w-6 h-6 lg:w-7 lg:h-7"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- WhatsApp Button (Right) -->
+    <a
+      href="https://wa.me/260971692077?text=Hi%20BIB's%20Beverages"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed right-6 bottom-6 lg:right-8 lg:bottom-8 w-12 h-12 lg:w-14 lg:h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-soft flex items-center justify-center transition p-2"
+      aria-label="Contact us on WhatsApp"
+      title="Contact us on WhatsApp"
+      style="margin-left: auto; z-index: 40"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="">
+        <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+        <path
+          fill="white"
+          d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"
+        />
+      </svg>
+    </a>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

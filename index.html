@@ -1,0 +1,1998 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BIB's Beverages — refreshing every moment with delicious fruit beverages."
+    />
+    <title>BIB's Beverages | Refreshing Every Moment</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bib: {
+                green: "#3DAE2B",
+                dark: "#111111",
+                lime: "#B8DF5A",
+                cream: "#FFF9EA",
+                orange: "#F7A51A",
+              },
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 18px 60px rgba(17,17,17,.10)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-white text-bib-dark">
+    <!-- HEADER -->
+    <header
+      id="header"
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-black/5"
+    >
+      <div class="w-full px-5 lg:px-8 h-20 flex items-center justify-between">
+        <div class="leading-none">
+          <div class="font-display font-black text-3xl tracking-tight">
+            <a href="#home" class="flex items-center">
+              <img
+                src="./assets/logo.png"
+                alt="Logo"
+                class="h-14 w-auto object-contain"
+              />
+              <span class="text-bib-green">Bibagry</span>
+              Limited
+            </a>
+          </div>
+          <!-- <div
+              class="text-[9px] font-bold tracking-[.35em] text-gray-500 ml-1"
+            >
+              BEVERAGES
+            </div> -->
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#products">Products</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="#reviews">Reviews</a>
+          <a class="nav-link" href="#company">Company</a>
+          <a class="nav-link" href="#leadership">Leadership</a>
+          <a class="nav-link" href="#clients">Client </a>
+          <a class="nav-link" href="about.html">About</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a
+            href="#contact"
+            class="px-5 py-3 rounded-full bg-bib-green text-white text-sm font-bold hover:bg-green-700 transition"
+            >Contact Us</a
+          >
+        </div>
+
+        <button
+          id="menuBtn"
+          class="lg:hidden w-11 h-11 rounded-xl border border-gray-200 flex items-center justify-center"
+          aria-label="Open menu"
+        >
+          <span class="text-xl">☰</span>
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="hidden lg:hidden border-t bg-white">
+        <div class="px-5 py-5 flex flex-col gap-4 text-sm font-semibold">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#company">Company</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#clients">Client </a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section
+        id="home"
+        class="hero-bg min-h-[760px] pt-28 lg:pt-20 overflow-hidden relative"
+      >
+        <span class="fruit-orb w-8 h-8 bg-green-500 left-[5%] top-[22%]"></span>
+        <span
+          class="fruit-orb w-5 h-5 bg-orange-400 left-[42%] top-[24%]"
+          style="animation-delay: 1s"
+        ></span>
+        <span
+          class="fruit-orb w-10 h-10 bg-yellow-300 right-[8%] top-[18%]"
+          style="animation-delay: 2s"
+        ></span>
+        <span
+          class="fruit-orb w-6 h-6 bg-red-400 left-[13%] bottom-[20%]"
+          style="animation-delay: 3s"
+        ></span>
+
+        <div
+          class="max-w-7xl mx-auto px-5 lg:px-8 min-h-[700px] grid lg:grid-cols-2 items-center gap-10"
+        >
+          <div class="relative z-10 reveal">
+            <span
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm text-bib-green text-xs font-extrabold uppercase tracking-widest"
+            >
+              <span class="w-2 h-2 rounded-full bg-bib-green"></span>
+              Made for refreshing moments
+            </span>
+
+            <h1
+              class="mt-7 text-5xl sm:text-6xl lg:text-7xl font-black leading-[.98] tracking-tight"
+            >
+              REFRESHING
+              <span class="block text-bib-green">EVERY MOMENT.</span>
+            </h1>
+
+            <p class="mt-6 text-xl font-semibold text-gray-800">
+              Real Taste. Real Refreshment.
+            </p>
+            <p class="mt-4 max-w-xl text-gray-600 leading-7">
+              BIB's Beverages brings you a delicious blend of quality
+              ingredients, vibrant fruit flavours and everyday refreshment.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#products"
+                class="px-7 py-4 rounded-full bg-bib-green text-white font-bold shadow-lg shadow-green-200 hover:-translate-y-1 transition"
+              >
+                Explore Products <span class="ml-2">→</span>
+              </a>
+              <a
+                href="#company"
+                class="px-7 py-4 rounded-full bg-white border border-gray-200 font-bold hover:border-bib-green transition"
+              >
+                Our Story
+              </a>
+            </div>
+
+            <div class="mt-10 flex gap-8">
+              <div>
+                <div class="text-2xl font-black">100%</div>
+                <div class="text-xs text-gray-500">Quality Focus</div>
+              </div>
+              <div>
+                <div class="text-2xl font-black">5+</div>
+                <div class="text-xs text-gray-500">Fruit Flavours</div>
+              </div>
+              <div>
+                <div class="text-2xl font-black">4.8★</div>
+                <div class="text-xs text-gray-500">Customer Rating</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative min-h-[520px] lg:min-h-[650px] flex items-center justify-center reveal"
+          >
+            <div
+              class="absolute w-[470px] h-[470px] rounded-full bg-white/70 blur-sm"
+            ></div>
+
+            <div class="relative flex items-end justify-center gap-[-5px] z-10">
+              <!-- <div
+                class="bottle w-28 sm:w-32 h-80 sm:h-[370px] box-shadow-none bg-none rotate-[-11deg] -mr-11"
+              >
+                <img
+                  src="./assets/orange.png"
+                  alt="BIB's Mango Beverage"
+                  class="w-full h-full object-cover p-1"
+                />
+              </div> -->
+              <div
+                class="bottle w-28 sm:w-32 h-80 sm:h-[370px] box-shadow-none bg-none rotate-[-7deg] -mr-4"
+              >
+                <img
+                  src="./assets/cola.png"
+                  alt="BIB's Mango Beverage"
+                  class="w-full h-full object-cover p-1"
+                />
+              </div>
+
+              <div
+                class="bottle w-36 sm:w-40 h-[390px] sm:h-[470px] bg-gradient-to-b box-shadow-none bg-none from-yellow-300 to-orange-500 z-50"
+              >
+                <img
+                  src="./assets/mango.png"
+                  alt="BIB's Mango Beverage"
+                  class="w-full h-full object-cover p-1"
+                />
+              </div>
+
+              <div
+                class="bottle w-28 sm:w-32 h-80 sm:h-[370px] bg-gradient-to-b box-shadow-none bg-none from-lime-300 to-green-500 rotate-[7deg] -ml-4 z-20"
+              >
+                <img
+                  src="./assets/orange.png"
+                  alt="BIB's Mango Beverage"
+                  class="w-full h-full object-cover p-1"
+                />
+              </div>
+              <!-- <div
+                class="bottle w-28 sm:w-32 h-80 sm:h-[370px] bg-gradient-to-b box-shadow-none bg-none from-lime-300 to-green-500 rotate-[11deg] -ml-11 z-0"
+              >
+                <img
+                  src="./assets/cola.png"
+                  alt="BIB's Mango Beverage"
+                  class="w-full h-full object-cover p-1"
+                />
+              </div> -->
+            </div>
+
+            <div
+              class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[90%] h-24 rounded-[50%] bg-orange-300/50 blur-2xl"
+            ></div>
+            <div
+              class="absolute right-[3%] bottom-[18%] text-7xl animate-bounce"
+            >
+              🍋
+            </div>
+            <div class="absolute left-[2%] bottom-[20%] text-6xl">🥭</div>
+            <div class="absolute left-[20%] top-[17%] text-5xl reveal show">
+              🍃
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCTS CAROUSEL: infinite auto-run -->
+      <section id="products-carousel" class="py-8 bg-bib-green">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="overflow-hidden">
+            <div class="carousel relative">
+              <div class="carousel-track flex items-center gap-8">
+                <!-- original set -->
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Smoove-Logos-1.png"
+                    alt="Smoove 1"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Smoove-Logos-2.png"
+                    alt="Smoove 2"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Smoove-Logos-3.png"
+                    alt="Smoove 3"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Skweezy-Logo-1.png"
+                    alt="Skweezy 1"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Skweezy-Logo-2.png"
+                    alt="Skweezy 2"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Skweezy-Logo-3.png"
+                    alt="Skweezy 3"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Hydro-Logos-1.png"
+                    alt="Hydro 1"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Hydro-Logos-2.png"
+                    alt="Hydro 2"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Hydro-Logos-3.png"
+                    alt="Hydro 3"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Hydro-Logos-4.png"
+                    alt="Hydro 4"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Bib's-Cola-Logo.png"
+                    alt="Bib's Cola"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Energyza-Logo.png"
+                    alt="Energyza"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Bibs_Tangawizi--Logo.png"
+                    alt="Tangawizi"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Sembe.png"
+                    alt="Sembe"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <!-- duplicate set for seamless infinite loop -->
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Smoove-Logos-1.png"
+                    alt="Smoove 1"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Smoove-Logos-2.png"
+                    alt="Smoove 2"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Smoove-Logos-3.png"
+                    alt="Smoove 3"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Skweezy-Logo-1.png"
+                    alt="Skweezy 1"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Skweezy-Logo-2.png"
+                    alt="Skweezy 2"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Skweezy-Logo-3.png"
+                    alt="Skweezy 3"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Hydro-Logos-1.png"
+                    alt="Hydro 1"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Hydro-Logos-2.png"
+                    alt="Hydro 2"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Hydro-Logos-3.png"
+                    alt="Hydro 3"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Hydro-Logos-4.png"
+                    alt="Hydro 4"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Bib's-Cola-Logo.png"
+                    alt="Bib's Cola"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Energyza-Logo.png"
+                    alt="Energyza"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Bibs_Tangawizi--Logo.png"
+                    alt="Tangawizi"
+                    class="h-20 object-contain"
+                  />
+                </div>
+                <div class="carousel-item flex items-center justify-center p-4">
+                  <img
+                    src="./assets/Sembe.png"
+                    alt="Sembe"
+                    class="h-20 object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT HIGHLIGHTS SECTION -->
+      <section id="products" class="py-24">
+        <div class="text-center reveal">
+          <p
+            class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+          >
+            Taste the difference
+          </p>
+          <h2 class="mt-3 text-4xl lg:text-5xl font-black">Our Products</h2>
+          <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
+            Colourful flavours made to bring a little more freshness to every
+            day.
+          </p>
+        </div>
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-8 px-5 lg:grid-cols-2 lg:gap-12 lg:px-8"
+        >
+          <!-- Content -->
+          <div class="reveal show order-2 mt-8 lg:order-1 lg:mt-0">
+            <p
+              class="text-xs font-extrabold uppercase tracking-[.25em] text-bib-green"
+            >
+              What's inside
+            </p>
+
+            <h2 class="mt-3 text-4xl font-black lg:text-5xl">
+              Skweezy Colourful Flavours
+            </h2>
+
+            <p class="mt-6 leading-8 text-gray-600">
+              At BIB's Beverages, our goal is simple: create beverages people
+              love to drink. We combine carefully selected ingredients, modern
+              processing and consistent quality standards to deliver a
+              satisfying taste in every bottle.
+            </p>
+          </div>
+
+          <!-- Products -->
+          <div
+            class="order-1 mt-14 flex w-full flex-col gap-5 lg:order-2 lg:mt-14 lg:grid lg:grid-cols-2 lg:items-center lg:gap-6"
+          >
+            <!-- Left Products -->
+            <div class="flex w-full flex-col gap-5 lg:gap-[22px]">
+              <!-- Mango -->
+              <div
+                class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFFDF7] via-[#FFF6E8] to-[#FFE8C7] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+              >
+                <div
+                  class="pointer-events-none absolute -right-6 -top-6 text-[75px] opacity-20 blur-[1px] sm:-right-8 sm:-top-8 sm:text-[90px] lg:text-[100px]"
+                >
+                  🥭
+                </div>
+
+                <div
+                  class="pointer-events-none absolute -bottom-6 -left-6 text-[65px] opacity-10 sm:-bottom-8 sm:-left-8 sm:text-[80px]"
+                >
+                  🍊
+                </div>
+
+                <img
+                  src="./assets/mango.png"
+                  alt="Skweezy Mango Juice"
+                  class="relative z-10 h-full w-full object-contain p-5 transition duration-500 hover:scale-105 sm:p-6 lg:p-4"
+                />
+              </div>
+
+              <!-- Orange -->
+              <div
+                class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFFFFF] via-[#FFF8EE] to-[#FFE8CC] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+              >
+                <img
+                  src="./assets/Skweezy-Logo-1.png"
+                  alt=""
+                  aria-hidden="true"
+                  class="pointer-events-none absolute right-0 top-8 w-52 rotate-12 opacity-10 sm:top-10 sm:w-64 lg:top-12 lg:w-72"
+                />
+
+                <img
+                  src="./assets/Skweezy-Orange.png"
+                  alt="Skweezy Orange Juice"
+                  class="relative z-10 h-full w-full object-contain p-5 drop-shadow-[0_20px_20px_rgba(0,0,0,0.15)] transition duration-500 hover:scale-105 sm:p-6 lg:p-4"
+                />
+              </div>
+            </div>
+
+            <!-- Lemon Mint -->
+            <div
+              class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFFFFF] via-[#F5FFF1] to-[#E5F8DC] sm:h-[420px] lg:h-60 lg:rounded-[0_65px]"
+            >
+              <div
+                class="pointer-events-none absolute -right-5 -top-5 text-[75px] opacity-20 sm:-right-6 sm:-top-6 sm:text-[90px] lg:text-[95px]"
+              >
+                🍋
+              </div>
+
+              <div
+                class="pointer-events-none absolute -bottom-1 -left-2 text-[65px] opacity-10 sm:text-[75px]"
+              >
+                🌿
+              </div>
+
+              <img
+                src="./assets/Skweezy.png"
+                alt="Skweezy Lemon Mint Juice"
+                class="relative z-10 h-full w-full object-contain p-5 transition duration-500 hover:scale-105 sm:p-6 lg:p-4"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto mt-10 grid max-w-7xl items-center gap-8 px-5 lg:mt-20 lg:grid-cols-2 lg:gap-12 lg:px-8"
+        >
+          <!-- Products -->
+          <div
+            class="order-1 flex w-full flex-col gap-5 sm:gap-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-6"
+          >
+            <!-- LEFT PRODUCTS -->
+            <div class="flex w-full flex-col gap-5 lg:gap-[22px]">
+              <!-- Apple -->
+              <div
+                class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FAFFF3] via-[#F0F9DF] to-[#DDF2C5] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+              >
+                <!-- Background emojis -->
+                <span
+                  class="pointer-events-none absolute -right-5 -top-5 z-0 rotate-12 text-[75px] opacity-15 sm:text-[90px] lg:text-[100px]"
+                >
+                  🍏
+                </span>
+
+                <span
+                  class="pointer-events-none absolute -bottom-7 -left-5 z-0 -rotate-12 text-[60px] opacity-10 sm:text-[70px]"
+                >
+                  🌿
+                </span>
+
+                <!-- Soft glow -->
+                <div
+                  class="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 blur-3xl sm:h-40 sm:w-40"
+                ></div>
+
+                <!-- Bottle -->
+                <img
+                  src="./assets/smoove-apple.png"
+                  alt="Sparkling Apple"
+                  class="relative z-10 h-full w-full object-contain p-5 drop-shadow-[0_16px_18px_rgba(60,80,30,0.18)] transition duration-500 hover:scale-105 sm:p-6 lg:p-6"
+                />
+              </div>
+
+              <!-- Lemon -->
+              <div
+                class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFFDEB] via-[#F4F8D4] to-[#E2EEA8] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+              >
+                <!-- Background emojis -->
+                <span
+                  class="pointer-events-none absolute -right-6 -top-6 z-0 rotate-12 text-[75px] opacity-15 sm:text-[90px] lg:text-[95px]"
+                >
+                  🍋
+                </span>
+
+                <span
+                  class="pointer-events-none absolute -bottom-7 -left-5 z-0 -rotate-12 text-[60px] opacity-10 sm:text-[65px]"
+                >
+                  🍃
+                </span>
+
+                <!-- Soft glow -->
+                <div
+                  class="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FFFFF0]/80 blur-3xl sm:h-40 sm:w-40"
+                ></div>
+
+                <!-- Bottle -->
+                <img
+                  src="./assets/Smoove-lime-lemon.png"
+                  alt="Lemon Drink"
+                  class="relative z-10 h-full w-full object-contain p-5 drop-shadow-[0_18px_18px_rgba(60,70,20,0.22)] transition duration-500 hover:scale-105 sm:p-6 lg:p-6"
+                />
+              </div>
+            </div>
+
+            <!-- RIGHT PRODUCTS -->
+            <div class="flex w-full flex-col gap-5 lg:mt-[100px] lg:gap-[22px]">
+              <!-- Pineapple -->
+              <div
+                class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFFFFF] via-[#F2FFF1] to-[#D8F4D8] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+              >
+                <!-- Background emojis -->
+                <span
+                  class="pointer-events-none absolute -right-5 -top-5 z-0 rotate-12 text-[75px] opacity-15 sm:text-[90px] lg:text-[95px]"
+                >
+                  🍋
+                </span>
+
+                <span
+                  class="pointer-events-none absolute -bottom-7 -left-5 z-0 -rotate-12 text-[60px] opacity-10 sm:text-[70px]"
+                >
+                  🌿
+                </span>
+
+                <!-- Soft glow -->
+                <div
+                  class="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/90 blur-3xl sm:h-40 sm:w-40"
+                ></div>
+
+                <!-- Bottle -->
+                <img
+                  src="./assets/Smoove-Pineapple.png"
+                  alt="Pineapple Drink"
+                  class="relative z-10 h-full w-full object-contain p-5 drop-shadow-[0_16px_18px_rgba(30,90,50,0.18)] transition duration-500 hover:scale-105 sm:p-6 lg:p-6"
+                />
+              </div>
+
+              <!-- Orange -->
+              <div
+                class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFFFFF] via-[#FFF8EE] to-[#FFE5C7] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+              >
+                <!-- Background emojis -->
+                <span
+                  class="pointer-events-none absolute -right-5 -top-5 z-0 rotate-12 text-[75px] opacity-15 sm:text-[90px] lg:text-[100px]"
+                >
+                  🍊
+                </span>
+
+                <span
+                  class="pointer-events-none absolute -bottom-7 -left-5 z-0 -rotate-12 text-[60px] opacity-10 sm:text-[70px]"
+                >
+                  🍃
+                </span>
+
+                <!-- Soft glow -->
+                <div
+                  class="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/90 blur-3xl sm:h-40 sm:w-40"
+                ></div>
+
+                <!-- Bottle -->
+                <img
+                  src="./assets/smoove-orange.png"
+                  alt="Sparkling Orange"
+                  class="relative z-10 h-full w-full object-contain p-5 drop-shadow-[0_18px_18px_rgba(120,70,20,0.20)] transition duration-500 hover:scale-105 sm:p-6 lg:p-6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENT -->
+          <div class="reveal show order-2 mt-6 lg:order-2 lg:mt-0">
+            <p
+              class="text-xs font-extrabold uppercase tracking-[.25em] text-bib-green"
+            >
+              What's inside
+            </p>
+
+            <h2 class="mt-3 text-4xl font-black lg:text-5xl">
+              Smoove Colourful Flavours
+            </h2>
+
+            <p class="mt-6 leading-8 text-gray-600">
+              At BIB's Beverages, our goal is simple: create beverages people
+              love to drink. We combine carefully selected ingredients, modern
+              processing and consistent quality standards to deliver a
+              satisfying taste in every bottle.
+            </p>
+          </div>
+        </div>
+        <div
+          class="mx-auto mt-10 grid max-w-7xl items-center gap-8 px-5 lg:mt-20 lg:grid-cols-2 lg:gap-12 lg:px-8"
+        >
+          <!-- CONTENT -->
+          <div class="reveal show order-2 mt-6 lg:order-1 lg:mt-0">
+            <p
+              class="text-xs font-extrabold uppercase tracking-[.25em] text-bib-green"
+            >
+              What's inside
+            </p>
+
+            <h2 class="mt-3 text-4xl font-black lg:text-5xl">
+              Cola, Tanagwizi-Ginger, Energyza
+            </h2>
+
+            <p class="mt-6 leading-8 text-gray-600">
+              At BIB's Beverages, our goal is simple: create beverages people
+              love to drink. We combine carefully selected ingredients, modern
+              processing and consistent quality standards to deliver a
+              satisfying taste in every bottle.
+            </p>
+          </div>
+
+          <!-- PRODUCTS -->
+          <div
+            class="order-1 mt-0 flex w-full flex-col gap-5 sm:gap-6 lg:order-2 lg:mt-14 lg:grid lg:grid-cols-2 lg:items-center lg:gap-6"
+          >
+            <!-- LEFT PRODUCTS -->
+            <div class="flex w-full flex-col gap-5 lg:gap-[22px]">
+              <!-- COLA -->
+              <div
+                class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFFDF8] via-[#FFF1E8] to-[#FFDCD2] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+              >
+                <!-- Background emojis -->
+                <span
+                  class="pointer-events-none absolute -right-5 -top-5 z-0 rotate-12 text-[75px] opacity-10 sm:text-[90px] lg:text-[100px]"
+                >
+                  🥤
+                </span>
+
+                <span
+                  class="pointer-events-none absolute -bottom-7 -left-5 z-0 -rotate-12 text-[60px] opacity-10 sm:text-[70px]"
+                >
+                  🫧
+                </span>
+
+                <!-- Soft glow -->
+                <div
+                  class="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/90 blur-3xl sm:h-44 sm:w-44"
+                ></div>
+
+                <!-- Bottle -->
+                <img
+                  src="./assets/cola.png"
+                  alt="BIB's Cola"
+                  class="relative z-10 h-full w-full object-contain p-5 drop-shadow-[0_18px_20px_rgba(40,20,10,0.25)] transition duration-500 hover:scale-105 sm:p-6 lg:p-6"
+                />
+              </div>
+
+              <!-- ENERGYZA -->
+              <div
+                class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#F8FBFF] via-[#EEF3FF] to-[#DDE5FF] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+              >
+                <!-- Background emojis -->
+                <span
+                  class="pointer-events-none absolute -right-5 -top-5 z-0 rotate-12 text-[75px] opacity-10 sm:text-[90px] lg:text-[100px]"
+                >
+                  ⚡
+                </span>
+
+                <span
+                  class="pointer-events-none absolute -bottom-7 -left-5 z-0 -rotate-12 text-[60px] opacity-10 sm:text-[70px]"
+                >
+                  ✨
+                </span>
+
+                <!-- Soft glow -->
+                <div
+                  class="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/90 blur-3xl sm:h-44 sm:w-44"
+                ></div>
+
+                <!-- Bottle -->
+                <img
+                  src="./assets/energyza.png"
+                  alt="Energyza Energy Drink"
+                  class="relative z-10 h-full w-full object-contain p-5 drop-shadow-[0_18px_20px_rgba(50,60,100,0.20)] transition duration-500 hover:scale-105 sm:p-6 lg:p-6"
+                />
+              </div>
+            </div>
+
+            <!-- TANAGWIZI GINGER -->
+            <div
+              class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFFEF5] via-[#FFF6DE] to-[#F5E3B5] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+            >
+              <!-- Background emojis -->
+              <span
+                class="pointer-events-none absolute -right-5 -top-5 z-0 rotate-12 text-[75px] opacity-10 sm:text-[90px] lg:text-[100px]"
+              >
+                🫚
+              </span>
+
+              <span
+                class="pointer-events-none absolute -bottom-7 -left-5 z-0 -rotate-12 text-[60px] opacity-10 sm:text-[70px]"
+              >
+                🌿
+              </span>
+
+              <!-- Soft glow -->
+              <div
+                class="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/90 blur-3xl sm:h-44 sm:w-44"
+              ></div>
+
+              <!-- Bottle -->
+              <img
+                src="./assets/Tanagwizi-Ginger.png"
+                alt="BIB's Tangawizi"
+                class="relative z-10 h-full w-full object-contain p-5 drop-shadow-[0_18px_20px_rgba(100,60,20,0.20)] transition duration-500 hover:scale-105 sm:p-6 lg:p-6"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto mt-10 grid max-w-7xl items-center gap-8 px-5 lg:mt-20 lg:grid-cols-2 lg:gap-12 lg:px-8"
+        >
+          <!-- PRODUCTS -->
+          <div
+            class="order-1 flex w-full flex-col gap-5 sm:gap-6 lg:order-2 lg:grid lg:grid-cols-2 lg:items-center lg:gap-6"
+          >
+            <!-- LEFT PRODUCTS -->
+            <div class="flex w-full flex-col gap-5 lg:gap-[22px]">
+              <!-- Hydro 1 -->
+              <div
+                class="reveal show relative overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#172B2A] via-[#245C50] to-[#102E2A] shadow-soft transition hover:-translate-y-2 lg:rounded-[0_65px]"
+              >
+                <!-- Decorative -->
+                <span class="absolute left-5 top-5 z-0 text-3xl opacity-20">
+                  💧
+                </span>
+
+                <span class="absolute bottom-7 left-7 z-0 text-3xl opacity-15">
+                  🫧
+                </span>
+
+                <span class="absolute bottom-5 right-8 z-0 text-3xl opacity-20">
+                  🍃
+                </span>
+
+                <!-- Glow -->
+                <div
+                  class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[#A7F3D0]/20 blur-3xl"
+                ></div>
+
+                <div
+                  class="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-[#67E8F9]/15 blur-3xl"
+                ></div>
+
+                <!-- Logo -->
+                <div
+                  class="relative z-10 flex h-64 items-center justify-center overflow-hidden rounded-[0_50px] bg-white/[0.04] sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+                >
+                  <img
+                    src="./assets/Hydro-Logos-1.png"
+                    alt="Hydro"
+                    class="h-full w-full object-contain p-4 drop-shadow-[0_12px_20px_rgba(0,0,0,0.25)] transition duration-500 hover:scale-105"
+                  />
+                </div>
+              </div>
+
+              <!-- Hydro 3 -->
+              <div
+                class="reveal show relative overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#DCEBFA] via-[#B9D8EA] to-[#8FB8D2] shadow-soft transition hover:-translate-y-2 lg:rounded-[0_65px]"
+              >
+                <span class="absolute left-6 top-5 z-0 text-3xl opacity-25">
+                  💧
+                </span>
+
+                <span class="absolute right-8 top-8 z-0 text-2xl opacity-20">
+                  🫧
+                </span>
+
+                <span class="absolute bottom-6 left-8 z-0 text-3xl opacity-20">
+                  💦
+                </span>
+
+                <span class="absolute bottom-7 right-7 z-0 text-2xl opacity-20">
+                  ✨
+                </span>
+
+                <!-- Glow -->
+                <div
+                  class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/40 blur-3xl"
+                ></div>
+
+                <div
+                  class="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-sky-300/30 blur-3xl"
+                ></div>
+
+                <div
+                  class="relative z-10 flex h-64 items-center justify-center overflow-hidden rounded-[0_50px] bg-white/10 sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+                >
+                  <img
+                    src="./assets/Hydro-Logos-3.png"
+                    alt="Hydro"
+                    class="h-full w-full object-contain p-4 drop-shadow-[0_10px_18px_rgba(0,0,0,0.12)] transition duration-500 hover:scale-105"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT PRODUCTS -->
+            <div class="flex w-full flex-col gap-5 lg:mt-[100px] lg:gap-[22px]">
+              <!-- Hydro 2 -->
+              <div
+                class="reveal show relative overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#E3F4D2] via-[#B8E4C1] to-[#8CCFC0] shadow-soft transition hover:-translate-y-2 lg:rounded-[0_65px]"
+              >
+                <span class="absolute left-6 top-6 z-0 text-3xl opacity-20">
+                  🫧
+                </span>
+
+                <span class="absolute right-8 top-7 z-0 text-2xl opacity-20">
+                  💧
+                </span>
+
+                <span class="absolute bottom-6 left-8 z-0 text-2xl opacity-20">
+                  🌿
+                </span>
+
+                <span class="absolute bottom-7 right-7 z-0 text-3xl opacity-20">
+                  ✨
+                </span>
+
+                <!-- Glow -->
+                <div
+                  class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-white/50 blur-3xl"
+                ></div>
+
+                <div
+                  class="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-emerald-300/30 blur-3xl"
+                ></div>
+
+                <div
+                  class="relative z-10 flex h-64 items-center justify-center overflow-hidden rounded-[0_50px] bg-white/10 sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+                >
+                  <img
+                    src="./assets/Hydro-Logos-2.png"
+                    alt="Hydro"
+                    class="h-full w-full object-contain p-4 drop-shadow-[0_10px_18px_rgba(0,0,0,0.12)] transition duration-500 hover:scale-105"
+                  />
+                </div>
+              </div>
+
+              <!-- Hydro 4 -->
+              <div
+                class="reveal show relative overflow-hidden rounded-[0_50px] bg-gradient-to-br from-[#FFE0C2] via-[#F6C7C9] to-[#DCC9E8] shadow-soft transition hover:-translate-y-2 lg:rounded-[0_65px]"
+              >
+                <span class="absolute left-6 top-5 z-0 text-3xl opacity-20">
+                  🥭
+                </span>
+
+                <span class="absolute right-8 top-7 z-0 text-2xl opacity-20">
+                  ✨
+                </span>
+
+                <span class="absolute bottom-6 left-8 z-0 text-3xl opacity-15">
+                  🍃
+                </span>
+
+                <span class="absolute bottom-7 right-7 z-0 text-2xl opacity-20">
+                  💧
+                </span>
+
+                <!-- Glow -->
+                <div
+                  class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-orange-100/60 blur-3xl"
+                ></div>
+
+                <div
+                  class="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-purple-200/40 blur-3xl"
+                ></div>
+
+                <div
+                  class="relative z-10 flex h-64 items-center justify-center overflow-hidden rounded-[0_50px] bg-white/10 sm:h-72 lg:h-60 lg:rounded-[0_65px]"
+                >
+                  <img
+                    src="./assets/Hydro-Logos-4.png"
+                    alt="Hydro"
+                    class="h-full w-full object-contain p-4 drop-shadow-[0_10px_18px_rgba(0,0,0,0.12)] transition duration-500 hover:scale-105"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENT -->
+          <div class="reveal show order-2 mt-6 lg:order-2 lg:mt-0">
+            <p
+              class="text-xs font-extrabold uppercase tracking-[.25em] text-bib-green"
+            >
+              What's inside
+            </p>
+
+            <h2 class="mt-3 text-4xl font-black lg:text-5xl">
+              Hydro pure water with a bright citrus finish
+            </h2>
+
+            <p class="mt-6 leading-8 text-gray-600">
+              At BIB's Beverages, our goal is simple: create beverages people
+              love to drink. We combine carefully selected ingredients, modern
+              processing and consistent quality standards to deliver a
+              satisfying taste in every bottle.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <!-- <section id="products" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="text-center reveal">
+            <p
+              class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+            >
+              Taste the difference
+            </p>
+            <h2 class="mt-3 text-4xl lg:text-5xl font-black">Our Products</h2>
+            <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
+              Colourful flavours made to bring a little more freshness to every
+              day.
+            </p>
+          </div>
+
+          <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            <article
+              class="rounded-3xl bg-orange-50 p-5 hover:-translate-y-2 transition shadow-soft reveal"
+            >
+              <div
+                class="h-52 rounded-2xl bg-gradient-to-b from-yellow-200 to-orange-400 flex items-end justify-center overflow-hidden"
+              >
+                <img
+                  src="./assets/mango.png"
+                  alt="BIB's Mango Beverage"
+                  class="w-full h-full object-contain p-1"
+                />
+              </div>
+              <h3 class="mt-5 text-lg font-black">Skweezy Juices</h3>
+              <p class="mt-2 text-sm text-gray-500">
+                Sweet, juicy and naturally refreshing.
+              </p>
+            </article>
+
+            <article
+              class="rounded-3xl bg-pink-50 p-5 hover:-translate-y-2 transition shadow-soft reveal"
+            >
+              <div
+                class="h-52 rounded-2xl bg-gradient-to-b from-pink-200 to-red-400 flex items-end justify-center overflow-hidden"
+              >
+                <img
+                  src="./assets/orange.png"
+                  alt="BIB's Orange Beverage"
+                  class="w-full h-full object-contain p-1"
+                />
+              </div>
+
+              <h3 class="mt-5 text-lg font-black">Smoove Drinks</h3>
+              <p class="mt-2 text-sm text-gray-500">
+                Delicate lychee flavour for a unique taste.
+              </p>
+            </article>
+
+            <article
+              class="rounded-3xl bg-lime-50 p-5 hover:-translate-y-2 transition shadow-soft reveal"
+            >
+              <div
+                class="h-52 rounded-2xl bg-gradient-to-b from-lime-100 to-green-300 flex items-end justify-center overflow-hidden"
+              >
+                <img
+                  src="./assets/orange.png"
+                  alt="BIB's Orange Beverage"
+                  class="w-full h-full object-contain p-1"
+                />
+              </div>
+              <h3 class="mt-5 text-lg font-black">HydroPure Water</h3>
+              <p class="mt-2 text-sm text-gray-500">
+                Zesty goodness with a bright citrus finish.
+              </p>
+            </article>
+
+            <article
+              class="rounded-3xl bg-yellow-50 p-5 hover:-translate-y-2 transition shadow-soft reveal"
+            >
+              <div
+                class="h-52 rounded-2xl bg-gradient-to-b from-[#8B3A24] via-[#3D1710] to-[#120706] flex items-end justify-center overflow-hidden"
+              >
+                <img
+                  src="./assets/cola.png"
+                  alt="BIB's Mango Beverage"
+                  class="w-full h-full object-contain p-1"
+                />
+              </div>
+              <h3 class="mt-5 text-lg font-black">Bib's Cola</h3>
+              <p class="mt-2 text-sm text-gray-500">
+                A tropical flavour that refreshes your senses.
+              </p>
+            </article>
+
+            <article
+              class="rounded-3xl bg-red-50 p-5 hover:-translate-y-2 transition shadow-soft reveal"
+            >
+              <div
+                class="h-52 rounded-2xl bg-gradient-to-b from-red-100 to-orange-300 flex items-end justify-center overflow-hidden"
+              >
+                <div
+                  class="bottle w-24 h-44 bg-gradient-to-b from-orange-300 to-red-500"
+                >
+                  <div class="bottle-label">
+                    <b>BIB's</b><small>Energyza </small>
+                  </div>
+                </div>
+              </div>
+              <h3 class="mt-5 text-lg font-black">Energyza Energy Drink</h3>
+              <p class="mt-2 text-sm text-gray-500">
+                A perfect mix of flavours in every sip.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- GALLERY -->
+      <section id="gallery" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div
+            class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 reveal"
+          >
+            <div>
+              <p
+                class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+              >
+                Fresh. Bright. Delicious.
+              </p>
+              <h2 class="mt-3 text-4xl lg:text-5xl font-black">Gallery</h2>
+            </div>
+            <!-- <p class="max-w-md text-gray-500">if u want content here.</p> -->
+          </div>
+
+          <div class="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-4">
+            <!-- Gallery 1 -->
+            <div
+              class="gallery-card overflow-hidden rounded-3xl bg-gradient-to-br from-orange-200 to-yellow-400 min-h-[280px] flex items-center justify-center reveal lg:col-span-2 lg:row-span-2 lg:min-h-[390px]"
+            >
+              <img
+                src="./assets/gallery-1.png"
+                alt="gallery-1"
+                class="h-full w-full object-cover"
+              />
+            </div>
+
+            <!-- Gallery 2 -->
+            <div
+              class="gallery-card min-h-[220px] overflow-hidden rounded-3xl bg-gradient-to-br from-pink-200 to-red-400 flex items-center justify-center reveal lg:min-h-[185px]"
+            >
+              <img
+                src="./assets/gallery-2.png"
+                alt="gallery-2"
+                class="h-full w-full object-cover"
+              />
+            </div>
+
+            <!-- Gallery 3 -->
+            <div
+              class="gallery-card min-h-[220px] overflow-hidden rounded-3xl bg-gradient-to-br from-lime-100 to-green-400 flex items-center justify-center reveal lg:min-h-[185px]"
+            >
+              <img
+                src="./assets/gallery-3.png"
+                alt="gallery-3"
+                class="h-full w-full object-cover"
+              />
+            </div>
+
+            <!-- Gallery 4 -->
+            <div
+              class="gallery-card min-h-[220px] overflow-hidden rounded-3xl bg-gradient-to-br from-yellow-100 to-yellow-400 flex items-center justify-center reveal lg:min-h-[185px]"
+            >
+              <img
+                src="./assets/gallery-4.png"
+                alt="gallery-4"
+                class="h-full w-full object-cover"
+              />
+            </div>
+
+            <!-- Gallery 5 -->
+            <div
+              class="gallery-card min-h-[220px] overflow-hidden rounded-3xl bg-gradient-to-br from-orange-100 to-red-400 flex items-center justify-center reveal lg:min-h-[185px]"
+            >
+              <img
+                src="./assets/gallery-5.png"
+                alt="gallery-5"
+                class="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT PRODUCT -->
+      <section id="about-product" class="py-24">
+        <div
+          class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center"
+        >
+          <div class="reveal">
+            <p
+              class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+            >
+              What's inside
+            </p>
+            <h2 class="mt-3 text-4xl lg:text-5xl font-black">
+              About Our Products
+            </h2>
+            <p class="mt-6 text-gray-600 leading-8">
+              At BIB's Beverages, our goal is simple: create beverages people
+              love to drink. We combine carefully selected ingredients, modern
+              processing and consistent quality standards to deliver a
+              satisfying taste in every bottle.
+            </p>
+
+            <div class="mt-8 grid sm:grid-cols-3 gap-4">
+              <div class="p-5 rounded-2xl bg-green-50">
+                <div class="text-2xl">🌿</div>
+                <b class="block mt-3">Quality Ingredients</b>
+                <span class="text-xs text-gray-500">Carefully selected</span>
+              </div>
+              <div class="p-5 rounded-2xl bg-orange-50">
+                <div class="text-2xl">⚗️</div>
+                <b class="block mt-3">Modern Process</b>
+                <span class="text-xs text-gray-500">Consistent quality</span>
+              </div>
+              <div class="p-5 rounded-2xl bg-yellow-50">
+                <div class="text-2xl">✓</div>
+                <b class="block mt-3">Safe & Fresh</b>
+                <span class="text-xs text-gray-500">Made with care</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative reveal">
+            <div
+              class="rounded-[2.5rem] bg-gradient-to-br from-green-100 via-lime-50 to-yellow-100 min-h-[500px] flex items-center justify-center overflow-hidden"
+            >
+              <img
+                src="./assets/bucket.png"
+                alt="bucket "
+                class="w-full object-cover"
+              />
+            </div>
+            <div
+              class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-soft p-5"
+            >
+              <div class="text-3xl font-black">100%</div>
+              <div class="text-xs text-gray-500">Made with care</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section id="reviews" class="py-24 bg-bib-cream">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-12 items-center">
+            <div class="reveal">
+              <p
+                class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+              >
+                Loved by customers
+              </p>
+              <h2 class="mt-3 text-4xl lg:text-5xl font-black">
+                Customer Ratings
+              </h2>
+              <div class="mt-6 flex items-center gap-5">
+                <span class="text-6xl font-black">4.8</span>
+                <div>
+                  <div class="text-2xl tracking-widest star">★★★★★</div>
+                  <p class="text-sm text-gray-500 mt-1">
+                    Based on 1,256+ reviews
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-5">
+              <article class="bg-white rounded-3xl p-7 shadow-soft reveal">
+                <div class="text-4xl text-bib-green">“</div>
+                <p class="mt-2 text-gray-600 leading-7">
+                  The mango flavour is delicious and refreshing. It has become
+                  one of our family's favourites.
+                </p>
+                <div class="mt-6 font-bold">Happy Customer</div>
+                <div class="text-sm star mt-1">★★★★★</div>
+              </article>
+              <article class="bg-white rounded-3xl p-7 shadow-soft reveal">
+                <div class="text-4xl text-bib-green">“</div>
+                <p class="mt-2 text-gray-600 leading-7">
+                  Great taste, attractive packaging and a refreshing drink for
+                  hot days.
+                </p>
+                <div class="mt-6 font-bold">Verified Customer</div>
+                <div class="text-sm star mt-1">★★★★★</div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPANY -->
+      <section id="company" class="py-24">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div
+            class="grid grid-cols-1 overflow-hidden rounded-[2.5rem] bg-gray-950 text-white reveal show md:grid-cols-[60%_40%] lg:grid-cols-[75%_25%]"
+          >
+            <!-- LEFT SIDE -->
+            <div class="p-6 sm:p-8 md:p-10 lg:p-16">
+              <p
+                class="text-bib-lime text-xs font-extrabold uppercase tracking-[.25em]"
+              >
+                Who we are
+              </p>
+
+              <h2 class="mt-4 text-3xl font-black sm:text-4xl lg:text-5xl">
+                Welcome to Our Family
+              </h2>
+
+              <p
+                class="mt-6 text-sm leading-7 text-gray-300 sm:text-base sm:leading-8"
+              >
+                Bibagry Limited is a Zambian-based FMCG with a strong portfolio
+                of soft drinks. With a multi-million dollar investment into
+                state-of-the-art machinery and technology and extensive
+                technical expertise, Bibagry’s high-performance plant in
+                Kamfinsa is capable of producing more than 36,000 bottles per
+                hour. We employ hundreds of people, and directly support the
+                communities around our plant. Bibagry Limited was founded in
+                2018 and is wholly owned by Kassco Limited, one of Zambia’s most
+                successful and best-known mining and plant hire contractors,
+                that has been in business since 2005.
+              </p>
+
+              <!-- FEATURES -->
+              <div class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-5">
+                <div>
+                  <div class="text-2xl">🌱</div>
+                  <b class="mt-2 block">Quality</b>
+                  <span class="text-xs text-gray-400">Products</span>
+                </div>
+
+                <div>
+                  <div class="text-2xl">⚙️</div>
+                  <b class="mt-2 block">Modern</b>
+                  <span class="text-xs text-gray-400">Technology</span>
+                </div>
+
+                <div>
+                  <div class="text-2xl">♥</div>
+                  <b class="mt-2 block">Customer</b>
+                  <span class="text-xs text-gray-400">Satisfaction</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div
+              class="relative flex min-h-[300px] items-center justify-center overflow-hidden bg-gradient-to-br from-bib-green to-lime-300 sm:min-h-[350px] md:min-h-full lg:min-h-[420px]"
+            >
+              <!-- Background Emoji -->
+              <div
+                class="absolute -bottom-16 -right-10 text-[150px] opacity-20 sm:text-[190px] lg:text-[230px]"
+              >
+                💧
+              </div>
+
+              <!-- Logo -->
+              <div class="relative px-4 text-center">
+                <div class="text-5xl font-black sm:text-6xl">
+                  BIB<span class="text-white">'s</span>
+                </div>
+
+                <div
+                  class="mt-1 text-xs font-bold tracking-[.35em] sm:text-sm sm:tracking-[.45em]"
+                >
+                  BEVERAGES
+                </div>
+
+                <div class="mt-5 text-sm text-white/80 sm:mt-6">
+                  Refreshing every moment.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEADERSHIP -->
+      <section id="leadership" class="py-24 bg-gray-50">
+        <div class="mx-auto max-w-6xl px-5 lg:px-8">
+          <!-- Heading -->
+          <div class="text-center reveal">
+            <p
+              class="text-xs font-extrabold uppercase tracking-[.25em] text-bib-green"
+            >
+              Our people
+            </p>
+
+            <h2 class="mt-3 text-4xl font-black sm:text-5xl">Leadership</h2>
+          </div>
+
+          <!-- Leadership Cards -->
+          <div
+            class="mt-10 grid grid-cols-1 gap-5 sm:mt-12 sm:gap-6 lg:grid-cols-2 lg:gap-7"
+          >
+            <!-- Director -->
+            <article
+              class="reveal flex flex-col items-center gap-5 rounded-[2rem] bg-white p-5 shadow-soft sm:p-6 lg:flex-row lg:items-center lg:gap-6"
+            >
+              <!-- Image -->
+              <div
+                class="flex h-56 w-full shrink-0 items-end justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-gray-200 to-gray-400 sm:h-64 lg:h-44 lg:w-36"
+              >
+                <div
+                  class="text-[7rem] leading-none sm:text-[8rem] lg:text-7xl"
+                >
+                  👨🏻‍💼
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="w-full text-center sm:text-left">
+                <span
+                  class="text-xs font-bold uppercase tracking-widest text-bib-green"
+                >
+                  Director
+                </span>
+
+                <h3 class="mt-2 text-2xl font-black sm:text-3xl lg:text-2xl">
+                  Mr. MEHRAN AHMAD
+                </h3>
+
+                <p
+                  class="mx-auto mt-3 max-w-md text-sm leading-6 text-gray-500 sm:mx-0"
+                >
+                  Visionary leadership focused on quality, innovation and
+                  sustainable growth.
+                </p>
+              </div>
+            </article>
+
+            <!-- Managing Director -->
+            <article
+              class="reveal flex flex-col items-center gap-5 rounded-[2rem] bg-white p-5 shadow-soft sm:p-6 lg:flex-row lg:items-center lg:gap-6"
+            >
+              <!-- Image -->
+              <div
+                class="flex h-56 w-full shrink-0 items-end justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-gray-200 to-gray-400 sm:h-64 lg:h-44 lg:w-36"
+              >
+                <div
+                  class="text-[7rem] leading-none sm:text-[8rem] lg:text-7xl"
+                >
+                  👨🏽‍💼
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="w-full text-center sm:text-left">
+                <span
+                  class="text-xs font-bold uppercase tracking-widest text-bib-green"
+                >
+                  Managing Director
+                </span>
+
+                <h3 class="mt-2 text-2xl font-black sm:text-3xl lg:text-2xl">
+                  Mr. MEHRAN AHMAD
+                </h3>
+
+                <p
+                  class="mx-auto mt-3 max-w-md text-sm leading-6 text-gray-500 sm:mx-0"
+                >
+                  Driving operational excellence and building a stronger
+                  beverage brand every day.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- CLIENTS -->
+      <section id="clients" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="text-center reveal">
+            <p
+              class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+            >
+              Our Clients
+            </p>
+            <h2 class="mt-3 text-4xl lg:text-5xl font-black">Our Client</h2>
+          </div>
+
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/choppies.png"
+                alt="Client logo 1"
+                class="max-h-16 object-cover"
+              />
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/shoprite.jpg"
+                alt="shoprite"
+                class="max-h-16 object-contain"
+              />
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/pick.png"
+                alt="pick"
+                class="max-h-16 object-contain"
+              />
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/puma.jpg"
+                alt="puma"
+                class="max-h-16 object-contain"
+              />
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/total.png"
+                alt="total"
+                class="max-h-16 object-contain"
+              />
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/engen.png"
+                alt="engen"
+                class="max-h-16 object-contain"
+              />
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/spar.png"
+                alt="spar"
+                class="max-h-16 object-contain"
+              />
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/game.png"
+                alt="game"
+                class="max-h-16 object-contain"
+              />
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 shadow-soft flex items-center justify-center reveal hover:-translate-y-2 hover:outline hover:outline-2 hover:outline-bib-green/40 hover:shadow-xl transition-transform duration-300"
+            >
+              <img
+                src="./assets/food.png"
+                alt="food"
+                class="max-h-16 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="contact" class="py-24 bg-[#F6F5EE]">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center reveal">
+          <div
+            class="rounded-[2.5rem] bg-white p-8 sm:p-10 shadow-soft ring-1 ring-black/5 h-full"
+          >
+            <div
+              class="inline-flex items-center gap-3 rounded-full bg-bib-green/10 px-4 py-2 text-sm font-bold text-bib-green"
+            >
+              <span class="h-2.5 w-2.5 rounded-full bg-bib-green"></span>
+              Reach out today
+            </div>
+
+            <h2 class="mt-6 text-4xl font-black tracking-tight text-bib-dark">
+              Contact Us
+            </h2>
+            <p class="mt-4 max-w-2xl text-gray-600 leading-7">
+              Have a question about our beverages or want to partner with BIB's?
+              Send us a message and we’ll get back to you shortly.
+            </p>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-[1.75rem] bg-bib-green/5 p-6">
+                <p
+                  class="text-xs uppercase tracking-[.28em] text-bib-green font-semibold"
+                >
+                  Phone
+                </p>
+                <p class="mt-3 text-lg font-bold text-bib-dark">
+                  +260 972 229 868
+                </p>
+                <p class="mt-2 text-sm text-gray-600">
+                  Call or WhatsApp us anytime.
+                </p>
+              </div>
+
+              <div class="rounded-[1.75rem] bg-orange-100/90 p-6">
+                <p
+                  class="text-xs uppercase tracking-[.28em] text-orange-600 font-semibold"
+                >
+                  Email
+                </p>
+                <p class="mt-3 text-lg font-bold text-bib-dark">
+                  welcome@bibagary.com
+                </p>
+                <p class="mt-2 text-sm text-gray-600">
+                  Fast replies during business hours.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-[1.75rem] bg-gray-50 p-6">
+                <p
+                  class="text-xs uppercase tracking-[.28em] text-gray-500 font-semibold"
+                >
+                  Office
+                </p>
+                <p class="mt-3 text-sm text-gray-700">
+                  Plot 6028, Kamfinsa Road Kitwe, Zambia
+                </p>
+              </div>
+              <div class="rounded-[1.75rem] bg-gray-50 p-6">
+                <p
+                  class="text-xs uppercase tracking-[.28em] text-gray-500 font-semibold"
+                >
+                  Hours
+                </p>
+                <p class="mt-3 text-sm text-gray-700">
+                  Mon – Fri: 8:00 AM – 5:30 PM<br />
+                  Saturday : 8:00 AM – 13:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="rounded-[2.5rem] overflow-hidden bg-gradient-to-br from-bib-green/10 via-white to-lime-100 p-1 shadow-soft"
+          >
+            <div class="h-full rounded-[2rem] bg-white p-8 sm:p-10">
+              <div
+                class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div>
+                  <p
+                    class="text-xs uppercase tracking-[.3em] text-gray-500 font-semibold"
+                  >
+                    Let’s chat
+                  </p>
+                  <h3 class="mt-3 text-3xl font-black text-bib-dark">
+                    Send a message
+                  </h3>
+                </div>
+                <div
+                  class="inline-flex rounded-full bg-bib-green px-4 py-3 text-sm font-bold text-white"
+                >
+                  Fast reply
+                </div>
+              </div>
+
+              <form class="mt-8 space-y-5">
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <label class="block">
+                    <span class="text-sm font-medium text-gray-700"
+                      >Full Name</span
+                    >
+                    <input
+                      type="text"
+                      placeholder="Your name"
+                      class="mt-3 w-full rounded-3xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-bib-dark outline-none transition focus:border-bib-green focus:ring-2 focus:ring-bib-green/20"
+                    />
+                  </label>
+
+                  <label class="block">
+                    <span class="text-sm font-medium text-gray-700">Email</span>
+                    <input
+                      type="email"
+                      placeholder="you@example.com"
+                      class="mt-3 w-full rounded-3xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-bib-dark outline-none transition focus:border-bib-green focus:ring-2 focus:ring-bib-green/20"
+                    />
+                  </label>
+                </div>
+
+                <label class="block">
+                  <span class="text-sm font-medium text-gray-700">Subject</span>
+                  <input
+                    type="text"
+                    placeholder="What would you like to discuss?"
+                    class="mt-3 w-full rounded-3xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-bib-dark outline-none transition focus:border-bib-green focus:ring-2 focus:ring-bib-green/20"
+                  />
+                </label>
+
+                <label class="block">
+                  <span class="text-sm font-medium text-gray-700">Message</span>
+                  <textarea
+                    rows="5"
+                    placeholder="Tell us more about your request"
+                    class="mt-3 w-full rounded-[1.75rem] border border-gray-200 bg-gray-50 px-4 py-4 text-sm text-bib-dark outline-none resize-none transition focus:border-bib-green focus:ring-2 focus:ring-bib-green/20"
+                  ></textarea>
+                </label>
+
+                <div
+                  class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+                >
+                  <button
+                    type="submit"
+                    class="inline-flex items-center justify-center rounded-full bg-bib-green px-6 py-3 text-sm font-bold text-white transition hover:bg-green-700"
+                  >
+                    Send Message
+                  </button>
+                  <p class="text-xs text-gray-500">
+                    We typically respond within 24 hours.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-white">
+      <div
+        class="max-w-7xl mx-auto px-5 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] gap-12"
+      >
+        <div>
+          <div class="text-4xl font-black">
+            BIB<span class="text-bib-green">'s</span>
+          </div>
+          <div class="tracking-[.35em] text-[10px] text-gray-400 font-bold">
+            BEVERAGES
+          </div>
+          <p class="mt-5 text-gray-400 text-sm leading-6">
+            Bibagry Limited was founded in 2018 and is wholly owned by Kassco
+            Limited.With a multi-million dollar investment into state-of-the-art
+            machinery and technology and extensive technical expertise,
+            Bibagry’s high-performance plant in Kamfinsa is capable of producing
+            more than 36,000 bottles per hour.
+          </p>
+
+          <div class="flex items-center gap-3 mt-6">
+            <!-- Facebook -->
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#1877F2]"
+            >
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M14.5 8H17V4.5C16.57 4.45 15.1 4.3 13.35 4.3
+             C9.7 4.3 7.2 6.53 7.2 10.62V13.5H3.5V17.4H7.2V24H11.7V17.4H15.25L15.8 13.5H11.7V11.05
+             C11.7 9.93 12 8.75 14.5 8Z"
+                />
+              </svg>
+            </a>
+
+            <!-- Twitter / X -->
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-black"
+            >
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.24-8.28L2.8 2h6.4l4.42 5.85L18.9 2zm-1.1 17.8h1.73L8.27 4.08H6.41L17.8 19.8z"
+                />
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a
+              href="#"
+              aria-label="YouTube"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF0000]"
+            >
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.9V8.1l6.5 3.9-6.5 3.9z"
+                />
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#0A66C2]"
+            >
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M5 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 10h4v11H3V10zm6 0h3.8v1.5h.1c.5-.9 1.7-1.9 3.6-1.9 3.9 0 4.5 2.6 4.5 6v5.4h-4v-4.8c0-1.1 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5V21H9V10z"
+                />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#515BD4]"
+            >
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1.2"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold">Quick Links</h4>
+          <div class="mt-5 space-y-3 text-sm text-gray-400">
+            <a class="block hover:text-white" href="#home">Home</a>
+            <a class="block hover:text-white" href="#products">Products</a>
+            <a class="block hover:text-white" href="#gallery">Gallery</a>
+            <a class="block hover:text-white" href="#about.html"
+              >About Company</a
+            >
+            <a class="block hover:text-white" href="#leadership">Leadership</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold">Our Products</h4>
+          <div class="mt-5 space-y-3 text-sm text-gray-400">
+            <p>Skweezy Juices</p>
+            <p>Smoove Drinks</p>
+            <p>HydroPure Water</p>
+            <p>Bib's Cola</p>
+            <p>Energyza Energy Drink</p>
+            <p>Tangawizi Ginger Drink</p>
+            <p>Sembe Mealie Meal</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold">Contact Us</h4>
+          <div class="mt-5 space-y-3 text-sm text-gray-400">
+            <p>📞 +260 972229868</p>
+            <p>📞 +260 779728877</p>
+            <p>✉ welcome@bibagary.com</p>
+            <p>📍 Plot 6028, Kamfinsa Road, Kitwe, Zambia</p>
+          </div>
+
+          <div class="mt-7">
+            <p class="text-sm font-semibold">Subscribe for updates</p>
+            <div class="mt-3 flex gap-2">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="min-w-0 flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm outline-none focus:border-bib-green"
+              />
+              <button
+                class="px-4 py-3 rounded-xl bg-bib-green font-bold text-sm hover:bg-green-700 transition"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10">
+        <div
+          class="max-w-7xl mx-auto px-5 lg:px-8 py-6 flex flex-col sm:flex-row gap-3 justify-between text-xs text-gray-500"
+        >
+          <p>© 2026 BIB's Beverages. All Rights Reserved.</p>
+          <div class="flex gap-5">
+            <a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING ICONS -->
+    <!-- Back to Top Button (Left) -->
+    <button
+      id="backToTop"
+      class="fixed left-6 bottom-6 lg:left-8 lg:bottom-8 w-12 h-12 lg:w-14 lg:h-14 bg-bib-green text-white rounded-full shadow-soft flex items-center justify-center hover:bg-green-700 transition opacity-0 invisible transform scale-0"
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      <svg
+        class="w-6 h-6 lg:w-7 lg:h-7"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- WhatsApp Button (Right) -->
+    <a
+      href="https://wa.me/260971692077?text=Hi%20BIB's%20Beverages"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed right-6 bottom-6 lg:right-8 lg:bottom-8 w-12 h-12 lg:w-14 lg:h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-soft flex items-center justify-center transition p-2"
+      aria-label="Contact us on WhatsApp"
+      title="Contact us on WhatsApp"
+      style="margin-left: auto; z-index: 40"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="">
+        <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+        <path
+          fill="white"
+          d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"
+        />
+      </svg>
+    </a>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
