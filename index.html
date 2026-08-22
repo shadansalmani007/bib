@@ -73,7 +73,7 @@
         <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
           <a class="nav-link active" href="#home">Home</a>
           <a class="nav-link" href="#products">Products</a>
-          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="gallery.html">Gallery</a>
           <a class="nav-link" href="#reviews">Reviews</a>
           <a class="nav-link" href="#company">Company</a>
           <a class="nav-link" href="#leadership">Leadership</a>
@@ -102,7 +102,7 @@
         <div class="px-5 py-5 flex flex-col gap-4 text-sm font-semibold">
           <a href="#home">Home</a>
           <a href="#products">Products</a>
-          <a href="#gallery">Gallery</a>
+          <a href="gallery.html">Gallery</a>
           <a href="#reviews">Reviews</a>
           <a href="#company">Company</a>
           <a href="#leadership">Leadership</a>
@@ -118,24 +118,56 @@
         id="home"
         class="hero-bg min-h-[760px] pt-28 lg:pt-20 overflow-hidden relative"
       >
+        <!-- Floating Random Shapes -->
+        <div
+          id="heroParticles"
+          class="absolute inset-0 z-[5] pointer-events-none overflow-hidden"
+        ></div>
+        <!-- =====================================================
+       RIGHT SIDE FLOATING CURTAIN / WAVE
+       ===================================================== -->
+        <div
+          id="heroCurtain"
+          class="absolute z-[1] pointer-events-none right-[-180px] lg:right-[-120px] top-[-120px] lg:top-[10px] w-[600px] sm:w-[700px] lg:w-[820px] opacity-60"
+        >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0185/5999/1872/files/blue_strand_transparent.png?v=1778949964"
+            alt=""
+            class="w-full h-auto object-contain hue-rotate-[70deg] saturate-[1.15] brightness-[1.08] opacity-[.40]"
+          />
+        </div>
+
+        <!-- Soft color atmosphere behind curtain -->
+        <div
+          class="absolute z-0 pointer-events-none right-[-180px] top-[5%] w-[620px] h-[620px] rounded-full bg-gradient-to-br from-green-200/50 via-yellow-100/40 to-orange-200/30 blur-3xl"
+        ></div>
+
+        <!-- Floating fruit orbs -->
         <span class="fruit-orb w-8 h-8 bg-green-500 left-[5%] top-[22%]"></span>
+
         <span
           class="fruit-orb w-5 h-5 bg-orange-400 left-[42%] top-[24%]"
           style="animation-delay: 1s"
         ></span>
+
         <span
           class="fruit-orb w-10 h-10 bg-yellow-300 right-[8%] top-[18%]"
           style="animation-delay: 2s"
         ></span>
+
         <span
           class="fruit-orb w-6 h-6 bg-red-400 left-[13%] bottom-[20%]"
           style="animation-delay: 3s"
         ></span>
 
+        <!-- =====================================================
+       MAIN HERO CONTENT
+       ===================================================== -->
         <div
-          class="max-w-7xl mx-auto px-5 lg:px-8 min-h-[700px] grid lg:grid-cols-2 items-center gap-10"
+          class="max-w-7xl mx-auto px-5 lg:px-8 min-h-[700px] grid lg:grid-cols-2 items-center gap-10 relative z-10"
         >
-          <div class="relative z-10 reveal">
+          <!-- LEFT -->
+          <div class="relative z-20 reveal">
             <span
               class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm text-bib-green text-xs font-extrabold uppercase tracking-widest"
             >
@@ -153,6 +185,7 @@
             <p class="mt-6 text-xl font-semibold text-gray-800">
               Real Taste. Real Refreshment.
             </p>
+
             <p class="mt-4 max-w-xl text-gray-600 leading-7">
               BIB's Beverages brings you a delicious blend of quality
               ingredients, vibrant fruit flavours and everyday refreshment.
@@ -165,6 +198,7 @@
               >
                 Explore Products <span class="ml-2">→</span>
               </a>
+
               <a
                 href="#company"
                 class="px-7 py-4 rounded-full bg-white border border-gray-200 font-bold hover:border-bib-green transition"
@@ -178,10 +212,12 @@
                 <div class="text-2xl font-black">100%</div>
                 <div class="text-xs text-gray-500">Quality Focus</div>
               </div>
+
               <div>
                 <div class="text-2xl font-black">5+</div>
                 <div class="text-xs text-gray-500">Fruit Flavours</div>
               </div>
+
               <div>
                 <div class="text-2xl font-black">4.8★</div>
                 <div class="text-xs text-gray-500">Customer Rating</div>
@@ -189,35 +225,32 @@
             </div>
           </div>
 
+          <!-- =====================================================
+         RIGHT / BOTTLES
+         ===================================================== -->
           <div
-            class="relative min-h-[520px] lg:min-h-[650px] flex items-center justify-center reveal"
+            class="relative z-20 min-h-[520px] lg:min-h-[650px] flex items-center justify-center reveal"
           >
+            <!-- soft bottle background -->
             <div
-              class="absolute w-[470px] h-[470px] rounded-full bg-white/70 blur-sm"
+              class="absolute w-[470px] h-[470px] rounded-full bg-white/60 blur-sm"
             ></div>
 
-            <div class="relative flex items-end justify-center gap-[-5px] z-10">
-              <!-- <div
-                class="bottle w-28 sm:w-32 h-80 sm:h-[370px] box-shadow-none bg-none rotate-[-11deg] -mr-11"
-              >
-                <img
-                  src="assets/orange.png"
-                  alt="BIB's Mango Beverage"
-                  class="w-full h-full object-cover p-1"
-                />
-              </div> -->
+            <div class="relative flex items-end justify-center gap-[-5px] z-20">
+              <!-- COLA -->
               <div
                 class="bottle w-28 sm:w-32 h-80 sm:h-[370px] box-shadow-none bg-none rotate-[-7deg] -mr-4"
               >
                 <img
                   src="assets/cola.png"
-                  alt="BIB's Mango Beverage"
+                  alt="BIB's Cola Beverage"
                   class="w-full h-full object-cover p-1"
                 />
               </div>
 
+              <!-- MANGO -->
               <div
-                class="bottle w-36 sm:w-40 h-[390px] sm:h-[470px] bg-gradient-to-b box-shadow-none bg-none from-yellow-300 to-orange-500 z-50"
+                class="bottle w-36 sm:w-40 h-[390px] sm:h-[470px] box-shadow-none bg-none from-yellow-300 to-orange-500 z-50"
               >
                 <img
                   src="assets/mango.png"
@@ -226,41 +259,100 @@
                 />
               </div>
 
+              <!-- ORANGE -->
               <div
-                class="bottle w-28 sm:w-32 h-80 sm:h-[370px] bg-gradient-to-b box-shadow-none bg-none from-lime-300 to-green-500 rotate-[7deg] -ml-4 z-20"
+                class="bottle w-28 sm:w-32 h-80 sm:h-[370px] box-shadow-none bg-none from-lime-300 to-green-500 rotate-[7deg] -ml-4 z-20"
               >
                 <img
                   src="assets/orange.png"
-                  alt="BIB's Mango Beverage"
+                  alt="BIB's Orange Beverage"
                   class="w-full h-full object-cover p-1"
                 />
               </div>
-              <!-- <div
-                class="bottle w-28 sm:w-32 h-80 sm:h-[370px] bg-gradient-to-b box-shadow-none bg-none from-lime-300 to-green-500 rotate-[11deg] -ml-11 z-0"
-              >
-                <img
-                  src="assets/cola.png"
-                  alt="BIB's Mango Beverage"
-                  class="w-full h-full object-cover p-1"
-                />
-              </div> -->
             </div>
 
+            <!-- Bottle ground glow -->
             <div
               class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[90%] h-24 rounded-[50%] bg-orange-300/50 blur-2xl"
             ></div>
+
+            <!-- Fruits -->
             <div
               class="absolute right-[3%] bottom-[18%] text-7xl animate-bounce"
             >
               🍋
             </div>
+
             <div class="absolute left-[2%] bottom-[20%] text-6xl">🥭</div>
+
             <div class="absolute left-[20%] top-[17%] text-5xl reveal show">
               🍃
             </div>
           </div>
         </div>
+
+        <!-- =====================================================
+       BOTTOM WAVE — YE REMOVE NAHI KI HAI
+       ===================================================== -->
+        <div
+          class="absolute bottom-0 left-0 z-30 h-[86px] w-full overflow-hidden leading-none pointer-events-none"
+        >
+          <svg
+            class="absolute bottom-0 left-0 h-full w-full"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                id="heroWaveGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#FFF8E8" />
+                <stop offset="45%" stop-color="#F4E7C8" />
+                <stop offset="100%" stop-color="#DDEEDB" />
+              </linearGradient>
+            </defs>
+
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              fill="url(#heroWaveGradient)"
+            ></path>
+          </svg>
+        </div>
       </section>
+
+      <style>
+        @keyframes heroParticleFloat {
+          0% {
+            transform: translate3d(0, 0, 0) rotate(0deg);
+          }
+
+          25% {
+            transform: translate3d(25px, -35px, 0) rotate(90deg);
+          }
+
+          50% {
+            transform: translate3d(-20px, -70px, 0) rotate(180deg);
+          }
+
+          75% {
+            transform: translate3d(30px, -35px, 0) rotate(270deg);
+          }
+
+          100% {
+            transform: translate3d(0, 0, 0) rotate(360deg);
+          }
+        }
+
+        #heroParticles span {
+          will-change: transform;
+          filter: blur(0.2px);
+        }
+      </style>
       <!-- PRODUCTS CAROUSEL: infinite auto-run -->
       <section id="products-carousel" class="py-8 bg-bib-green">
         <div class="max-w-7xl mx-auto px-5 lg:px-8">
@@ -470,6 +562,7 @@
           </div>
         </div>
       </section>
+
       <!-- PRODUCT HIGHLIGHTS SECTION -->
       <section id="products" class="py-24">
         <div class="text-center reveal">
@@ -1047,6 +1140,742 @@
           </div>
         </div>
       </section>
+      <!-- =========================================================
+     BIB'S — PRODUCTS SCROLL STORY
+     First design + Second code products
+========================================================= -->
+
+      <section id="products" class="relative bg-bib-dark text-white">
+        <div class="relative mx-auto max-w-[1800px]">
+          <!-- =====================================================
+         STICKY PRODUCT VISUAL
+    ====================================================== -->
+
+          <div
+            class="pointer-events-none sticky top-0 z-10 hidden h-screen w-1/2 overflow-hidden lg:block"
+          >
+            <div class="absolute inset-0">
+              <!-- =================================================
+             VISUAL 01 — SKWEEZY
+        ================================================== -->
+
+              <div
+                data-showcase-image="0"
+                class="bib-showcase-image is-active absolute inset-0 flex items-center justify-center overflow-hidden opacity-100 transition-all duration-700 ease-[cubic-bezier(.77,0,.18,1)]"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-[#FFFDF7] via-[#FFF4DF] to-[#E5F4C9]"
+                ></div>
+
+                <!-- Decorative fruit -->
+                <span class="absolute -right-10 top-10 text-[150px] opacity-15">
+                  🥭
+                </span>
+
+                <span class="absolute bottom-5 left-0 text-[130px] opacity-10">
+                  🍋
+                </span>
+
+                <span
+                  class="absolute right-16 bottom-20 text-[80px] opacity-10"
+                >
+                  🍊
+                </span>
+
+                <!-- Products -->
+
+                <div
+                  class="relative z-10 flex h-full w-full items-center justify-center gap-[-20px] px-10"
+                >
+                  <img
+                    src="assets/mango.png"
+                    alt="Skweezy Mango"
+                    class="relative z-30 h-[58%] w-[38%] object-contain drop-shadow-[0_25px_25px_rgba(0,0,0,0.20)]"
+                  />
+
+                  <img
+                    src="assets/Skweezy-Orange.png"
+                    alt="Skweezy Orange"
+                    class="relative z-20 -ml-12 h-[62%] w-[38%] object-contain drop-shadow-[0_25px_25px_rgba(0,0,0,0.20)]"
+                  />
+
+                  <img
+                    src="assets/Skweezy.png"
+                    alt="Skweezy Lemon Mint"
+                    class="relative z-10 -ml-12 h-[58%] w-[38%] object-contain drop-shadow-[0_25px_25px_rgba(0,0,0,0.20)]"
+                  />
+                </div>
+              </div>
+
+              <!-- =================================================
+             VISUAL 02 — SMOOVE
+        ================================================== -->
+
+              <div
+                data-showcase-image="1"
+                class="bib-showcase-image absolute inset-0 flex items-center justify-center overflow-hidden opacity-0 transition-all duration-700 ease-[cubic-bezier(.77,0,.18,1)]"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-[#F7FFF2] via-[#EDF8DD] to-[#D5EEC8]"
+                ></div>
+
+                <span class="absolute -right-10 top-10 text-[150px] opacity-15">
+                  🍏
+                </span>
+
+                <span class="absolute bottom-5 left-5 text-[130px] opacity-10">
+                  🍋
+                </span>
+
+                <span
+                  class="absolute right-10 bottom-20 text-[100px] opacity-10"
+                >
+                  🍍
+                </span>
+
+                <div
+                  class="relative z-10 flex h-full w-full items-center justify-center gap-[-25px] px-8"
+                >
+                  <img
+                    src="assets/Smoove-apple.png"
+                    alt="Smoove Apple"
+                    class="relative z-30 h-[58%] w-[35%] object-contain drop-shadow-[0_25px_25px_rgba(50,70,30,0.22)]"
+                  />
+
+                  <img
+                    src="assets/Smoove-lime-lemon.png"
+                    alt="Smoove Lime Lemon"
+                    class="relative z-20 -ml-10 h-[62%] w-[35%] object-contain drop-shadow-[0_25px_25px_rgba(50,70,30,0.22)]"
+                  />
+
+                  <img
+                    src="assets/Smoove-Pineapple.png"
+                    alt="Smoove Pineapple"
+                    class="relative z-10 -ml-10 h-[58%] w-[35%] object-contain drop-shadow-[0_25px_25px_rgba(50,70,30,0.22)]"
+                  />
+                </div>
+              </div>
+
+              <!-- =================================================
+             VISUAL 03 — COLA / ENERGYZA / TANGAWIZI
+        ================================================== -->
+
+              <div
+                data-showcase-image="2"
+                class="bib-showcase-image absolute inset-0 flex items-center justify-center overflow-hidden opacity-0 transition-all duration-700 ease-[cubic-bezier(.77,0,.18,1)]"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-[#FFFDF8] via-[#F5EDE7] to-[#DCE5FA]"
+                ></div>
+
+                <span class="absolute -right-10 top-10 text-[150px] opacity-10">
+                  🥤
+                </span>
+
+                <span class="absolute bottom-10 left-5 text-[110px] opacity-10">
+                  ⚡
+                </span>
+
+                <span
+                  class="absolute right-16 bottom-16 text-[90px] opacity-10"
+                >
+                  🫚
+                </span>
+
+                <div
+                  class="relative z-10 flex h-full w-full items-center justify-center gap-[-25px] px-8"
+                >
+                  <img
+                    src="assets/cola.png"
+                    alt="BIB's Cola"
+                    class="relative z-30 h-[58%] w-[35%] object-contain drop-shadow-[0_25px_25px_rgba(40,20,10,0.25)]"
+                  />
+
+                  <img
+                    src="assets/Energyza.png"
+                    alt="Energyza"
+                    class="relative z-20 -ml-10 h-[62%] w-[35%] object-contain drop-shadow-[0_25px_25px_rgba(40,40,90,0.22)]"
+                  />
+
+                  <img
+                    src="assets/Tanagwizi-Ginger.png"
+                    alt="Tanagwizi Ginger"
+                    class="relative z-10 -ml-10 h-[58%] w-[35%] object-contain drop-shadow-[0_25px_25px_rgba(100,60,20,0.22)]"
+                  />
+                </div>
+              </div>
+
+              <!-- =================================================
+VISUAL 04 — HYDRO
+================================================== -->
+
+              <div
+                data-showcase-image="3"
+                class="bib-showcase-image absolute inset-0 flex items-center justify-center overflow-hidden opacity-0 transition-all duration-700 ease-[cubic-bezier(.77,0,.18,1)]"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-[#17332F] via-[#2B665A] to-[#A9D6D9]"
+                ></div>
+
+                <span class="absolute left-10 top-10 text-[100px] opacity-20">
+                  💧
+                </span>
+
+                <span class="absolute right-5 top-20 text-[120px] opacity-15">
+                  🫧
+                </span>
+
+                <span
+                  class="absolute bottom-10 left-20 text-[100px] opacity-15"
+                >
+                  💦
+                </span>
+
+                <!-- HYDRO LOGOS -->
+                <div
+                  class="relative z-10 grid h-full w-full grid-cols-2 grid-rows-2 items-center justify-items-center gap-4 px-10 py-16"
+                >
+                  <div class="flex h-full w-full items-center justify-center">
+                    <img
+                      src="assets/Hydro-Logos-1.png"
+                      alt="Hydro 1"
+                      class="max-h-[80%] max-w-[85%] object-contain drop-shadow-[0_20px_25px_rgba(0,0,0,0.30)]"
+                    />
+                  </div>
+
+                  <div class="flex h-full w-full items-center justify-center">
+                    <img
+                      src="assets/Hydro-Logos-2.png"
+                      alt="Hydro 2"
+                      class="max-h-[80%] max-w-[85%] object-contain drop-shadow-[0_20px_25px_rgba(0,0,0,0.30)]"
+                    />
+                  </div>
+
+                  <div class="flex h-full w-full items-center justify-center">
+                    <img
+                      src="assets/Hydro-Logos-3.png"
+                      alt="Hydro 3"
+                      class="max-h-[80%] max-w-[85%] object-contain drop-shadow-[0_20px_25px_rgba(0,0,0,0.30)]"
+                    />
+                  </div>
+
+                  <div class="flex h-full w-full items-center justify-center">
+                    <img
+                      src="assets/Hydro-Logos-4.png"
+                      alt="Hydro 4"
+                      class="max-h-[80%] max-w-[85%] object-contain drop-shadow-[0_20px_25px_rgba(0,0,0,0.30)]"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dark image overlay -->
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"
+            ></div>
+
+            <!-- Label -->
+
+            <div
+              class="absolute left-8 top-8 z-20 flex items-center gap-3 font-body text-[10px] font-bold uppercase tracking-[.2em]"
+            >
+              <span class="h-2.5 w-2.5 rounded-full bg-bib-lime"></span>
+
+              BIB's / Products
+            </div>
+
+            <!-- Bottom text -->
+
+            <div class="absolute bottom-8 left-8 z-20 max-w-[300px]">
+              <p
+                class="font-body text-[9px] font-bold uppercase tracking-[.25em] text-white/60"
+              >
+                Scroll to explore
+              </p>
+
+              <div class="mt-4 h-px w-24 bg-white/50"></div>
+            </div>
+          </div>
+
+          <!-- =====================================================
+         RIGHT SCROLL CONTENT
+    ====================================================== -->
+
+          <div class="relative ml-0 w-full lg:ml-[50%] lg:w-1/2">
+            <!-- Top bar -->
+
+            <div
+              class="sticky top-0 z-30 flex h-20 items-center justify-between border-b border-white/10 bg-bib-dark px-5 sm:px-8 lg:px-12"
+            >
+              <div
+                class="flex items-center gap-2 font-body text-[10px] font-bold uppercase tracking-[.18em]"
+              >
+                <span class="text-bib-orange">+</span>
+
+                BIB'S WORLD
+              </div>
+
+              <div class="font-display text-sm font-bold">
+                Products
+
+                <span class="ml-1 text-bib-lime">+</span>
+              </div>
+            </div>
+
+            <!-- =====================================================
+           STORY 01 — SKWEEZY
+      ====================================================== -->
+
+            <article
+              data-showcase-item="0"
+              class="bib-showcase-item is-active flex min-h-[100svh] flex-col justify-between px-5 py-12 sm:px-8 sm:py-16 lg:min-h-screen lg:px-12 lg:py-10"
+            >
+              <!-- MOBILE PRODUCTS -->
+
+              <div
+                class="mb-12 grid h-[55vh] grid-cols-3 gap-1 overflow-hidden rounded-[35px] bg-gradient-to-br from-[#FFFDF7] via-[#FFF4DF] to-[#E5F4C9] p-3 lg:hidden"
+              >
+                <img
+                  src="assets/mango.png"
+                  alt="Skweezy Mango"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Skweezy-Orange.png"
+                  alt="Skweezy Orange"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Skweezy.png"
+                  alt="Skweezy Lemon Mint"
+                  class="h-full w-full object-contain"
+                />
+              </div>
+
+              <div>
+                <p
+                  class="mb-8 font-body text-[10px] font-bold uppercase tracking-[.2em] text-bib-orange"
+                >
+                  + 01 / Skweezy
+                </p>
+
+                <h2
+                  class="bib-showcase-heading font-display text-6xl font-black leading-[.82] tracking-[-.08em] sm:text-7xl xl:text-[86px]"
+                >
+                  SKWEEZY
+
+                  <br />
+
+                  <span class="text-white/25"> COLOURFUL </span>
+
+                  <br />
+
+                  <span class="text-bib-lime"> FLAVOURS. </span>
+                </h2>
+              </div>
+
+              <div class="grid gap-8 pb-4 pt-20 sm:grid-cols-2 sm:items-end">
+                <p
+                  class="max-w-[360px] font-body text-sm leading-7 text-white/55"
+                >
+                  Colourful flavours made to bring a little more freshness to
+                  every day. Discover Mango, Orange and Lemon Mint.
+                </p>
+
+                <div class="sm:text-right">
+                  <span
+                    class="font-display text-7xl font-black tracking-[-.08em] text-white/10"
+                  >
+                    01
+                  </span>
+
+                  <p
+                    class="mt-2 font-body text-[9px] font-bold uppercase tracking-[.2em] text-white/40"
+                  >
+                    Keep scrolling
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================================
+           STORY 02 — SMOOVE
+      ====================================================== -->
+
+            <article
+              data-showcase-item="1"
+              class="bib-showcase-item flex min-h-[100svh] flex-col justify-between border-t border-white/10 px-5 py-12 sm:px-8 sm:py-16 lg:min-h-screen lg:px-12 lg:py-10"
+            >
+              <!-- MOBILE PRODUCTS -->
+
+              <div
+                class="mb-12 grid h-[55vh] grid-cols-3 gap-1 overflow-hidden rounded-[35px] bg-gradient-to-br from-[#F7FFF2] via-[#EDF8DD] to-[#D5EEC8] p-3 lg:hidden"
+              >
+                <img
+                  src="assets/Smoove-apple.png"
+                  alt="Smoove Apple"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Smoove-lime-lemon.png"
+                  alt="Smoove Lemon"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Smoove-Pineapple.png"
+                  alt="Smoove Pineapple"
+                  class="h-full w-full object-contain"
+                />
+              </div>
+
+              <div>
+                <p
+                  class="mb-8 font-body text-[10px] font-bold uppercase tracking-[.2em] text-bib-orange"
+                >
+                  + 02 / Smoove
+                </p>
+
+                <h2
+                  class="bib-showcase-heading font-display text-6xl font-black leading-[.82] tracking-[-.08em] sm:text-7xl xl:text-[86px]"
+                >
+                  SMOOVE
+
+                  <br />
+
+                  <span class="text-white/25"> SMOOTH </span>
+
+                  <br />
+
+                  <span class="text-bib-lime"> VIBES. </span>
+                </h2>
+              </div>
+
+              <div class="grid gap-8 pb-4 pt-20 sm:grid-cols-2 sm:items-end">
+                <p
+                  class="max-w-[360px] font-body text-sm leading-7 text-white/55"
+                >
+                  Smooth, colourful and refreshing. Explore Apple, Lemon and
+                  Pineapple flavours made for everyday moments.
+                </p>
+
+                <div class="sm:text-right">
+                  <span
+                    class="font-display text-7xl font-black tracking-[-.08em] text-white/10"
+                  >
+                    02
+                  </span>
+
+                  <p
+                    class="mt-2 font-body text-[9px] font-bold uppercase tracking-[.2em] text-white/40"
+                  >
+                    Keep scrolling
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================================
+           STORY 03 — BIB'S CLASSICS
+      ====================================================== -->
+
+            <article
+              data-showcase-item="2"
+              class="bib-showcase-item flex min-h-[100svh] flex-col justify-between border-t border-white/10 px-5 py-12 sm:px-8 sm:py-16 lg:min-h-screen lg:px-12 lg:py-10"
+            >
+              <!-- MOBILE PRODUCTS -->
+
+              <div
+                class="mb-12 grid h-[55vh] grid-cols-3 gap-1 overflow-hidden rounded-[35px] bg-gradient-to-br from-[#FFFDF8] via-[#F5EDE7] to-[#DCE5FA] p-3 lg:hidden"
+              >
+                <img
+                  src="assets/cola.png"
+                  alt="BIB's Cola"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Energyza.png"
+                  alt="Energyza"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Tanagwizi-Ginger.png"
+                  alt="Tanagwizi Ginger"
+                  class="h-full w-full object-contain"
+                />
+              </div>
+
+              <div>
+                <p
+                  class="mb-8 font-body text-[10px] font-bold uppercase tracking-[.2em] text-bib-orange"
+                >
+                  + 03 / Classics
+                </p>
+
+                <h2
+                  class="bib-showcase-heading font-display text-6xl font-black leading-[.82] tracking-[-.08em] sm:text-7xl xl:text-[86px]"
+                >
+                  BIB'S
+
+                  <br />
+
+                  <span class="text-white/25"> CLASSIC </span>
+
+                  <br />
+
+                  <span class="text-bib-lime"> FAVOURITES. </span>
+                </h2>
+              </div>
+
+              <div class="grid gap-8 pb-4 pt-20 sm:grid-cols-2 sm:items-end">
+                <p
+                  class="max-w-[360px] font-body text-sm leading-7 text-white/55"
+                >
+                  From the familiar taste of Cola to the kick of Energyza and
+                  the spicy freshness of Tanagwizi Ginger.
+                </p>
+
+                <div class="sm:text-right">
+                  <span
+                    class="font-display text-7xl font-black tracking-[-.08em] text-white/10"
+                  >
+                    03
+                  </span>
+
+                  <p
+                    class="mt-2 font-body text-[9px] font-bold uppercase tracking-[.2em] text-white/40"
+                  >
+                    Keep scrolling
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================================
+           STORY 04 — HYDRO
+      ====================================================== -->
+
+            <article
+              data-showcase-item="3"
+              class="bib-showcase-item flex min-h-[100svh] flex-col justify-between border-t border-white/10 px-5 py-12 sm:px-8 sm:py-16 lg:min-h-screen lg:px-12 lg:py-10"
+            >
+              <!-- MOBILE PRODUCTS -->
+
+              <div
+                class="mb-12 grid h-[55vh] grid-cols-2 gap-2 overflow-hidden rounded-[35px] bg-gradient-to-br from-[#17332F] via-[#2B665A] to-[#A9D6D9] p-4 lg:hidden"
+              >
+                <img
+                  src="assets/Hydro-Logos-1.png"
+                  alt="Hydro 1"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Hydro-Logos-2.png"
+                  alt="Hydro 2"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Hydro-Logos-3.png"
+                  alt="Hydro 3"
+                  class="h-full w-full object-contain"
+                />
+
+                <img
+                  src="assets/Hydro-Logos-4.png"
+                  alt="Hydro 4"
+                  class="h-full w-full object-contain"
+                />
+              </div>
+
+              <div>
+                <p
+                  class="mb-8 font-body text-[10px] font-bold uppercase tracking-[.2em] text-bib-orange"
+                >
+                  + 04 / Hydro
+                </p>
+
+                <h2
+                  class="bib-showcase-heading font-display text-6xl font-black leading-[.82] tracking-[-.08em] sm:text-7xl xl:text-[86px]"
+                >
+                  PURE
+
+                  <br />
+
+                  <span class="text-white/25"> WATER. </span>
+
+                  <br />
+
+                  <span class="text-bib-lime"> BRIGHT. </span>
+                </h2>
+              </div>
+
+              <div class="grid gap-8 pb-4 pt-20 sm:grid-cols-2 sm:items-end">
+                <p
+                  class="max-w-[360px] font-body text-sm leading-7 text-white/55"
+                >
+                  Hydro brings pure refreshment with a bright citrus finish.
+                  Four Hydro varieties made to keep you refreshed.
+                </p>
+
+                <div class="sm:text-right">
+                  <span
+                    class="font-display text-7xl font-black tracking-[-.08em] text-white/10"
+                  >
+                    04
+                  </span>
+
+                  <p
+                    class="mt-2 font-body text-[9px] font-bold uppercase tracking-[.2em] text-white/40"
+                  >
+                    That's BIB's
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     SCROLL STORY CSS
+========================================================= -->
+
+      <style>
+        /*
+   * Product visual animation
+   */
+
+        .bib-showcase-image {
+          transform: scale(1.08);
+        }
+
+        .bib-showcase-image.is-active {
+          opacity: 1 !important;
+          transform: scale(1);
+        }
+
+        /*
+   * Story item transition
+   */
+
+        .bib-showcase-item {
+          transition:
+            opacity 500ms ease,
+            transform 700ms cubic-bezier(0.77, 0, 0.18, 1);
+        }
+
+        /*
+   * Desktop inactive content
+   */
+
+        @media (min-width: 1024px) {
+          .bib-showcase-item:not(.is-active) {
+            opacity: 0.45;
+          }
+
+          .bib-showcase-item.is-active {
+            opacity: 1;
+          }
+        }
+      </style>
+
+      <!-- =========================================================
+     SCROLL STORY JAVASCRIPT
+========================================================= -->
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const items = document.querySelectorAll(".bib-showcase-item");
+
+          const images = document.querySelectorAll(".bib-showcase-image");
+
+          /*
+           * Stop if section elements are missing
+           */
+
+          if (!items.length || !images.length) {
+            return;
+          }
+
+          /*
+           * Initial state
+           */
+
+          items[0].classList.add("is-active");
+
+          images[0].classList.add("is-active");
+
+          /*
+           * Intersection Observer
+           */
+
+          const observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting && entry.intersectionRatio > 0.45) {
+                  const index = entry.target.getAttribute("data-showcase-item");
+
+                  /*
+                   * Remove active item
+                   */
+
+                  items.forEach(function (item) {
+                    item.classList.remove("is-active");
+                  });
+
+                  /*
+                   * Remove active visual
+                   */
+
+                  images.forEach(function (image) {
+                    image.classList.remove("is-active");
+                  });
+
+                  /*
+                   * Activate current story
+                   */
+
+                  entry.target.classList.add("is-active");
+
+                  /*
+                   * Activate matching visual
+                   */
+
+                  const currentImage = document.querySelector(
+                    '[data-showcase-image="' + index + '"]',
+                  );
+
+                  if (currentImage) {
+                    currentImage.classList.add("is-active");
+                  }
+                }
+              });
+            },
+            {
+              threshold: [0.25, 0.45, 0.65],
+
+              rootMargin: "-10% 0px -10% 0px",
+            },
+          );
+
+          /*
+           * Observe all story sections
+           */
+
+          items.forEach(function (item) {
+            observer.observe(item);
+          });
+        });
+      </script>
 
       <!-- PRODUCTS -->
       <!-- <section id="products" class="py-24 bg-white">
@@ -1161,78 +1990,95 @@
         </div>
       </section> -->
 
-      <!-- GALLERY -->
-      <section id="gallery" class="py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-5 lg:px-8">
-          <div
-            class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 reveal"
-          >
-            <div>
-              <p
-                class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
-              >
-                Fresh. Bright. Delicious.
-              </p>
-              <h2 class="mt-3 text-4xl lg:text-5xl font-black">Gallery</h2>
-            </div>
-            <!-- <p class="max-w-md text-gray-500">if u want content here.</p> -->
+      <!-- 3D Responsive Image Carousel -->
+      <section class="overflow-hidden bg-bib-cream py-16 sm:py-20 lg:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="mx-auto max-w-2xl text-center">
+            <span
+              class="inline-flex rounded-full bg-bib-lime/50 px-4 py-2 font-body text-xs font-semibold uppercase tracking-wider text-bib-dark sm:text-sm"
+            >
+              Our Collection
+            </span>
+
+            <h2
+              class="mt-5 font-display text-3xl font-bold tracking-tight text-bib-dark sm:text-4xl lg:text-5xl"
+            >
+              Explore Our
+              <span class="text-bib-green">Creative Work</span>
+            </h2>
+
+            <p
+              class="mt-4 font-body text-sm leading-7 text-bib-dark/60 sm:text-base"
+            >
+              Explore our collection through an interactive 3D image carousel.
+            </p>
           </div>
 
-          <div class="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-4">
-            <!-- Gallery 1 -->
+          <!-- Carousel Wrapper -->
+          <div id="carousel" class="relative mx-auto mt-12 max-w-6xl sm:mt-16">
+            <!-- 3D Stage -->
             <div
-              class="gallery-card overflow-hidden rounded-3xl bg-gradient-to-br from-orange-200 to-yellow-400 min-h-[280px] flex items-center justify-center reveal lg:col-span-2 lg:row-span-2 lg:min-h-[390px]"
+              class="relative flex h-[500px] items-center justify-center [perspective:1400px] sm:h-[570px]"
             >
-              <img
-                src="assets/gallery-1.png"
-                alt="gallery-1"
-                class="h-full w-full object-cover"
-              />
+              <!-- JS Cards Container -->
+              <div
+                id="carousel-track"
+                class="relative flex h-full w-full items-center justify-center"
+              ></div>
             </div>
 
-            <!-- Gallery 2 -->
-            <div
-              class="gallery-card min-h-[220px] overflow-hidden rounded-3xl bg-gradient-to-br from-pink-200 to-red-400 flex items-center justify-center reveal lg:min-h-[185px]"
+            <!-- Previous Button -->
+            <button
+              id="prevBtn"
+              type="button"
+              aria-label="Previous slide"
+              class="absolute left-1 top-1/2 z-50 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-bib-dark shadow-soft transition-all duration-300 hover:bg-bib-green hover:text-white sm:left-4 sm:h-12 sm:w-12"
             >
-              <img
-                src="assets/gallery-2.png"
-                alt="gallery-2"
-                class="h-full w-full object-cover"
-              />
-            </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
 
-            <!-- Gallery 3 -->
-            <div
-              class="gallery-card min-h-[220px] overflow-hidden rounded-3xl bg-gradient-to-br from-lime-100 to-green-400 flex items-center justify-center reveal lg:min-h-[185px]"
+            <!-- Next Button -->
+            <button
+              id="nextBtn"
+              type="button"
+              aria-label="Next slide"
+              class="absolute right-1 top-1/2 z-50 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-bib-dark shadow-soft transition-all duration-300 hover:bg-bib-green hover:text-white sm:right-4 sm:h-12 sm:w-12"
             >
-              <img
-                src="assets/gallery-3.png"
-                alt="gallery-3"
-                class="h-full w-full object-cover"
-              />
-            </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
 
-            <!-- Gallery 4 -->
+            <!-- Dots -->
             <div
-              class="gallery-card min-h-[220px] overflow-hidden rounded-3xl bg-gradient-to-br from-yellow-100 to-yellow-400 flex items-center justify-center reveal lg:min-h-[185px]"
-            >
-              <img
-                src="assets/gallery-4.png"
-                alt="gallery-4"
-                class="h-full w-full object-cover"
-              />
-            </div>
-
-            <!-- Gallery 5 -->
-            <div
-              class="gallery-card min-h-[220px] overflow-hidden rounded-3xl bg-gradient-to-br from-orange-100 to-red-400 flex items-center justify-center reveal lg:min-h-[185px]"
-            >
-              <img
-                src="assets/gallery-5.png"
-                alt="gallery-5"
-                class="h-full w-full object-cover"
-              />
-            </div>
+              id="dots"
+              class="absolute bottom-0 left-1/2 flex -translate-x-1/2 items-center gap-2"
+            ></div>
           </div>
         </div>
       </section>
@@ -1784,7 +2630,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-950 text-white">
+    <footer class="bg-gray-950 text-white rounded-t-[50px]">
       <div
         class="max-w-7xl mx-auto px-5 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] gap-12"
       >
