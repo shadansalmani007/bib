@@ -136,77 +136,77 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const slides = [
   {
-    image: "assets/skweezy-group.jpg",
+    image: "assets/mango.jpeg",
     category: "Mango",
     title: "Skweezy-Mango",
     description: " demo text lorem ipsum dolor sit amet.",
   },
 
   {
-    image: "assets/smoovy-group.jpg",
+    image: "assets/cola.jpeg",
     category: "Flavors",
     title: "Creative Brand Identity",
     description: "lorem ipsum dolor sit amet.",
   },
 
   {
-    image: "assets/tangawizi-group.jpg",
-    category: "Ginger",
-    title: "Tangawizi-Ginger",
+    image: "assets/energy.jpeg",
+    category: "energy",
+    title: "energy",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 
   {
-    image: "assets/cola-group.jpg",
-    category: "Cola",
-    title: "Cola Drink",
+    image: "assets/water_2.png",
+    category: "water",
+    title: "water",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 
   {
-    image: "assets/hydropure-group.jpg",
+    image: "assets/water_3.png",
     category: "Water",
     title: "hydropure Water",
     description: "lorem ipsum dolor sit amet.",
   },
 
   {
-    image: "assets/gallery-1.png",
+    image: "assets/water_1.jpeg",
     category: "Water",
     title: "pure Water",
     description: "lorem ipsum dolor sit amet.",
   },
 
   {
-    image: "assets/gallery-2.png",
-    category: "water",
-    title: "lemon soda",
+    image: "assets/orange_slice.png",
+    category: "orange",
+    title: "orange",
     description: "lorem ipsum dolor sit amet.",
   },
 
   {
-    image: "assets/gallery-3.png",
+    image: "assets/skweezy_all.png",
     category: "lorem",
     title: "lorem",
     description: "lorem ipsum dolor sit amet.",
   },
 
   {
-    image: "assets/gallery-5.png",
+    image: "assets/img-slider.jpeg",
     category: "lorem",
     title: "lorem",
     description: "lorem ipsum dolor sit amet.",
   },
 
-  {
-    image: "assets/gallery-6.png",
-    category: "lorem",
-    title: "lorem",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+  // {
+  //   image: "assets/gallery-6.png",
+  //   category: "lorem",
+  //   title: "lorem",
+  //   description:
+  //     "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  // },
 
   // {
   //   image:
@@ -290,7 +290,7 @@ function createCards() {
           src="${slide.image}"
           alt="${slide.title}"
           loading="${index === 0 ? "eager" : "lazy"}"
-          class="h-full w-full object-contain"
+          class="h-full w-full object-cover"
         />
 
 
