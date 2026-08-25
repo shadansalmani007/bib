@@ -159,7 +159,7 @@
   <body class="bg-white text-bib-dark">
     <header
       id="header"
-      class="fixed top-5 left-5 right-5 z-50 bg-white/90 backdrop-blur-xl border border-black/5 rounded-[10px] shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]"
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-black/5"
     >
       <div class="w-full px-5 lg:px-8 h-20 flex items-center justify-between">
         <div class="leading-none">
@@ -179,11 +179,11 @@
         <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
           <a class="nav-link" href="index.html#home">Home</a>
           <a class="nav-link" href="index.html#products">Products</a>
-          <a class="nav-link active" href="gallery.html">Gallery</a>
           <a class="nav-link" href="index.html#reviews">Reviews</a>
           <a class="nav-link" href="index.html#company">Company</a>
           <a class="nav-link" href="index.html#leadership">Leadership</a>
           <a class="nav-link" href="index.html#clients">Client </a>
+          <a class="nav-link active" href="gallery.html">Gallery</a>
           <a class="nav-link" href="about.html">About</a>
         </nav>
 
@@ -208,11 +208,11 @@
         <div class="px-5 py-5 flex flex-col gap-4 text-sm font-semibold">
           <a href="index.html#home">Home</a>
           <a href="index.html#products">Products</a>
-          <a href="gallery.html">Gallery</a>
           <a href="index.html#reviews">Reviews</a>
           <a href="index.html#company">Company</a>
           <a href="index.html#leadership">Leadership</a>
           <a href="index.html#clients">Client </a>
+          <a href="gallery.html">Gallery</a>
           <a href="about.html">About</a>
         </div>
       </div>
@@ -220,8 +220,7 @@
 
     <main>
       <!-- =========================================================
-     BIB's GALLERY
-     Uses your existing Tailwind config
+     BIB'S GALLERY — ENHANCED / COMPACT VERSION
 ========================================================= -->
 
       <section
@@ -229,611 +228,579 @@
         class="relative overflow-hidden bg-bib-cream text-bib-dark"
       >
         <!-- =======================================================
-       HERO
+       GALLERY HERO
   ======================================================== -->
-
         <div
-          class="relative min-h-[780px] px-5 pb-24 pt-8 sm:px-8 lg:min-h-[850px] lg:px-[6vw]"
+          class="relative mx-auto max-w-7xl px-5 pb-20 pt-20 sm:px-8 lg:px-8 lg:pb-28 lg:pt-28"
         >
-          <!-- Background typography -->
+          <!-- Decorative background -->
+          <div
+            class="pointer-events-none absolute -right-32 top-10 h-72 w-72 rounded-full bg-bib-lime/20 blur-3xl"
+          ></div>
 
           <div
-            class="pointer-events-none absolute -left-5 top-[18%] select-none font-display text-[30vw] font-black leading-none tracking-[-.12em] text-bib-green/[0.06]"
-          >
-            BIB
-          </div>
+            class="pointer-events-none absolute -left-32 bottom-0 h-72 w-72 rounded-full bg-bib-orange/10 blur-3xl"
+          ></div>
 
-          <!-- Top line -->
-
+          <!-- Top label -->
           <div
-            class="relative z-10 flex items-center justify-between font-body text-[9px] font-bold uppercase tracking-[.22em] sm:text-[10px]"
+            class="relative z-10 flex items-center justify-between border-b border-black/10 pb-5"
           >
-            <div class="flex items-center gap-3">
+            <div
+              class="flex items-center gap-3 text-[10px] font-extrabold uppercase tracking-[.25em]"
+            >
               <span class="h-2.5 w-2.5 rounded-full bg-bib-green"></span>
-
-              <span>BIB's Gallery</span>
+              BIB's Gallery
             </div>
 
-            <span class="hidden sm:block"> Moments / Flavours / People </span>
-          </div>
-
-          <!-- Main heading -->
-
-          <div class="relative z-10 mt-32 sm:mt-40 lg:mt-32">
-            <h1
-              class="font-display text-[22vw] font-black leading-[.73] tracking-[-.1em] sm:text-[18vw] lg:text-[13vw]"
+            <span
+              class="hidden text-[10px] font-bold uppercase tracking-[.2em] text-black/40 sm:block"
             >
-              TASTE
-
-              <br />
-
-              <span class="text-bib-green"> THE </span>
-
-              <br />
-
-              <span class="font-body font-light italic text-bib-orange">
-                moment.
-              </span>
-            </h1>
+              Moments / Flavours / Refresh
+            </span>
           </div>
 
-          <!-- Hero image -->
-
+          <!-- Hero content -->
           <div
-            class="group absolute right-[5%] top-[31%] z-20 w-[190px] rotate-6 overflow-hidden rounded-[48%_52%_55%_45%] shadow-[18px_22px_0_#B8DF5A] sm:right-[9%] sm:w-[260px] lg:right-[14%] lg:top-[22%] lg:w-[330px]"
+            class="relative z-10 mt-16 grid items-center gap-12 lg:grid-cols-[1.05fr_.95fr] lg:gap-20"
           >
-            <img
-              src="assets/cola.png"
-              alt="BIB's refreshing drink"
-              class="aspect-[.78] w-full object-contain transition duration-700 group-hover:scale-110"
-            />
-          </div>
+            <!-- Text -->
+            <div>
+              <p
+                class="text-xs font-extrabold uppercase tracking-[.25em] text-bib-green"
+              >
+                Inside BIB's
+              </p>
 
-          <!-- Floating badge -->
+              <h1
+                class="mt-4 font-display text-[18vw] font-black leading-[.78] tracking-[-.1em] sm:text-[110px] lg:text-[130px]"
+              >
+                TASTE
+                <br />
+                <span class="text-bib-green">THE</span>
+                <br />
+                <span class="font-body font-light italic text-bib-orange">
+                  moment.
+                </span>
+              </h1>
 
-          <div
-            class="absolute right-[3%] top-[22%] z-30 hidden h-24 w-24 rotate-12 items-center justify-center rounded-full bg-bib-orange text-center font-display text-[10px] font-black uppercase leading-tight text-white lg:flex"
-          >
-            Fresh
-            <br />
-            Everyday
-            <br />
-            ✦
-          </div>
+              <p
+                class="mt-8 max-w-md text-sm leading-7 text-black/55 sm:text-base"
+              >
+                A colourful collection of BIB's products, flavours and
+                refreshing moments. Discover the drinks made to bring more taste
+                to every day.
+              </p>
 
-          <!-- Bottom content -->
+              <div class="mt-8 flex items-center gap-4">
+                <span class="h-px w-14 bg-bib-dark"></span>
 
-          <div
-            class="absolute bottom-12 left-5 right-5 z-10 flex flex-col gap-8 sm:left-8 sm:right-8 md:flex-row md:items-end md:justify-between lg:left-[6vw] lg:right-[6vw]"
-          >
-            <p
-              class="max-w-[390px] font-body text-sm leading-7 text-black/55 sm:text-base"
-            >
-              A visual collection of BIB's — colourful, refreshing and made for
-              the moments that deserve a little more flavour.
-            </p>
+                <span
+                  class="text-[9px] font-bold uppercase tracking-[.2em] text-black/50"
+                >
+                  Scroll to explore
+                </span>
+              </div>
+            </div>
 
+            <!-- Hero product -->
             <div
-              class="flex items-center gap-3 font-body text-[9px] font-bold uppercase tracking-[.2em]"
+              class="relative flex min-h-[420px] items-center justify-center"
             >
-              <span class="h-px w-12 bg-bib-dark"></span>
+              <div
+                class="absolute h-[310px] w-[310px] rounded-full bg-bib-green/10 sm:h-[390px] sm:w-[390px]"
+              ></div>
 
-              Scroll to explore
+              <div
+                class="absolute right-8 top-5 z-20 hidden h-24 w-24 rotate-12 items-center justify-center rounded-full bg-bib-orange text-center text-[10px] font-black uppercase leading-tight text-white shadow-lg sm:flex"
+              >
+                Fresh
+                <br />
+                Everyday
+                <br />
+                ✦
+              </div>
+
+              <div
+                class="group relative z-10 w-[240px] rotate-3 sm:w-[290px] lg:w-[320px]"
+              >
+                <img
+                  src="assets/cola.png"
+                  alt="BIB's Cola"
+                  class="h-auto max-h-[460px] w-full object-contain drop-shadow-[20px_25px_20px_rgba(0,0,0,.15)] transition duration-700 group-hover:-translate-y-3 group-hover:scale-105"
+                />
+              </div>
             </div>
           </div>
         </div>
 
         <!-- =======================================================
-       MOVING BRAND STRIP
+       BRAND MARQUEE
   ======================================================== -->
-
-        <div
-          class="relative -rotate-[1.5deg] scale-[1.03] overflow-hidden bg-bib-green py-5"
-        >
+        <div class="relative overflow-hidden bg-bib-green py-4">
           <div
             class="flex w-max animate-[bibGalleryMarquee_22s_linear_infinite]"
           >
             <div class="flex items-center">
               <span
-                class="px-7 font-display text-5xl font-black tracking-[-.06em] text-bib-lime sm:text-7xl"
+                class="px-7 font-display text-4xl font-black tracking-[-.05em] text-bib-lime sm:text-6xl"
               >
                 REFRESH
               </span>
 
-              <span class="text-3xl text-white"> ✦ </span>
+              <span class="text-2xl text-white">✦</span>
 
               <span
-                class="px-7 font-display text-5xl font-black tracking-[-.06em] text-white sm:text-7xl"
+                class="px-7 font-display text-4xl font-black tracking-[-.05em] text-white sm:text-6xl"
               >
                 SHARE
               </span>
 
-              <span class="text-3xl text-bib-lime"> ✦ </span>
+              <span class="text-2xl text-bib-lime">✦</span>
 
               <span
-                class="px-7 font-display text-5xl font-black tracking-[-.06em] text-bib-lime sm:text-7xl"
+                class="px-7 font-display text-4xl font-black tracking-[-.05em] text-bib-lime sm:text-6xl"
               >
                 ENJOY
               </span>
 
-              <span class="text-3xl text-white"> ✦ </span>
+              <span class="text-2xl text-white">✦</span>
 
               <span
-                class="px-7 font-display text-5xl font-black tracking-[-.06em] text-white sm:text-7xl"
+                class="px-7 font-display text-4xl font-black tracking-[-.05em] text-white sm:text-6xl"
               >
                 REPEAT
               </span>
 
-              <span class="px-4 text-3xl text-bib-lime"> ✦ </span>
+              <span class="px-5 text-2xl text-bib-lime">✦</span>
             </div>
 
             <div class="flex items-center">
               <span
-                class="px-7 font-display text-5xl font-black tracking-[-.06em] text-bib-lime sm:text-7xl"
+                class="px-7 font-display text-4xl font-black tracking-[-.05em] text-bib-lime sm:text-6xl"
               >
                 REFRESH
               </span>
 
-              <span class="text-3xl text-white"> ✦ </span>
+              <span class="text-2xl text-white">✦</span>
 
               <span
-                class="px-7 font-display text-5xl font-black tracking-[-.06em] text-white sm:text-7xl"
+                class="px-7 font-display text-4xl font-black tracking-[-.05em] text-white sm:text-6xl"
               >
                 SHARE
               </span>
 
-              <span class="text-3xl text-bib-lime"> ✦ </span>
+              <span class="text-2xl text-bib-lime">✦</span>
 
               <span
-                class="px-7 font-display text-5xl font-black tracking-[-.06em] text-bib-lime sm:text-7xl"
+                class="px-7 font-display text-4xl font-black tracking-[-.05em] text-bib-lime sm:text-6xl"
               >
                 ENJOY
               </span>
 
-              <span class="text-3xl text-white"> ✦ </span>
+              <span class="text-2xl text-white">✦</span>
 
               <span
-                class="px-7 font-display text-5xl font-black tracking-[-.06em] text-white sm:text-7xl"
+                class="px-7 font-display text-4xl font-black tracking-[-.05em] text-white sm:text-6xl"
               >
                 REPEAT
               </span>
 
-              <span class="px-4 text-3xl text-bib-lime"> ✦ </span>
+              <span class="px-5 text-2xl text-bib-lime">✦</span>
             </div>
           </div>
         </div>
 
         <!-- =======================================================
-       GALLERY INTRO
+       INTRO + FILTER
   ======================================================== -->
-
         <div
-          class="mx-auto max-w-[1400px] px-5 pb-16 pt-32 sm:px-8 lg:px-[6vw] lg:pb-24 lg:pt-40"
+          class="mx-auto max-w-7xl px-5 pb-14 pt-24 sm:px-8 lg:px-8 lg:pb-20 lg:pt-28"
         >
           <div
             class="flex flex-col gap-8 md:flex-row md:items-end md:justify-between"
           >
             <div>
               <p
-                class="mb-5 font-body text-[10px] font-bold uppercase tracking-[.25em] text-bib-green"
+                class="text-[10px] font-extrabold uppercase tracking-[.25em] text-bib-green"
               >
-                Inside BIB's
+                Explore the collection
               </p>
 
               <h2
-                class="font-display text-6xl font-black leading-[.78] tracking-[-.09em] sm:text-8xl lg:text-[105px]"
+                class="mt-3 font-display text-6xl font-black leading-[.8] tracking-[-.08em] sm:text-8xl lg:text-[100px]"
               >
                 GOOD
-
                 <br />
-
-                <span class="text-bib-green"> ENERGY. </span>
+                <span class="text-bib-green">ENERGY.</span>
               </h2>
             </div>
 
-            <p class="max-w-[300px] font-body text-sm leading-7 text-black/50">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              saepe ad consequatur pariatur dolore corporis..
+            <p class="max-w-sm text-sm leading-7 text-black/50">
+              From colourful flavours to refreshing water and energetic drinks,
+              explore some of our favourite BIB's moments.
             </p>
           </div>
 
-          <!-- Filter buttons -->
-
+          <!-- Filters -->
           <div class="mt-10 flex flex-wrap gap-2">
             <button
               data-filter="all"
-              class="bib-filter rounded-full bg-bib-dark px-5 py-3 font-body text-[9px] font-bold uppercase tracking-[.15em] text-white transition duration-300 hover:-translate-y-1"
+              class="bib-filter rounded-full bg-bib-dark px-5 py-3 text-[9px] font-bold uppercase tracking-[.15em] text-white transition duration-300 hover:-translate-y-1"
             >
               All
             </button>
 
             <button
-              data-filter="people"
-              class="bib-filter rounded-full border border-bib-dark/10 px-5 py-3 font-body text-[9px] font-bold uppercase tracking-[.15em] transition hover:-translate-y-1 hover:bg-bib-dark hover:text-white"
-            >
-              People
-            </button>
-
-            <button
               data-filter="product"
-              class="bib-filter rounded-full border border-bib-dark/10 px-5 py-3 font-body text-[9px] font-bold uppercase tracking-[.15em] transition hover:-translate-y-1 hover:bg-bib-dark hover:text-white"
+              class="bib-filter rounded-full border border-bib-dark/10 bg-white/50 px-5 py-3 text-[9px] font-bold uppercase tracking-[.15em] transition hover:-translate-y-1 hover:bg-bib-dark hover:text-white"
             >
-              Product
+              Products
             </button>
 
             <button
               data-filter="lifestyle"
-              class="bib-filter rounded-full border border-bib-dark/10 px-5 py-3 font-body text-[9px] font-bold uppercase tracking-[.15em] transition hover:-translate-y-1 hover:bg-bib-dark hover:text-white"
+              class="bib-filter rounded-full border border-bib-dark/10 bg-white/50 px-5 py-3 text-[9px] font-bold uppercase tracking-[.15em] transition hover:-translate-y-1 hover:bg-bib-dark hover:text-white"
             >
               Lifestyle
+            </button>
+
+            <button
+              data-filter="water"
+              class="bib-filter rounded-full border border-bib-dark/10 bg-white/50 px-5 py-3 text-[9px] font-bold uppercase tracking-[.15em] transition hover:-translate-y-1 hover:bg-bib-dark hover:text-white"
+            >
+              Water
             </button>
           </div>
         </div>
 
         <!-- =======================================================
-       ASYMMETRIC GALLERY
+       PRODUCT GRID
   ======================================================== -->
-
         <div
-          class="mx-auto grid max-w-[1400px] grid-cols-1 gap-y-28 px-5 pb-36 sm:px-8 md:grid-cols-12 md:gap-x-8 lg:px-[6vw]"
+          class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-5 pb-24 sm:px-8 md:grid-cols-2 lg:grid-cols-3 lg:px-8"
         >
-          <!-- ================= IMAGE 01 ================= -->
-
+          <!-- CARD 01 -->
           <article
             data-category="product"
-            class="bib-gallery-item relative md:col-span-5 md:col-start-1"
+            class="bib-gallery-item reveal group"
           >
             <div
-              class="bib-gallery-image group relative cursor-pointer overflow-hidden rounded-[48%_52%_42%_58%] shadow-[-18px_20px_0_#B8DF5A]"
+              class="relative overflow-hidden rounded-[2.5rem] bg-white p-8 shadow-soft transition duration-500 hover:-translate-y-2 hover:shadow-xl"
             >
-              <img
-                src="assets/smoove-orange.png"
-                alt="BIB's product"
-                class="aspect-[.8] w-full object-contain transition duration-700 group-hover:scale-110"
-              />
-
               <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-7 opacity-0 transition duration-500 group-hover:opacity-100"
+                class="absolute right-5 top-5 rounded-full bg-bib-orange/10 px-4 py-2 text-[9px] font-bold uppercase tracking-widest text-bib-orange"
               >
-                <span
-                  class="font-body text-[9px] font-bold uppercase tracking-[.2em] text-white"
-                >
-                  Open image ↗
-                </span>
-              </div>
-
-              <div
-                class="absolute bottom-5 left-5 rounded-full bg-white px-4 py-2 font-body text-[9px] font-bold uppercase tracking-[.12em] shadow-soft"
-              >
-                <span
-                  class="mr-1 inline-block h-2 w-2 rounded-full bg-bib-orange"
-                ></span>
-
                 Product
               </div>
-            </div>
-
-            <div class="flex justify-between pt-5">
-              <div>
-                <h3 class="font-display text-sm font-bold">Made to refresh.</h3>
-
-                <p
-                  class="mt-1 font-body text-[9px] uppercase tracking-[.15em] text-black/35"
-                >
-                  Flavour / Product
-                </p>
-              </div>
-
-              <span class="font-body text-[10px] text-black/30"> 01 </span>
-            </div>
-
-            <span
-              class="pointer-events-none absolute -right-20 top-1/2 hidden font-display text-6xl font-black tracking-[-.08em] text-bib-orange lg:block"
-            >
-              FRESH!
-            </span>
-          </article>
-
-          <!-- ================= IMAGE 02 ================= -->
-
-          <article
-            data-category="people"
-            class="bib-gallery-item relative md:col-span-4 md:col-start-8 md:mt-36"
-          >
-            <div
-              class="bib-gallery-image group relative cursor-pointer overflow-hidden rounded-[30px_120px_30px_120px]"
-            >
-              <img
-                src="assets/Skweezy-Mango.png"
-                alt="Friends enjoying a moment"
-                class="aspect-[.78] w-full object-contain transition duration-700 group-hover:scale-110"
-              />
 
               <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-7 opacity-0 transition duration-500 group-hover:opacity-100"
+                class="flex h-[360px] items-center justify-center rounded-[2rem] bg-gradient-to-br from-orange-50 via-white to-yellow-50"
               >
-                <span
-                  class="font-body text-[9px] font-bold uppercase tracking-[.2em] text-white"
-                >
-                  Open image ↗
-                </span>
+                <img
+                  src="assets/smoove-orange.png"
+                  alt="Smoove Orange"
+                  class="h-full max-h-[330px] w-full object-contain p-5 transition duration-700 group-hover:scale-105 group-hover:-rotate-2"
+                />
               </div>
 
-              <div
-                class="absolute bottom-5 left-5 rounded-full bg-white px-4 py-2 font-body text-[9px] font-bold uppercase tracking-[.12em] shadow-soft"
-              >
-                <span
-                  class="mr-1 inline-block h-2 w-2 rounded-full bg-bib-green"
-                ></span>
+              <div class="mt-6 flex items-end justify-between">
+                <div>
+                  <h3 class="font-display text-xl font-black">Smoove Orange</h3>
 
-                Mango
+                  <p
+                    class="mt-1 text-[9px] font-bold uppercase tracking-[.15em] text-black/35"
+                  >
+                    Orange / Refresh
+                  </p>
+                </div>
+
+                <span class="text-xs font-bold text-black/30">01</span>
               </div>
-            </div>
-
-            <div class="flex justify-between pt-5">
-              <div>
-                <h3 class="font-display text-sm font-bold">Fresh Mango.</h3>
-
-                <p
-                  class="mt-1 font-body text-[9px] uppercase tracking-[.15em] text-black/35"
-                >
-                  Flavour / Product
-                </p>
-              </div>
-
-              <span class="font-body text-[10px] text-black/30"> 02 </span>
             </div>
           </article>
 
-          <!-- ================= IMAGE 03 ================= -->
-
-          <article
-            data-category="lifestyle"
-            class="bib-gallery-item relative md:col-span-6 md:col-start-5 md:-mt-8"
-          >
-            <div
-              class="bib-gallery-image group relative cursor-pointer overflow-hidden rounded-[140px_30px_140px_30px]"
-            >
-              <img
-                src="assets/img-slider-02.jpeg"
-                alt="BIB's lifestyle moment"
-                class="aspect-[1.4] w-full object-contain transition duration-700 group-hover:scale-110 bg-[#2fa4da]"
-              />
-
-              <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-7 opacity-0 transition duration-500 group-hover:opacity-100"
-              >
-                <span
-                  class="font-body text-[9px] font-bold uppercase tracking-[.2em] text-white"
-                >
-                  Open image ↗
-                </span>
-              </div>
-
-              <div
-                class="absolute bottom-5 left-5 rounded-full bg-white px-4 py-2 font-body text-[9px] font-bold uppercase tracking-[.12em] shadow-soft"
-              >
-                <span
-                  class="mr-1 inline-block h-2 w-2 rounded-full bg-bib-green"
-                ></span>
-
-                Lifestyle
-              </div>
-            </div>
-
-            <div class="flex justify-between pt-5">
-              <div>
-                <h3 class="font-display text-sm font-bold">
-                  Bring the good energy.
-                </h3>
-
-                <p
-                  class="mt-1 font-body text-[9px] uppercase tracking-[.15em] text-black/35"
-                >
-                  Lifestyle / Summer
-                </p>
-              </div>
-
-              <span class="font-body text-[10px] text-black/30"> 03 </span>
-            </div>
-          </article>
-
-          <!-- ================= IMAGE 04 ================= -->
-
+          <!-- CARD 02 -->
           <article
             data-category="product"
-            class="bib-gallery-item relative md:col-span-4 md:col-start-2"
+            class="bib-gallery-item reveal group md:mt-14"
           >
             <div
-              class="bib-gallery-image group relative cursor-pointer overflow-hidden rounded-[55%_45%_62%_38%]"
+              class="relative overflow-hidden rounded-[2.5rem] bg-white p-8 shadow-soft transition duration-500 hover:-translate-y-2 hover:shadow-xl"
             >
-              <img
-                src="assets/Smoove-apple.png"
-                alt="Fresh BIB's beverage"
-                class="aspect-[.8] w-full object-contain transition duration-700 group-hover:scale-110"
-              />
-
               <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-7 opacity-0 transition duration-500 group-hover:opacity-100"
+                class="absolute right-5 top-5 rounded-full bg-bib-green/10 px-4 py-2 text-[9px] font-bold uppercase tracking-widest text-bib-green"
               >
-                <span
-                  class="font-body text-[9px] font-bold uppercase tracking-[.2em] text-white"
-                >
-                  Open image ↗
-                </span>
+                Product
               </div>
 
               <div
-                class="absolute bottom-5 left-5 rounded-full bg-white px-4 py-2 font-body text-[9px] font-bold uppercase tracking-[.12em] shadow-soft"
+                class="flex h-[360px] items-center justify-center rounded-[2rem] bg-gradient-to-br from-green-50 via-white to-lime-50"
               >
-                <span
-                  class="mr-1 inline-block h-2 w-2 rounded-full bg-bib-orange"
-                ></span>
-
-                Flavour
-              </div>
-            </div>
-
-            <div class="flex justify-between pt-5">
-              <div>
-                <h3 class="font-display text-sm font-bold">
-                  Colour tastes good.
-                </h3>
-
-                <p
-                  class="mt-1 font-body text-[9px] uppercase tracking-[.15em] text-black/35"
-                >
-                  Flavour / Refresh
-                </p>
+                <img
+                  src="assets/Skweezy-Mango.png"
+                  alt="Skweezy Mango"
+                  class="h-full max-h-[330px] w-full object-contain p-5 transition duration-700 group-hover:scale-105 group-hover:rotate-2"
+                />
               </div>
 
-              <span class="font-body text-[10px] text-black/30"> 04 </span>
+              <div class="mt-6 flex items-end justify-between">
+                <div>
+                  <h3 class="font-display text-xl font-black">Skweezy Mango</h3>
+
+                  <p
+                    class="mt-1 text-[9px] font-bold uppercase tracking-[.15em] text-black/35"
+                  >
+                    Mango / Juice
+                  </p>
+                </div>
+
+                <span class="text-xs font-bold text-black/30">02</span>
+              </div>
             </div>
           </article>
 
-          <!-- ================= IMAGE 05 ================= -->
-
+          <!-- CARD 03 -->
           <article
-            data-category="people"
-            class="bib-gallery-item relative md:col-span-5 md:col-start-8 md:mt-40"
+            data-category="lifestyle"
+            class="bib-gallery-item reveal group"
           >
             <div
-              class="bib-gallery-image group relative cursor-pointer overflow-hidden rounded-[40px]"
+              class="relative overflow-hidden rounded-[2.5rem] bg-white p-5 shadow-soft transition duration-500 hover:-translate-y-2 hover:shadow-xl"
             >
-              <img
-                src="assets/gallery-1.png"
-                alt="Friends sharing a moment"
-                class="aspect-[1.25] w-full object-contain transition duration-700 group-hover:scale-110"
-              />
-
               <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-7 opacity-0 transition duration-500 group-hover:opacity-100"
+                class="absolute left-5 top-5 z-10 rounded-full bg-white/90 px-4 py-2 text-[9px] font-bold uppercase tracking-widest shadow-sm"
               >
-                <span
-                  class="font-body text-[9px] font-bold uppercase tracking-[.2em] text-white"
-                >
-                  Open image ↗
-                </span>
+                Lifestyle
               </div>
 
-              <div
-                class="absolute bottom-5 left-5 rounded-full bg-white px-4 py-2 font-body text-[9px] font-bold uppercase tracking-[.12em] shadow-soft"
-              >
-                <span
-                  class="mr-1 inline-block h-2 w-2 rounded-full bg-bib-green"
-                ></span>
+              <div class="overflow-hidden rounded-[2rem] bg-[#2fa4da]">
+                <img
+                  src="assets/img-slider-02.jpeg"
+                  alt="BIB's lifestyle"
+                  class="h-[360px] w-full object-cover transition duration-700 group-hover:scale-105"
+                />
+              </div>
 
-                WATER
+              <div class="px-3 pb-3 pt-6 flex items-end justify-between">
+                <div>
+                  <h3 class="font-display text-xl font-black">
+                    Bring the good energy.
+                  </h3>
+
+                  <p
+                    class="mt-1 text-[9px] font-bold uppercase tracking-[.15em] text-black/35"
+                  >
+                    Lifestyle / Summer
+                  </p>
+                </div>
+
+                <span class="text-xs font-bold text-black/30">03</span>
               </div>
             </div>
+          </article>
 
-            <div class="flex justify-between pt-5">
-              <div>
-                <h3 class="font-display text-sm font-bold">
-                  Good times taste better.
-                </h3>
-
-                <p
-                  class="mt-1 font-body text-[9px] uppercase tracking-[.15em] text-black/35"
-                >
-                  People / BIB's
-                </p>
+          <!-- CARD 04 -->
+          <article
+            data-category="product"
+            class="bib-gallery-item reveal group"
+          >
+            <div
+              class="relative overflow-hidden rounded-[2.5rem] bg-white p-8 shadow-soft transition duration-500 hover:-translate-y-2 hover:shadow-xl"
+            >
+              <div
+                class="absolute right-5 top-5 rounded-full bg-bib-green/10 px-4 py-2 text-[9px] font-bold uppercase tracking-widest text-bib-green"
+              >
+                Product
               </div>
 
-              <span class="font-body text-[10px] text-black/30"> 05 </span>
+              <div
+                class="flex h-[360px] items-center justify-center rounded-[2rem] bg-gradient-to-br from-green-50 via-white to-lime-50"
+              >
+                <img
+                  src="assets/Smoove-apple.png"
+                  alt="Smoove Apple"
+                  class="h-full max-h-[330px] w-full object-contain p-5 transition duration-700 group-hover:scale-105 group-hover:-rotate-2"
+                />
+              </div>
+
+              <div class="mt-6 flex items-end justify-between">
+                <div>
+                  <h3 class="font-display text-xl font-black">Smoove Apple</h3>
+
+                  <p
+                    class="mt-1 text-[9px] font-bold uppercase tracking-[.15em] text-black/35"
+                  >
+                    Apple / Refresh
+                  </p>
+                </div>
+
+                <span class="text-xs font-bold text-black/30">04</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 05 — SMALLER -->
+          <article
+            data-category="water"
+            class="bib-gallery-item reveal group md:mt-10"
+          >
+            <div
+              class="relative overflow-hidden rounded-[2.5rem] bg-white p-5 shadow-soft transition duration-500 hover:-translate-y-2 hover:shadow-xl"
+            >
+              <div
+                class="absolute left-5 top-5 z-10 rounded-full bg-white/90 px-4 py-2 text-[9px] font-bold uppercase tracking-widest shadow-sm"
+              >
+                Water
+              </div>
+
+              <div
+                class="flex h-[280px] items-center justify-center overflow-hidden rounded-[2rem] bg-gradient-to-br from-blue-50 via-white to-cyan-50"
+              >
+                <img
+                  src="assets/gallery-1.png"
+                  alt="BIB's Water"
+                  class="h-full w-full object-contain p-4 transition duration-700 group-hover:scale-105"
+                />
+              </div>
+
+              <div class="px-3 pb-2 pt-5 flex items-end justify-between">
+                <div>
+                  <h3 class="font-display text-lg font-black">
+                    Pure Refreshment.
+                  </h3>
+
+                  <p
+                    class="mt-1 text-[9px] font-bold uppercase tracking-[.15em] text-black/35"
+                  >
+                    Water / Refresh
+                  </p>
+                </div>
+
+                <span class="text-xs font-bold text-black/30">05</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 06 — SMALLER -->
+          <article
+            data-category="product"
+            class="bib-gallery-item reveal group md:mt-2"
+          >
+            <div
+              class="relative overflow-hidden rounded-[2.5rem] bg-white p-5 shadow-soft transition duration-500 hover:-translate-y-2 hover:shadow-xl"
+            >
+              <div
+                class="absolute right-5 top-5 rounded-full bg-bib-orange/10 px-4 py-2 text-[9px] font-bold uppercase tracking-widest text-bib-orange"
+              >
+                Energy
+              </div>
+
+              <div
+                class="flex h-[280px] items-center justify-center overflow-hidden rounded-[2rem] bg-gradient-to-br from-yellow-50 via-white to-orange-50"
+              >
+                <img
+                  src="assets/Energyza.png"
+                  alt="Energyza Energy Drink"
+                  class="h-full w-full object-contain p-4 transition duration-700 group-hover:scale-105 group-hover:rotate-2"
+                />
+              </div>
+
+              <div class="px-3 pb-2 pt-5 flex items-end justify-between">
+                <div>
+                  <h3 class="font-display text-lg font-black">Energyza</h3>
+
+                  <p
+                    class="mt-1 text-[9px] font-bold uppercase tracking-[.15em] text-black/35"
+                  >
+                    Energy / Power
+                  </p>
+                </div>
+
+                <span class="text-xs font-bold text-black/30">06</span>
+              </div>
             </div>
           </article>
         </div>
 
         <!-- =======================================================
-       FEATURE / BRAND MOMENT
+       COMPACT BRAND FEATURE
   ======================================================== -->
-
         <div
-          class="relative mx-5 max-w-[1400px] overflow-hidden rounded-[35px] bg-bib-green px-7 py-20 sm:mx-8 sm:px-12 lg:mx-auto lg:rounded-[50px] lg:px-[8%] lg:py-28"
+          class="mx-5 mb-24 overflow-hidden rounded-[2.5rem] bg-bib-green sm:mx-8 lg:mx-auto lg:max-w-7xl"
         >
-          <!-- Decorative lime circle -->
-
           <div
-            class="absolute -right-32 -top-32 h-[400px] w-[400px] rounded-full bg-bib-lime"
-          ></div>
+            class="relative grid items-center gap-8 px-7 py-10 sm:px-10 sm:py-12 md:grid-cols-[1fr_260px] lg:px-14"
+          >
+            <!-- Decorative -->
+            <div
+              class="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-bib-lime/80"
+            ></div>
 
-          <!-- Decorative orange circle -->
+            <div
+              class="pointer-events-none absolute -bottom-24 -left-16 h-44 w-44 rounded-full bg-bib-orange/80"
+            ></div>
 
-          <div
-            class="absolute -bottom-44 -left-20 h-[350px] w-[350px] rounded-full bg-bib-orange"
-          ></div>
-
-          <div class="relative z-10 grid items-center gap-12 lg:grid-cols-2">
-            <div>
+            <div class="relative z-10">
               <p
-                class="mb-5 font-body text-[10px] font-bold uppercase tracking-[.25em] text-white/60"
+                class="text-[9px] font-bold uppercase tracking-[.25em] text-white/60"
               >
                 The BIB's feeling
               </p>
 
               <h3
-                class="font-display text-6xl font-black leading-[.78] tracking-[-.09em] text-white sm:text-8xl lg:text-[105px]"
+                class="mt-3 font-display text-5xl font-black leading-[.8] tracking-[-.07em] text-white sm:text-6xl"
               >
                 GOOD
-
-                <br />
-
-                <span class="text-bib-lime"> VIBES. </span>
+                <span class="text-bib-lime">VIBES.</span>
               </h3>
 
-              <p
-                class="mt-8 max-w-[380px] font-body text-sm leading-7 text-white/65"
-              >
-                Fresh flavours, bright colours and moments made to be shared.
+              <p class="mt-5 max-w-md text-sm leading-6 text-white/65">
+                Fresh flavours, bright colours and refreshing moments made to be
+                shared.
               </p>
             </div>
 
-            <!-- Feature image -->
-
-            <div
-              class="group relative mx-auto w-full max-w-[430px] rotate-2 overflow-hidden rounded-[45%_55%_50%_50%] shadow-[20px_25px_0_#F7A51A]"
-            >
+            <!-- Smaller product image -->
+            <div class="relative z-10 mx-auto w-[170px] sm:w-[200px]">
               <img
                 src="assets/Energyza.png"
                 alt="Energyza"
-                class="aspect-[.85] w-full object-contain transition duration-700 group-hover:scale-105"
+                class="h-auto max-h-[270px] w-full object-contain drop-shadow-[12px_15px_12px_rgba(0,0,0,.18)] transition duration-700 hover:-translate-y-2 hover:scale-105"
               />
             </div>
           </div>
         </div>
 
         <!-- =======================================================
-       FINAL
+       FINAL STATEMENT
   ======================================================== -->
-
-        <div class="mx-auto max-w-5xl px-5 py-36 text-center sm:px-8 lg:py-48">
+        <div
+          class="mx-auto max-w-5xl px-5 pb-28 pt-4 text-center sm:px-8 lg:pb-36"
+        >
           <p
-            class="font-display text-5xl font-black leading-[.82] tracking-[-.09em] sm:text-7xl lg:text-[100px]"
+            class="font-display text-5xl font-black leading-[.85] tracking-[-.08em] sm:text-7xl lg:text-[90px]"
           >
             Life tastes
-
             <span class="font-body font-light italic text-bib-orange">
               better
             </span>
-
             with BIB's.
           </p>
 
-          <div class="mx-auto mt-10 h-2 w-20 rounded-full bg-bib-green"></div>
+          <div class="mx-auto mt-8 h-1.5 w-16 rounded-full bg-bib-green"></div>
         </div>
 
         <!-- =======================================================
        LIGHTBOX
   ======================================================== -->
-
         <div
           id="bibLightbox"
           class="fixed inset-0 z-[9999] hidden items-center justify-center bg-bib-dark/95 p-5 backdrop-blur-md"
         >
           <button
             id="bibLightboxClose"
-            class="absolute right-5 top-5 grid h-12 w-12 place-items-center rounded-full bg-white font-body text-2xl text-bib-dark transition hover:scale-110 sm:right-8 sm:top-8"
+            class="absolute right-5 top-5 grid h-12 w-12 place-items-center rounded-full bg-white text-2xl text-bib-dark shadow-xl transition hover:scale-110 sm:right-8 sm:top-8"
             aria-label="Close image"
           >
             ×
@@ -849,9 +816,8 @@
       </section>
 
       <!-- =========================================================
-     ONLY REQUIRED EXTRA CSS
+     GALLERY CSS
 ========================================================= -->
-
       <style>
         @keyframes bibGalleryMarquee {
           from {
@@ -862,20 +828,28 @@
             transform: translateX(-50%);
           }
         }
+
+        .bib-gallery-item {
+          transition:
+            opacity 0.35s ease,
+            transform 0.35s ease;
+        }
+
+        .bib-gallery-item.hidden {
+          display: none;
+        }
       </style>
 
       <!-- =========================================================
      GALLERY JS
 ========================================================= -->
-
       <script>
         document.addEventListener("DOMContentLoaded", function () {
-          /* =====================================================
-     FILTER
-  ===================================================== */
+          /* ================================
+       FILTER
+    ================================= */
 
           const filterButtons = document.querySelectorAll(".bib-filter");
-
           const galleryItems = document.querySelectorAll(".bib-gallery-item");
 
           filterButtons.forEach(function (button) {
@@ -884,12 +858,10 @@
 
               filterButtons.forEach(function (btn) {
                 btn.classList.remove("bg-bib-dark", "text-white");
-
                 btn.classList.add("border", "border-bib-dark/10");
               });
 
               button.classList.add("bg-bib-dark", "text-white");
-
               button.classList.remove("border", "border-bib-dark/10");
 
               galleryItems.forEach(function (item) {
@@ -904,30 +876,22 @@
             });
           });
 
-          /* =====================================================
-     LIGHTBOX
-  ===================================================== */
+          /* ================================
+       LIGHTBOX
+    ================================= */
 
           const lightbox = document.getElementById("bibLightbox");
-
           const lightboxImage = document.getElementById("bibLightboxImage");
-
           const closeButton = document.getElementById("bibLightboxClose");
 
           document
-            .querySelectorAll(".bib-gallery-image")
-            .forEach(function (container) {
-              container.addEventListener("click", function () {
-                const image = container.querySelector("img");
-
-                if (!image) return;
-
+            .querySelectorAll(".bib-gallery-item img")
+            .forEach(function (image) {
+              image.addEventListener("click", function () {
                 lightboxImage.src = image.src;
-
                 lightboxImage.alt = image.alt;
 
                 lightbox.classList.remove("hidden");
-
                 lightbox.classList.add("flex");
 
                 document.body.style.overflow = "hidden";
@@ -936,9 +900,7 @@
 
           function closeLightbox() {
             lightbox.classList.add("hidden");
-
             lightbox.classList.remove("flex");
-
             document.body.style.overflow = "";
           }
 
@@ -1270,169 +1232,342 @@
         </div>
       </section> -->
     </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-gray-950 text-white">
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="relative overflow-hidden bg-[#07110B] text-white">
+      <!-- Top Brand Line -->
       <div
-        class="max-w-7xl mx-auto px-5 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] gap-12"
-      >
-        <div>
-          <div class="text-4xl font-black">
-            BIB<span class="text-bib-green">'s</span>
-          </div>
-          <div class="tracking-[.35em] text-[10px] text-gray-400 font-bold">
-            BEVERAGES
-          </div>
-          <p class="mt-5 text-gray-400 text-sm leading-6">
-            Bibagry Limited was founded in 2018 and is wholly owned by Kassco
-            Limited.With a multi-million dollar investment into state-of-the-art
-            machinery and technology and extensive technical expertise,
-            Bibagry’s high-performance plant in Kamfinsa is capable of producing
-            more than 36,000 bottles per hour.
-          </p>
+        class="h-1 w-full bg-gradient-to-r from-bib-green via-bib-lime to-bib-green"
+      ></div>
 
-          <div class="flex items-center gap-3 mt-6">
-            <!-- Facebook -->
-            <a
-              href="#"
-              aria-label="Facebook"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#1877F2]"
-            >
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M14.5 8H17V4.5C16.57 4.45 15.1 4.3 13.35 4.3
-             C9.7 4.3 7.2 6.53 7.2 10.62V13.5H3.5V17.4H7.2V24H11.7V17.4H15.25L15.8 13.5H11.7V11.05
-             C11.7 9.93 12 8.75 14.5 8Z"
-                />
-              </svg>
-            </a>
+      <!-- Decorative Glow -->
+      <div
+        class="pointer-events-none absolute -right-40 top-10 h-[450px] w-[450px] rounded-full bg-bib-green/10 blur-3xl"
+      ></div>
 
-            <!-- Twitter / X -->
-            <a
-              href="#"
-              aria-label="Twitter"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-black"
-            >
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.24-8.28L2.8 2h6.4l4.42 5.85L18.9 2zm-1.1 17.8h1.73L8.27 4.08H6.41L17.8 19.8z"
-                />
-              </svg>
-            </a>
+      <div
+        class="pointer-events-none absolute -left-40 bottom-0 h-[350px] w-[350px] rounded-full bg-bib-lime/5 blur-3xl"
+      ></div>
 
-            <!-- YouTube -->
-            <a
-              href="#"
-              aria-label="YouTube"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF0000]"
-            >
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.9V8.1l6.5 3.9-6.5 3.9z"
-                />
-              </svg>
-            </a>
+      <!-- =========================
+       MAIN FOOTER
+  ========================== -->
+      <div class="relative mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
+        <div class="grid gap-12 lg:grid-cols-[1.5fr_0.8fr_1fr_1fr]">
+          <!-- =========================
+           BRAND
+      ========================== -->
+          <div>
+            <!-- Logo -->
+            <a href="#home" class="inline-block">
+              <div class="text-4xl font-black tracking-tight">
+                BIB<span class="text-bib-green">'s</span>
+              </div>
 
-            <!-- LinkedIn -->
-            <a
-              href="#"
-              aria-label="LinkedIn"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#0A66C2]"
-            >
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M5 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 10h4v11H3V10zm6 0h3.8v1.5h.1c.5-.9 1.7-1.9 3.6-1.9 3.9 0 4.5 2.6 4.5 6v5.4h-4v-4.8c0-1.1 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5V21H9V10z"
-                />
-              </svg>
-            </a>
-
-            <!-- Instagram -->
-            <a
-              href="#"
-              aria-label="Instagram"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#515BD4]"
-            >
-              <svg
-                class="h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
+              <div
+                class="mt-1 text-[9px] font-bold tracking-[.4em] text-gray-500"
               >
-                <rect x="3" y="3" width="18" height="18" rx="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle
-                  cx="17.5"
-                  cy="6.5"
-                  r="1.2"
-                  fill="currentColor"
-                  stroke="none"
-                />
-              </svg>
+                BEVERAGES
+              </div>
             </a>
-          </div>
-        </div>
 
-        <div>
-          <h4 class="font-bold">Quick Links</h4>
-          <div class="mt-5 space-y-3 text-sm text-gray-400">
-            <a class="block hover:text-white" href="#home">Home</a>
-            <a class="block hover:text-white" href="#products">Products</a>
-            <a class="block hover:text-white" href="#gallery">Gallery</a>
-            <a class="block hover:text-white" href="#about.html"
-              >About Company</a
-            >
-            <a class="block hover:text-white" href="#leadership">Leadership</a>
-          </div>
-        </div>
+            <p class="mt-6 max-w-md text-sm leading-7 text-gray-400">
+              Bibagry Limited was founded in 2018 and is wholly owned by Kassco
+              Limited. With a multi-million dollar investment into
+              state-of-the-art machinery and technology and extensive technical
+              expertise, Bibagry’s high-performance plant in Kamfinsa is capable
+              of producing more than 36,000 bottles per hour.
+            </p>
 
-        <div>
-          <h4 class="font-bold">Our Products</h4>
-          <div class="mt-5 space-y-3 text-sm text-gray-400">
-            <p>Skweezy Juices</p>
-            <p>Smoove Drinks</p>
-            <p>HydroPure Water</p>
-            <p>Bib's Cola</p>
-            <p>Energyza Energy Drink</p>
-            <p>Tangawizi Ginger Drink</p>
-            <p>Sembe Mealie Meal</p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="font-bold">Contact Us</h4>
-          <div class="mt-5 space-y-3 text-sm text-gray-400">
-            <p>📞 +260 972229868</p>
-            <p>📞 +260 779728877</p>
-            <p>✉ welcome@bibagary.com</p>
-            <p>📍 Plot 6028, Kamfinsa Road, Kitwe, Zambia</p>
-          </div>
-
-          <div class="mt-7">
-            <p class="text-sm font-semibold">Subscribe for updates</p>
-            <div class="mt-3 flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                class="min-w-0 flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm outline-none focus:border-bib-green"
-              />
-              <button
-                class="px-4 py-3 rounded-xl bg-bib-green font-bold text-sm hover:bg-green-700 transition"
+            <!-- Social -->
+            <div class="mt-7 flex items-center gap-3">
+              <!-- Facebook -->
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#1877F2] hover:bg-[#1877F2]"
               >
-                Join
-              </button>
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M14.5 8H17V4.5C16.57 4.45 15.1 4.3 13.35 4.3
+                C9.7 4.3 7.2 6.53 7.2 10.62V13.5H3.5V17.4H7.2V24H11.7V17.4H15.25L15.8 13.5H11.7V11.05
+                C11.7 9.93 12 8.75 14.5 8Z"
+                  />
+                </svg>
+              </a>
+
+              <!-- X -->
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-black"
+              >
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.24-8.28L2.8 2h6.4l4.42 5.85L18.9 2zm-1.1 17.8h1.73L8.27 4.08H6.41L17.8 19.8z"
+                  />
+                </svg>
+              </a>
+
+              <!-- YouTube -->
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#FF0000] hover:bg-[#FF0000]"
+              >
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.9V8.1l6.5 3.9-6.5 3.9z"
+                  />
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#0A66C2] hover:bg-[#0A66C2]"
+              >
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M5 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 10h4v11H3V10zm6 0h3.8v1.5h.1c.5-.9 1.7-1.9 3.6-1.9 3.9 0 4.5 2.6 4.5 6v5.4h-4v-4.8c0-1.1 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5V21H9V10z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#515BD4]"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1.2"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- =========================
+           QUICK LINKS
+      ========================== -->
+          <div>
+            <h4 class="text-sm font-bold text-white">Quick Links</h4>
+
+            <div class="mt-6 space-y-3">
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#home"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Home
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#products"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Products
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#gallery"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Gallery
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#company"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                About Company
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#leadership"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Leadership
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#clients"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Our Clients
+              </a>
+            </div>
+          </div>
+
+          <!-- =========================
+           PRODUCTS
+      ========================== -->
+          <div>
+            <h4 class="text-sm font-bold text-white">Our Products</h4>
+
+            <div class="mt-6 space-y-3 text-sm text-gray-500">
+              <p class="transition hover:text-bib-lime cursor-default">
+                Skweezy Juices
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Smoove Drinks
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                HydroPure Water
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Bib's Cola
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Energyza Energy Drink
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Tangawizi Ginger Drink
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Sembe Mealie Meal
+              </p>
+            </div>
+          </div>
+
+          <!-- =========================
+           CONTACT
+      ========================== -->
+          <div>
+            <h4 class="text-sm font-bold text-white">Contact Us</h4>
+
+            <div class="mt-6 space-y-4 text-sm text-gray-500">
+              <p class="flex gap-3">
+                <span class="text-bib-green">☎</span>
+                <span>+260 972229868</span>
+              </p>
+
+              <p class="flex gap-3">
+                <span class="text-bib-green">☎</span>
+                <span>+260 779728877</span>
+              </p>
+
+              <p class="flex gap-3 break-all">
+                <span class="text-bib-green">✉</span>
+                <span>welcome@bibagary.com</span>
+              </p>
+
+              <p class="flex gap-3 leading-6">
+                <span class="text-bib-green">⌖</span>
+                <span>
+                  Plot 6028, Kamfinsa Road,<br />
+                  Kitwe, Zambia
+                </span>
+              </p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="mt-7">
+              <p class="text-sm font-semibold text-white">
+                Subscribe for updates
+              </p>
+
+              <div class="mt-3 flex gap-2">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  class="min-w-0 flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-gray-600 transition focus:border-bib-green focus:bg-white/[0.08]"
+                />
+
+                <button
+                  class="rounded-xl bg-bib-green px-4 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-green-700"
+                >
+                  Join
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- =========================
+         FOOTER CTA
+    ========================== -->
+        <div
+          class="mt-16 flex flex-col gap-5 overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-r from-bib-green/20 to-transparent p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7"
+        >
+          <div>
+            <p
+              class="text-xs font-bold uppercase tracking-[.25em] text-bib-lime"
+            >
+              Stay refreshed
+            </p>
+
+            <p class="mt-2 text-lg font-black text-white sm:text-xl">
+              Great taste. Quality. Every bottle.
+            </p>
+          </div>
+
+          <a
+            href="#contact"
+            class="inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-bib-dark transition hover:-translate-y-1 hover:bg-bib-lime"
+          >
+            Get In Touch
+            <span>→</span>
+          </a>
+        </div>
       </div>
 
+      <!-- =========================
+       COPYRIGHT
+  ========================== -->
       <div class="border-t border-white/10">
         <div
-          class="max-w-7xl mx-auto px-5 lg:px-8 py-6 flex flex-col sm:flex-row gap-3 justify-between text-xs text-gray-500"
+          class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-6 text-xs text-gray-600 sm:flex-row sm:items-center sm:justify-between lg:px-8"
         >
           <p>© 2026 BIB's Beverages. All Rights Reserved.</p>
+
           <div class="flex gap-5">
-            <a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a>
+            <a href="#" class="transition hover:text-gray-300">
+              Privacy Policy
+            </a>
+
+            <a href="#" class="transition hover:text-gray-300">
+              Terms & Conditions
+            </a>
           </div>
         </div>
       </div>
@@ -1482,75 +1617,5 @@
     </a>
 
     <script src="js/script.js"></script>
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const filterButtons = document.querySelectorAll(".gallery-filter");
-        const galleryItems = document.querySelectorAll(".gallery-item");
-
-        filterButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const selected = button.dataset.filter;
-
-            filterButtons.forEach((btn) => {
-              btn.classList.remove("bg-bib-dark", "text-white");
-              btn.classList.add(
-                "border",
-                "border-bib-dark/10",
-                "text-bib-dark",
-              );
-            });
-
-            button.classList.add("bg-bib-dark", "text-white");
-            button.classList.remove(
-              "border",
-              "border-bib-dark/10",
-              "text-bib-dark",
-            );
-
-            galleryItems.forEach((item) => {
-              const category = item.dataset.category;
-              const show = selected === "all" || category === selected;
-              item.classList.toggle("hidden", !show);
-            });
-          });
-        });
-
-        const lightbox = document.getElementById("galleryLightbox");
-        const lightboxImage = document.getElementById("galleryLightboxImage");
-        const closeButton = document.getElementById("galleryLightboxClose");
-
-        document.querySelectorAll(".gallery-media").forEach((media) => {
-          media.addEventListener("click", function () {
-            const image = media.querySelector("img");
-            if (!image) return;
-            lightboxImage.src = image.src;
-            lightboxImage.alt = image.alt;
-            lightbox.classList.remove("hidden");
-            lightbox.classList.add("flex");
-            document.body.style.overflow = "hidden";
-          });
-        });
-
-        function closeLightbox() {
-          lightbox.classList.add("hidden");
-          lightbox.classList.remove("flex");
-          document.body.style.overflow = "";
-        }
-
-        closeButton.addEventListener("click", closeLightbox);
-
-        lightbox.addEventListener("click", function (event) {
-          if (event.target === lightbox) {
-            closeLightbox();
-          }
-        });
-
-        document.addEventListener("keydown", function (event) {
-          if (event.key === "Escape") {
-            closeLightbox();
-          }
-        });
-      });
-    </script> -->
   </body>
 </html>
