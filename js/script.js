@@ -1,15 +1,24 @@
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
+const menuIcon = document.getElementById("menuIcon");
 
-if (menuBtn && mobileMenu) {
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
+menuBtn.addEventListener("click", () => {
+  const isOpen = !mobileMenu.classList.contains("hidden");
 
-  document.querySelectorAll("#mobileMenu a").forEach((link) => {
-    link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+  mobileMenu.classList.toggle("hidden");
+
+  menuIcon.textContent = isOpen ? "☰" : "✕";
+  menuBtn.setAttribute("aria-expanded", String(!isOpen));
+});
+
+// Close menu after clicking a mobile navigation link
+document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    menuIcon.textContent = "☰";
+    menuBtn.setAttribute("aria-expanded", "false");
   });
-}
+});
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -125,15 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
     track.style.animationPlayState = "running";
   });
 });
-/* ==========================================
-   RESPONSIVE 3D IMAGE CAROUSEL
-   13 ITEMS
-========================================== */
-
-/* ------------------------------------------
-   CAROUSEL DATA
------------------------------------------- */
-
 const slides = [
   {
     image: "assets/mango.jpeg",
@@ -141,14 +141,12 @@ const slides = [
     title: "Skweezy-Mango",
     description: " demo text lorem ipsum dolor sit amet.",
   },
-
   {
     image: "assets/cola.jpeg",
     category: "Flavors",
     title: "Creative Brand Identity",
     description: "lorem ipsum dolor sit amet.",
   },
-
   {
     image: "assets/energy.jpeg",
     category: "energy",
@@ -156,7 +154,6 @@ const slides = [
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
-
   {
     image: "assets/water_2.png",
     category: "water",
@@ -164,75 +161,36 @@ const slides = [
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
-
   {
     image: "assets/water_3.png",
     category: "Water",
     title: "hydropure Water",
     description: "lorem ipsum dolor sit amet.",
   },
-
   {
     image: "assets/water_1.jpeg",
     category: "Water",
     title: "pure Water",
     description: "lorem ipsum dolor sit amet.",
   },
-
   {
     image: "assets/orange_slice.png",
     category: "orange",
     title: "orange",
     description: "lorem ipsum dolor sit amet.",
   },
-
   {
     image: "assets/skweezy_all.png",
     category: "lorem",
     title: "lorem",
     description: "lorem ipsum dolor sit amet.",
   },
-
   {
     image: "assets/img-slider.jpeg",
     category: "lorem",
     title: "lorem",
     description: "lorem ipsum dolor sit amet.",
   },
-
-  // {
-  //   image: "assets/gallery-6.png",
-  //   category: "lorem",
-  //   title: "lorem",
-  //   description:
-  //     "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  // },
-
-  // {
-  //   image:
-  //     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85",
-  //   category: "Analytics",
-  //   title: "Data Driven Design",
-  //   description: "Turning meaningful data into better digital experiences.",
-  // },
-
-  // {
-  //   image:
-  //     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85",
-  //   category: "Development",
-  //   title: "Modern Development",
-  //   description:
-  //     "Fast, scalable and responsive digital products for modern brands.",
-  // },
-
-  // {
-  //   image:
-  //     "https://images.unsplash.com/photo-1553484771-047a44eee27b?auto=format&fit=crop&w=1200&q=85",
-  //   category: "Innovation",
-  //   title: "Ideas That Inspire",
-  //   description:
-  //     "Innovative concepts that turn simple ideas into memorable experiences.",
-  // },
 ];
 
 /* ------------------------------------------
