@@ -1,0 +1,514 @@
+<!-- HERO -->
+<section
+  id="home"
+  class="hero-bg min-h-[760px] pt-28 lg:pt-20 overflow-hidden relative"
+>
+  <!-- =====================================================
+       FULL HERO VIDEO BACKGROUND
+       ===================================================== -->
+  <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+    <video
+      class="absolute inset-0 w-full h-full object-cover"
+      src="assets/smoove_video_1.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    ></video>
+
+    <!-- Soft overlay so text stays readable -->
+    <div
+      class="absolute inset-0 bg-white/55 sm:bg-white/45 lg:bg-white/30"
+    ></div>
+
+    <!-- Extra gradient for text readability -->
+    <div
+      class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent"
+    ></div>
+  </div>
+
+  <!-- =====================================================
+       FLOATING PARTICLES
+       ===================================================== -->
+  <div
+    id="heroParticles"
+    class="absolute inset-0 z-[5] pointer-events-none overflow-hidden"
+  ></div>
+
+  <!-- =====================================================
+       RIGHT SIDE FLOATING CURTAIN / WAVE
+       ===================================================== -->
+  <div
+    id="heroCurtain"
+    class="absolute z-[1] pointer-events-none right-[-180px] sm:right-[-160px] lg:right-[-120px] top-[-120px] lg:top-0 w-[600px] sm:w-[700px] lg:w-[820px] opacity-60"
+  >
+    <img
+      src="https://cdn.shopify.com/s/files/1/0185/5999/1872/files/blue_strand_transparent.png?v=1778949964"
+      alt=""
+      class="w-full h-auto object-contain hue-rotate-[70deg] saturate-[1.15] brightness-[1.08] opacity-[.40]"
+    />
+  </div>
+
+  <!-- Soft color atmosphere -->
+  <div
+    class="absolute z-0 pointer-events-none right-[-180px] top-[5%] w-[620px] h-[620px] rounded-full bg-gradient-to-br from-green-200/40 via-yellow-100/30 to-orange-200/20 blur-3xl"
+  ></div>
+
+  <!-- =====================================================
+       FLOATING FRUIT ORBS
+       ===================================================== -->
+  <span class="fruit-orb w-8 h-8 bg-green-500 left-[5%] top-[22%]"></span>
+
+  <span
+    class="fruit-orb w-5 h-5 bg-orange-400 left-[42%] top-[24%]"
+    style="animation-delay: 1s"
+  ></span>
+
+  <span
+    class="fruit-orb w-10 h-10 bg-yellow-300 right-[8%] top-[18%]"
+    style="animation-delay: 2s"
+  ></span>
+
+  <span
+    class="fruit-orb w-6 h-6 bg-red-400 left-[13%] bottom-[20%]"
+    style="animation-delay: 3s"
+  ></span>
+
+  <!-- =====================================================
+       MAIN HERO CONTENT
+       ===================================================== -->
+  <div
+    class="max-w-7xl mx-auto px-5 lg:px-8 min-h-[700px] grid lg:grid-cols-2 items-center gap-10 relative z-10"
+  >
+    <!-- LEFT CONTENT -->
+    <div class="relative z-20 reveal">
+      <span
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur shadow-sm text-bib-green text-xs font-extrabold uppercase tracking-widest"
+      >
+        <span class="w-2 h-2 rounded-full bg-bib-green"></span>
+        Made for refreshing moments
+      </span>
+
+      <h1
+        class="mt-7 text-5xl sm:text-6xl lg:text-7xl font-black leading-[.98] tracking-tight"
+      >
+        REFRESHING
+        <span class="block text-bib-green">EVERY MOMENT.</span>
+      </h1>
+
+      <p class="mt-6 text-xl font-semibold text-gray-800">
+        Real Taste. Real Refreshment.
+      </p>
+
+      <p class="mt-4 max-w-xl text-gray-600 leading-7">
+        BIB's Beverages brings you a delicious blend of quality ingredients,
+        vibrant fruit flavours and everyday refreshment.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a
+          href="#products"
+          class="px-7 py-4 rounded-full bg-bib-green text-white font-bold shadow-lg shadow-green-200 hover:-translate-y-1 transition"
+        >
+          Explore Products
+          <span class="ml-2">→</span>
+        </a>
+
+        <a
+          href="#company"
+          class="px-7 py-4 rounded-full bg-white/90 backdrop-blur border border-gray-200 font-bold hover:border-bib-green transition"
+        >
+          Our Story
+        </a>
+      </div>
+
+      <div class="mt-10 flex gap-8">
+        <div>
+          <div class="text-2xl font-black">100%</div>
+          <div class="text-xs text-gray-500">Quality Focus</div>
+        </div>
+
+        <div>
+          <div class="text-2xl font-black">5+</div>
+          <div class="text-xs text-gray-500">Fruit Flavours</div>
+        </div>
+
+        <div>
+          <div class="text-2xl font-black">4.8★</div>
+          <div class="text-xs text-gray-500">Customer Rating</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         RIGHT / BOTTLES
+         ===================================================== -->
+    <div
+      class="relative z-20 min-h-[520px] lg:min-h-[650px] flex items-center justify-center reveal"
+    >
+      <!-- Soft bottle background -->
+      <div
+        class="absolute w-[350px] h-[350px] sm:w-[470px] sm:h-[470px] rounded-full bg-white/45 backdrop-blur-[2px] blur-sm"
+      ></div>
+
+      <!-- Bottles -->
+      <div class="relative flex items-end justify-center gap-[-5px] z-20">
+        <!-- COLA -->
+        <div
+          class="bottle w-24 sm:w-32 h-72 sm:h-[370px] box-shadow-none bg-none rotate-[-7deg] -mr-4"
+        >
+          <img
+            src="assets/cola.png"
+            alt="BIB's Cola Beverage"
+            class="w-full h-full object-cover p-1"
+          />
+        </div>
+
+        <!-- MANGO -->
+        <div
+          class="bottle w-32 sm:w-40 h-[350px] sm:h-[470px] box-shadow-none bg-none from-yellow-300 to-orange-500 z-50"
+        >
+          <img
+            src="assets/mango.png"
+            alt="BIB's Mango Beverage"
+            class="w-full h-full object-cover p-1"
+          />
+        </div>
+
+        <!-- ORANGE -->
+        <div
+          class="bottle w-24 sm:w-32 h-72 sm:h-[370px] box-shadow-none bg-none from-lime-300 to-green-500 rotate-[7deg] -ml-4 z-20"
+        >
+          <img
+            src="assets/orange.png"
+            alt="BIB's Orange Beverage"
+            class="w-full h-full object-cover p-1"
+          />
+        </div>
+      </div>
+
+      <!-- Bottle ground glow -->
+      <div
+        class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[90%] h-24 rounded-[50%] bg-orange-300/50 blur-2xl"
+      ></div>
+
+      <!-- Fruits -->
+      <div
+        class="absolute right-[3%] bottom-[18%] text-5xl sm:text-7xl animate-bounce"
+      >
+        🍋
+      </div>
+
+      <div class="absolute left-[2%] bottom-[20%] text-5xl sm:text-6xl">🥭</div>
+
+      <div
+        class="absolute left-[20%] top-[17%] text-4xl sm:text-5xl reveal show"
+      >
+        🍃
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       BOTTOM WAVE
+       ===================================================== -->
+  <div
+    class="absolute bottom-0 left-0 z-30 h-[86px] w-full overflow-hidden leading-none pointer-events-none"
+  >
+    <svg
+      class="absolute bottom-0 left-0 h-full w-full"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient
+          id="heroWaveGradient"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
+        >
+          <stop offset="0%" stop-color="#FFF8E8" />
+          <stop offset="45%" stop-color="#F4E7C8" />
+          <stop offset="100%" stop-color="#DDEEDB" />
+        </linearGradient>
+      </defs>
+
+      <path
+        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+        fill="url(#heroWaveGradient)"
+      ></path>
+    </svg>
+  </div>
+</section>
+
+<style>
+  @keyframes heroParticleFloat {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    25% {
+      transform: translate3d(25px, -35px, 0) rotate(90deg);
+    }
+
+    50% {
+      transform: translate3d(-20px, -70px, 0) rotate(180deg);
+    }
+
+    75% {
+      transform: translate3d(30px, -35px, 0) rotate(270deg);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0) rotate(360deg);
+    }
+  }
+
+  #heroParticles span {
+    will-change: transform;
+    filter: blur(0.2px);
+  }
+
+  #home video {
+    max-width: none;
+  }
+</style>
+
+<section
+  id="home"
+  class="hero-bg min-h-[760px] pt-28 lg:pt-20 overflow-hidden relative"
+>
+  <!-- Floating Random Shapes -->
+  <div
+    id="heroParticles"
+    class="absolute inset-0 z-[5] pointer-events-none overflow-hidden"
+  ></div>
+  <!-- =====================================================
+       RIGHT SIDE FLOATING CURTAIN / WAVE
+       ===================================================== -->
+  <div
+    id="heroCurtain"
+    class="absolute z-[1] pointer-events-none right-[-180px] lg:right-[-120px] top-[-120px] lg:top-[0px] w-[600px] sm:w-[700px] lg:w-[820px] opacity-60"
+  >
+    <img
+      src="https://cdn.shopify.com/s/files/1/0185/5999/1872/files/blue_strand_transparent.png?v=1778949964"
+      alt=""
+      class="w-full h-auto object-contain hue-rotate-[70deg] saturate-[1.15] brightness-[1.08] opacity-[.40]"
+    />
+  </div>
+
+  <!-- Soft color atmosphere behind curtain -->
+  <div
+    class="absolute z-0 pointer-events-none right-[-180px] top-[5%] w-[620px] h-[620px] rounded-full bg-gradient-to-br from-green-200/50 via-yellow-100/40 to-orange-200/30 blur-3xl"
+  ></div>
+
+  <!-- Floating fruit orbs -->
+  <span class="fruit-orb w-8 h-8 bg-green-500 left-[5%] top-[22%]"></span>
+
+  <span
+    class="fruit-orb w-5 h-5 bg-orange-400 left-[42%] top-[24%]"
+    style="animation-delay: 1s"
+  ></span>
+
+  <span
+    class="fruit-orb w-10 h-10 bg-yellow-300 right-[8%] top-[18%]"
+    style="animation-delay: 2s"
+  ></span>
+
+  <span
+    class="fruit-orb w-6 h-6 bg-red-400 left-[13%] bottom-[20%]"
+    style="animation-delay: 3s"
+  ></span>
+
+  <!-- =====================================================
+       MAIN HERO CONTENT
+       ===================================================== -->
+  <div
+    class="max-w-7xl mx-auto px-5 lg:px-8 min-h-[700px] grid lg:grid-cols-2 items-center gap-10 relative z-10"
+  >
+    <!-- LEFT -->
+    <div class="relative z-20 reveal">
+      <span
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm text-bib-green text-xs font-extrabold uppercase tracking-widest"
+      >
+        <span class="w-2 h-2 rounded-full bg-bib-green"></span>
+        Made for refreshing moments
+      </span>
+
+      <h1
+        class="mt-7 text-5xl sm:text-6xl lg:text-7xl font-black leading-[.98] tracking-tight"
+      >
+        REFRESHING
+        <span class="block text-bib-green">EVERY MOMENT.</span>
+      </h1>
+
+      <p class="mt-6 text-xl font-semibold text-gray-800">
+        Real Taste. Real Refreshment.
+      </p>
+
+      <p class="mt-4 max-w-xl text-gray-600 leading-7">
+        BIB's Beverages brings you a delicious blend of quality ingredients,
+        vibrant fruit flavours and everyday refreshment.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a
+          href="#products"
+          class="px-7 py-4 rounded-full bg-bib-green text-white font-bold shadow-lg shadow-green-200 hover:-translate-y-1 transition"
+        >
+          Explore Products <span class="ml-2">→</span>
+        </a>
+
+        <a
+          href="#company"
+          class="px-7 py-4 rounded-full bg-white border border-gray-200 font-bold hover:border-bib-green transition"
+        >
+          Our Story
+        </a>
+      </div>
+
+      <div class="mt-10 flex gap-8">
+        <div>
+          <div class="text-2xl font-black">100%</div>
+          <div class="text-xs text-gray-500">Quality Focus</div>
+        </div>
+
+        <div>
+          <div class="text-2xl font-black">5+</div>
+          <div class="text-xs text-gray-500">Fruit Flavours</div>
+        </div>
+
+        <div>
+          <div class="text-2xl font-black">4.8★</div>
+          <div class="text-xs text-gray-500">Customer Rating</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         RIGHT / BOTTLES
+         ===================================================== -->
+    <div
+      class="relative z-20 min-h-[520px] lg:min-h-[650px] flex items-center justify-center reveal"
+    >
+      <!-- soft bottle background -->
+      <div
+        class="absolute w-[470px] h-[470px] rounded-full bg-white/60 blur-sm"
+      ></div>
+
+      <div class="relative flex items-end justify-center gap-[-5px] z-20">
+        <!-- COLA -->
+        <div
+          class="bottle w-28 sm:w-32 h-80 sm:h-[370px] box-shadow-none bg-none rotate-[-7deg] -mr-4"
+        >
+          <img
+            src="assets/cola.png"
+            alt="BIB's Cola Beverage"
+            class="w-full h-full object-cover p-1"
+          />
+        </div>
+
+        <!-- MANGO -->
+        <div
+          class="bottle w-36 sm:w-40 h-[390px] sm:h-[470px] box-shadow-none bg-none from-yellow-300 to-orange-500 z-50"
+        >
+          <img
+            src="assets/mango.png"
+            alt="BIB's Mango Beverage"
+            class="w-full h-full object-cover p-1"
+          />
+        </div>
+
+        <!-- ORANGE -->
+        <div
+          class="bottle w-28 sm:w-32 h-80 sm:h-[370px] box-shadow-none bg-none from-lime-300 to-green-500 rotate-[7deg] -ml-4 z-20"
+        >
+          <img
+            src="assets/orange.png"
+            alt="BIB's Orange Beverage"
+            class="w-full h-full object-cover p-1"
+          />
+        </div>
+      </div>
+
+      <!-- Bottle ground glow -->
+      <div
+        class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[90%] h-24 rounded-[50%] bg-orange-300/50 blur-2xl"
+      ></div>
+
+      <!-- Fruits -->
+      <div class="absolute right-[3%] bottom-[18%] text-7xl animate-bounce">
+        🍋
+      </div>
+
+      <div class="absolute left-[2%] bottom-[20%] text-6xl">🥭</div>
+
+      <div class="absolute left-[20%] top-[17%] text-5xl reveal show">🍃</div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       BOTTOM WAVE — YE REMOVE NAHI KI HAI
+       ===================================================== -->
+  <div
+    class="absolute bottom-0 left-0 z-30 h-[86px] w-full overflow-hidden leading-none pointer-events-none"
+  >
+    <svg
+      class="absolute bottom-0 left-0 h-full w-full"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient
+          id="heroWaveGradient"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
+        >
+          <stop offset="0%" stop-color="#FFF8E8" />
+          <stop offset="45%" stop-color="#F4E7C8" />
+          <stop offset="100%" stop-color="#DDEEDB" />
+        </linearGradient>
+      </defs>
+
+      <path
+        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+        fill="url(#heroWaveGradient)"
+      ></path>
+    </svg>
+  </div>
+</section>
+
+<style>
+  @keyframes heroParticleFloat {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    25% {
+      transform: translate3d(25px, -35px, 0) rotate(90deg);
+    }
+
+    50% {
+      transform: translate3d(-20px, -70px, 0) rotate(180deg);
+    }
+
+    75% {
+      transform: translate3d(30px, -35px, 0) rotate(270deg);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0) rotate(360deg);
+    }
+  }
+
+  #heroParticles span {
+    will-change: transform;
+    filter: blur(0.2px);
+  }
+</style>
