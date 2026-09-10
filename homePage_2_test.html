@@ -1,0 +1,1347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sweetora Foods | Premium Confectionery Manufacturing</title>
+
+    <meta
+      name="description"
+      content="Premium confectionery manufacturing solutions built around quality, innovation and trust."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8b1734",
+              "primary-dark": "#5d0e24",
+              accent: "#d6a354",
+              cream: "#f8f3eb",
+              dark: "#171717",
+              text: "#5f5f5f",
+              border: "#e8e1d8",
+            },
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+              display: ["Playfair Display", "serif"],
+            },
+            maxWidth: {
+              container: "1200px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.8s ease;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-dark leading-[1.7]">
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header
+      class="fixed top-0 left-0 z-[1000] w-full border-b border-black/5 bg-white/95 backdrop-blur-xl"
+    >
+      <div
+        class="mx-auto flex h-[82px] w-[92%] max-w-container items-center justify-between"
+      >
+        <a href="#" class="font-display text-[29px] font-bold text-primary">
+          Sweet<span class="text-accent">ora</span>
+        </a>
+
+        <button
+          class="block cursor-pointer border-0 bg-transparent text-[28px] lg:hidden"
+          id="menuBtn"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+
+        <nav
+          id="navLinks"
+          class="absolute left-0 top-[82px] hidden w-full flex-col items-start gap-[18px] bg-white px-[4%] py-6 shadow-[0_15px_30px_rgba(0,0,0,0.08)] lg:static lg:flex lg:w-auto lg:flex-row lg:items-center lg:gap-7 lg:bg-transparent lg:p-0 lg:shadow-none"
+        >
+          <a
+            href="#about"
+            class="text-[13px] font-semibold transition hover:text-primary"
+          >
+            About
+          </a>
+
+          <a
+            href="#products"
+            class="text-[13px] font-semibold transition hover:text-primary"
+          >
+            Products
+          </a>
+
+          <a
+            href="#manufacturing"
+            class="text-[13px] font-semibold transition hover:text-primary"
+          >
+            Manufacturing
+          </a>
+
+          <a
+            href="#innovation"
+            class="text-[13px] font-semibold transition hover:text-primary"
+          >
+            Innovation
+          </a>
+
+          <a
+            href="#sustainability"
+            class="text-[13px] font-semibold transition hover:text-primary"
+          >
+            Sustainability
+          </a>
+
+          <a
+            href="#contact"
+            class="rounded bg-primary px-[19px] py-[11px] text-[13px] font-semibold text-white transition hover:bg-primary-dark"
+          >
+            Contact Us
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section
+      class="relative flex min-h-screen items-center overflow-hidden bg-cover bg-center pt-[82px]"
+      style="
+        background-image:
+          linear-gradient(
+            90deg,
+            rgba(45, 8, 19, 0.92) 0%,
+            rgba(45, 8, 19, 0.78) 45%,
+            rgba(45, 8, 19, 0.25) 100%
+          ),
+          url(&quot;https://images.unsplash.com/photo-1575377427642-087cf684f04d?auto=format&fit=crop&w=2000&q=85&quot;);
+      "
+    >
+      <div class="mx-auto w-[92%] max-w-container">
+        <div class="reveal max-w-[720px] py-[100px] text-white">
+          <span
+            class="mb-[22px] inline-block text-[13px] font-bold uppercase tracking-[3px] text-[#f0c97f]"
+          >
+            Premium Confectionery Manufacturing
+          </span>
+
+          <h1
+            class="mb-[25px] font-display text-[48px] leading-[1.15] sm:text-[60px] md:text-[72px] lg:text-[90px]"
+          >
+            Creating Sweetness.<br />
+            Building Trust.
+          </h1>
+
+          <p
+            class="mb-[35px] max-w-[620px] text-base text-white/80 md:text-[18px]"
+          >
+            We create high-quality confectionery products that combine
+            exceptional taste, innovative thinking and responsible manufacturing
+            for customers around the world.
+          </p>
+
+          <div class="flex flex-col gap-[14px] sm:flex-row sm:flex-wrap">
+            <a
+              href="#products"
+              class="inline-flex items-center justify-center rounded border border-transparent bg-primary px-7 py-[15px] text-[14px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-primary-dark"
+            >
+              Explore Products
+            </a>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded border border-white/50 px-7 py-[15px] text-[14px] font-bold text-white transition hover:bg-white hover:text-primary"
+            >
+              Partner With Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         STATS
+    ========================== -->
+
+    <section class="bg-primary text-white">
+      <div
+        class="mx-auto grid w-[92%] max-w-container grid-cols-2 lg:grid-cols-4"
+      >
+        <div
+          class="border-b border-r border-white/20 px-6 py-[45px] text-center lg:border-b-0"
+        >
+          <div class="font-display text-[45px] font-bold">85+</div>
+          <div class="mt-[5px] text-[13px] text-white/75">Countries Served</div>
+        </div>
+
+        <div
+          class="border-b border-white/20 px-6 py-[45px] text-center lg:border-b-0 lg:border-r"
+        >
+          <div class="font-display text-[45px] font-bold">116K</div>
+          <div class="mt-[5px] text-[13px] text-white/75">
+            m² Production Area
+          </div>
+        </div>
+
+        <div class="border-r border-white/20 px-6 py-[45px] text-center">
+          <div class="font-display text-[45px] font-bold">3,300+</div>
+          <div class="mt-[5px] text-[13px] text-white/75">Team Members</div>
+        </div>
+
+        <div class="px-6 py-[45px] text-center">
+          <div class="font-display text-[45px] font-bold">125K</div>
+          <div class="mt-[5px] text-[13px] text-white/75">
+            Tons Annual Capacity
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="py-[75px] md:py-[110px]" id="about">
+      <div
+        class="mx-auto grid w-[92%] max-w-container items-center gap-[50px] lg:grid-cols-2 lg:gap-20"
+      >
+        <div class="reveal relative h-[500px] overflow-hidden lg:h-[600px]">
+          <img
+            src="https://images.unsplash.com/photo-1599599810694-b5ac9ddf0f96?auto=format&fit=crop&w=1200&q=85"
+            alt="Confectionery production"
+            class="h-full w-full object-cover"
+          />
+
+          <div
+            class="absolute bottom-[25px] right-[25px] max-w-[220px] bg-white p-[25px] shadow-[0_15px_40px_rgba(0,0,0,0.15)]"
+          >
+            <strong class="block font-display text-[30px] text-primary">
+              Global
+            </strong>
+
+            Manufacturing Excellence
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            About Us
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            More Than a Manufacturer
+          </h2>
+
+          <p class="mb-[25px] mt-5 text-text">
+            We are a confectionery company built around passion, expertise and a
+            simple belief: better products create better experiences.
+          </p>
+
+          <p class="mb-[25px] text-text">
+            Our journey is driven by continuous improvement, technological
+            development and a deep understanding of changing consumer
+            preferences.
+          </p>
+
+          <p class="mb-[25px] text-text">
+            Today, we bring together skilled people, modern production
+            capabilities and international market experience to deliver
+            confectionery solutions for customers around the world.
+          </p>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center rounded border border-transparent bg-primary px-7 py-[15px] text-[14px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-primary-dark"
+          >
+            Discover Our Story
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+
+    <section class="bg-cream py-[75px] md:py-[110px]" id="products">
+      <div class="mx-auto w-[92%] max-w-container">
+        <div class="reveal mb-[60px] max-w-[700px]">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            Our Products
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            Something Delicious<br />
+            for Every Taste
+          </h2>
+
+          <p class="mt-5 text-[17px] text-text">
+            Our diverse confectionery portfolio combines creativity, quality and
+            carefully selected ingredients to create products for every
+            occasion.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-[22px] sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Gummies -->
+          <div
+            class="reveal overflow-hidden bg-white transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)]"
+          >
+            <div class="h-[290px] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&fit=crop&w=900&q=85"
+                alt="Gummies"
+                class="h-full w-full object-cover transition duration-500 hover:scale-[1.06]"
+              />
+            </div>
+
+            <div class="p-7">
+              <h3 class="mb-[10px] font-display text-[25px]">Gummies</h3>
+
+              <p class="mb-[18px] text-[14px] text-text">
+                Fun shapes, vibrant flavors and enjoyable textures made for
+                consumers of all ages.
+              </p>
+
+              <a href="#" class="text-[13px] font-bold text-primary">
+                Discover Gummies →
+              </a>
+            </div>
+          </div>
+
+          <!-- Soft Candy -->
+          <div
+            class="reveal overflow-hidden bg-white transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)]"
+          >
+            <div class="h-[290px] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581798459219-318e76aecc7b?auto=format&fit=crop&w=900&q=85"
+                alt="Soft Candy"
+                class="h-full w-full object-cover transition duration-500 hover:scale-[1.06]"
+              />
+            </div>
+
+            <div class="p-7">
+              <h3 class="mb-[10px] font-display text-[25px]">Soft Candy</h3>
+
+              <p class="mb-[18px] text-[14px] text-text">
+                Delicious combinations of flavor and texture developed for
+                memorable candy experiences.
+              </p>
+
+              <a href="#" class="text-[13px] font-bold text-primary">
+                Discover Soft Candy →
+              </a>
+            </div>
+          </div>
+
+          <!-- Hard Candy -->
+          <div
+            class="reveal overflow-hidden bg-white transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)]"
+          >
+            <div class="h-[290px] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=900&q=85"
+                alt="Hard Candy"
+                class="h-full w-full object-cover transition duration-500 hover:scale-[1.06]"
+              />
+            </div>
+
+            <div class="p-7">
+              <h3 class="mb-[10px] font-display text-[25px]">Hard Candy</h3>
+
+              <p class="mb-[18px] text-[14px] text-text">
+                Classic confectionery with bold flavors, attractive designs and
+                dependable quality.
+              </p>
+
+              <a href="#" class="text-[13px] font-bold text-primary">
+                Discover Hard Candy →
+              </a>
+            </div>
+          </div>
+
+          <!-- Sugar Free -->
+          <div
+            class="reveal overflow-hidden bg-white transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)]"
+          >
+            <div class="h-[290px] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                alt="Sugar Free"
+                class="h-full w-full object-cover transition duration-500 hover:scale-[1.06]"
+              />
+            </div>
+
+            <div class="p-7">
+              <h3 class="mb-[10px] font-display text-[25px]">Sugar-Free</h3>
+
+              <p class="mb-[18px] text-[14px] text-text">
+                Great taste for consumers looking for alternative confectionery
+                choices.
+              </p>
+
+              <a href="#" class="text-[13px] font-bold text-primary">
+                Discover Sugar-Free →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         WHY CHOOSE US
+    ========================== -->
+
+    <section class="py-[75px] md:py-[110px]">
+      <div class="mx-auto w-[92%] max-w-container">
+        <div class="reveal mb-[60px] max-w-[700px]">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            Why Choose Us
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            Your Idea.<br />
+            Our Expertise.
+          </h2>
+
+          <p class="mt-5 text-[17px] text-text">
+            Choosing the right manufacturing partner means more than choosing a
+            production facility. It means choosing experience, flexibility,
+            consistency and trust.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 border-t border-border md:grid-cols-2">
+          <div
+            class="reveal border-b border-border px-0 py-[42px] md:border-r md:px-[35px]"
+          >
+            <div class="mb-[18px] text-[13px] font-bold text-accent">01</div>
+
+            <h3 class="mb-3 font-display text-[29px]">
+              End-to-End Manufacturing
+            </h3>
+
+            <p class="text-text">
+              From product development to packaging, we provide integrated
+              solutions that simplify the journey from idea to market.
+            </p>
+          </div>
+
+          <div
+            class="reveal border-b border-border px-0 py-[42px] md:px-[35px]"
+          >
+            <div class="mb-[18px] text-[13px] font-bold text-accent">02</div>
+
+            <h3 class="mb-3 font-display text-[29px]">Flexible Production</h3>
+
+            <p class="text-text">
+              Our capabilities allow us to develop solutions for different
+              product categories, markets, volumes and requirements.
+            </p>
+          </div>
+
+          <div
+            class="reveal border-b border-border px-0 py-[42px] md:border-r md:px-[35px]"
+          >
+            <div class="mb-[18px] text-[13px] font-bold text-accent">03</div>
+
+            <h3 class="mb-3 font-display text-[29px]">Consistent Quality</h3>
+
+            <p class="text-text">
+              Controlled production processes help ensure consistent product
+              quality and reliable results batch after batch.
+            </p>
+          </div>
+
+          <div
+            class="reveal border-b border-border px-0 py-[42px] md:px-[35px]"
+          >
+            <div class="mb-[18px] text-[13px] font-bold text-accent">04</div>
+
+            <h3 class="mb-3 font-display text-[29px]">Product Development</h3>
+
+            <p class="text-text">
+              Our teams work with customers to develop new products, improve
+              existing recipes and create market-ready concepts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         MANUFACTURING
+    ========================== -->
+
+    <section
+      class="bg-dark py-[75px] text-white md:py-[110px]"
+      id="manufacturing"
+    >
+      <div
+        class="mx-auto grid w-[92%] max-w-container items-center gap-[50px] lg:grid-cols-[0.9fr_1.1fr] lg:gap-20"
+      >
+        <div class="reveal">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            Manufacturing
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            Advanced Manufacturing. Consistent Results.
+          </h2>
+
+          <p class="my-5 text-white/65">
+            Behind every successful confectionery product is a carefully
+            controlled manufacturing process.
+          </p>
+
+          <p class="mb-[30px] text-white/65">
+            Our facilities combine modern production technology with experienced
+            professionals to deliver reliable, efficient and scalable
+            manufacturing solutions.
+          </p>
+
+          <div class="grid grid-cols-1 gap-[18px] sm:grid-cols-2">
+            <div class="border border-white/10 p-[22px]">
+              <strong class="mb-[7px] block"> Product Development </strong>
+              <span class="text-[13px] text-white/55">
+                From idea to market-ready product.
+              </span>
+            </div>
+
+            <div class="border border-white/10 p-[22px]">
+              <strong class="mb-[7px] block">Production</strong>
+              <span class="text-[13px] text-white/55">
+                Efficient and scalable manufacturing.
+              </span>
+            </div>
+
+            <div class="border border-white/10 p-[22px]">
+              <strong class="mb-[7px] block"> Quality Control </strong>
+              <span class="text-[13px] text-white/55">
+                Strict process and quality monitoring.
+              </span>
+            </div>
+
+            <div class="border border-white/10 p-[22px]">
+              <strong class="mb-[7px] block">Packaging</strong>
+              <span class="text-[13px] text-white/55">
+                Flexible and attractive solutions.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal h-[500px] lg:h-[580px]">
+          <img
+            src="https://images.unsplash.com/photo-1581093458791-9d42e3c0f4f1?auto=format&fit=crop&w=1400&q=85"
+            alt="Modern manufacturing facility"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         INNOVATION
+    ========================== -->
+
+    <section class="py-[75px] md:py-[110px]" id="innovation">
+      <div
+        class="mx-auto grid w-[92%] max-w-container items-center gap-[50px] lg:grid-cols-2 lg:gap-20"
+      >
+        <div class="reveal h-[500px] lg:h-[560px]">
+          <img
+            src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=85"
+            alt="Product innovation"
+            class="h-full w-full object-cover"
+          />
+        </div>
+
+        <div class="reveal">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            Innovation
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            The Future of Confectionery Starts With an Idea
+          </h2>
+
+          <p class="mt-5 text-text">
+            Consumer preferences are constantly changing. That's why we
+            continuously invest in product development, technology and new
+            ideas.
+          </p>
+
+          <div class="mt-[30px]">
+            <div class="flex gap-5 border-b border-border py-5">
+              <span class="font-bold text-accent">01</span>
+
+              <div>
+                <strong>Flavors</strong>
+
+                <p class="text-text">
+                  Exploring combinations that create memorable taste
+                  experiences.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-5 border-b border-border py-5">
+              <span class="font-bold text-accent">02</span>
+
+              <div>
+                <strong>Textures</strong>
+
+                <p class="text-text">
+                  Developing enjoyable textures that make every bite different.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-5 border-b border-border py-5">
+              <span class="font-bold text-accent">03</span>
+
+              <div>
+                <strong>Shapes & Formats</strong>
+
+                <p class="text-text">
+                  Creating products that attract attention and encourage
+                  discovery.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-5 border-b border-border py-5">
+              <span class="font-bold text-accent">04</span>
+
+              <div>
+                <strong>Better Choices</strong>
+
+                <p class="text-text">
+                  Exploring reduced-sugar, sugar-free and alternative product
+                  concepts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SUSTAINABILITY
+    ========================== -->
+
+    <section class="bg-cream py-[75px] md:py-[110px]" id="sustainability">
+      <div class="mx-auto w-[92%] max-w-container">
+        <div class="reveal mb-[60px] max-w-[700px]">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            Sustainability
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            Growing Responsibly
+          </h2>
+
+          <p class="mt-5 text-[17px] text-text">
+            We believe business growth and environmental responsibility should
+            move together.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="reveal min-h-[230px] bg-white p-[35px_28px]">
+            <div
+              class="mb-[22px] grid h-12 w-12 place-items-center rounded-full bg-primary text-xl text-white"
+            >
+              ♻
+            </div>
+
+            <h3 class="mb-[10px] font-display text-[24px]">
+              Responsible Production
+            </h3>
+
+            <p class="text-[14px] text-text">
+              Improving efficiency and reducing unnecessary resource
+              consumption.
+            </p>
+          </div>
+
+          <div class="reveal min-h-[230px] bg-white p-[35px_28px]">
+            <div
+              class="mb-[22px] grid h-12 w-12 place-items-center rounded-full bg-primary text-xl text-white"
+            >
+              ◉
+            </div>
+
+            <h3 class="mb-[10px] font-display text-[24px]">People</h3>
+
+            <p class="text-[14px] text-text">
+              Creating a safe and respectful workplace where people can grow.
+            </p>
+          </div>
+
+          <div class="reveal min-h-[230px] bg-white p-[35px_28px]">
+            <div
+              class="mb-[22px] grid h-12 w-12 place-items-center rounded-full bg-primary text-xl text-white"
+            >
+              ⌁
+            </div>
+
+            <h3 class="mb-[10px] font-display text-[24px]">Environment</h3>
+
+            <p class="text-[14px] text-text">
+              Continuously working to reduce our environmental impact.
+            </p>
+          </div>
+
+          <div class="reveal min-h-[230px] bg-white p-[35px_28px]">
+            <div
+              class="mb-[22px] grid h-12 w-12 place-items-center rounded-full bg-primary text-xl text-white"
+            >
+              ♡
+            </div>
+
+            <h3 class="mb-[10px] font-display text-[24px]">Communities</h3>
+
+            <p class="text-[14px] text-text">
+              Creating positive value for communities connected to our people
+              and operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         GLOBAL
+    ========================== -->
+
+    <section
+      class="relative flex min-h-[560px] items-center bg-cover bg-center text-white"
+      style="
+        background-image:
+          linear-gradient(rgba(80, 12, 31, 0.82), rgba(80, 12, 31, 0.82)),
+          url(&quot;https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=2000&q=85&quot;);
+      "
+    >
+      <div class="mx-auto w-[92%] max-w-container">
+        <div class="reveal max-w-[700px]">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-[#f0c97f]"
+          >
+            Global Presence
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            From Our Facilities to Markets Around the World
+          </h2>
+
+          <p class="my-[22px] text-[17px] text-white/75">
+            Our ambition is global. We work with customers, distributors,
+            retailers and partners across international markets.
+          </p>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center rounded bg-white px-7 py-[15px] text-[14px] font-bold text-primary transition hover:bg-cream"
+          >
+            Talk to Our Export Team
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PRIVATE LABEL
+    ========================== -->
+
+    <section class="py-[75px] md:py-[110px]" id="private-label">
+      <div
+        class="mx-auto grid w-[92%] max-w-container items-center gap-[50px] lg:grid-cols-2 lg:gap-20"
+      >
+        <div class="reveal">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            Private Label
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            Your Brand.<br />
+            Our Expertise.
+          </h2>
+
+          <p class="mt-5 text-text">
+            Build your next confectionery product with a manufacturing partner
+            you can rely on.
+          </p>
+
+          <div class="mt-[30px]">
+            <!-- Step 01 -->
+            <div class="flex gap-[22px] border-b border-border py-5">
+              <div
+                class="grid h-[38px] min-w-[38px] place-items-center rounded-full bg-primary text-[13px] font-bold text-white"
+              >
+                01
+              </div>
+
+              <div>
+                <h3 class="mb-[5px] text-[17px] font-semibold">Discover</h3>
+
+                <p class="text-[14px] text-text">
+                  We understand your market, consumer and business requirements.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="flex gap-[22px] border-b border-border py-5">
+              <div
+                class="grid h-[38px] min-w-[38px] place-items-center rounded-full bg-primary text-[13px] font-bold text-white"
+              >
+                02
+              </div>
+
+              <div>
+                <h3 class="mb-[5px] text-[17px] font-semibold">Develop</h3>
+
+                <p class="text-[14px] text-text">
+                  We work on concepts, flavors, textures and specifications.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="flex gap-[22px] border-b border-border py-5">
+              <div
+                class="grid h-[38px] min-w-[38px] place-items-center rounded-full bg-primary text-[13px] font-bold text-white"
+              >
+                03
+              </div>
+
+              <div>
+                <h3 class="mb-[5px] text-[17px] font-semibold">Test</h3>
+
+                <p class="text-[14px] text-text">
+                  Samples and prototypes are reviewed and refined.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="flex gap-[22px] border-b border-border py-5">
+              <div
+                class="grid h-[38px] min-w-[38px] place-items-center rounded-full bg-primary text-[13px] font-bold text-white"
+              >
+                04
+              </div>
+
+              <div>
+                <h3 class="mb-[5px] text-[17px] font-semibold">Produce</h3>
+
+                <p class="text-[14px] text-text">
+                  Approved products move into controlled manufacturing.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 05 -->
+            <div class="flex gap-[22px] border-b border-border py-5">
+              <div
+                class="grid h-[38px] min-w-[38px] place-items-center rounded-full bg-primary text-[13px] font-bold text-white"
+              >
+                05
+              </div>
+
+              <div>
+                <h3 class="mb-[5px] text-[17px] font-semibold">Deliver</h3>
+
+                <p class="text-[14px] text-text">
+                  Finished products are prepared and delivered according to
+                  requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal h-[500px] lg:h-[600px]">
+          <img
+            src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=85"
+            alt="Private label product"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CAREERS
+    ========================== -->
+
+    <section class="bg-cream py-[75px] text-center md:py-[110px]">
+      <div class="mx-auto w-[92%] max-w-container">
+        <div class="reveal mx-auto max-w-[750px]">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            Careers
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            Build the Future With Us
+          </h2>
+
+          <p class="mx-auto my-5 text-text">
+            Behind every product is a team of people who make it possible. We
+            are always looking for talented, curious and motivated individuals
+            who want to learn, contribute and grow.
+          </p>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center rounded bg-primary px-7 py-[15px] text-[14px] font-bold text-white transition hover:bg-primary-dark"
+          >
+            Join Our Team
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="py-[75px] md:py-[110px]" id="contact">
+      <div
+        class="mx-auto grid w-[92%] max-w-container gap-[50px] lg:grid-cols-[0.8fr_1.2fr] lg:gap-20"
+      >
+        <div class="reveal">
+          <div
+            class="mb-[15px] text-[13px] font-bold uppercase tracking-[2px] text-primary"
+          >
+            Contact
+          </div>
+
+          <h2
+            class="font-display text-[38px] leading-[1.15] sm:text-[48px] lg:text-[62px]"
+          >
+            Let's Create Something Great Together
+          </h2>
+
+          <p class="my-5 mb-[35px] text-text">
+            Have a product idea? Looking for a manufacturing partner? Want to
+            explore a new business opportunity? Our team would love to hear from
+            you.
+          </p>
+
+          <div class="mb-[25px]">
+            <small
+              class="mb-1 block text-[11px] font-bold uppercase tracking-[1px] text-primary"
+            >
+              Email
+            </small>
+
+            hello@sweetorafoods.com
+          </div>
+
+          <div class="mb-[25px]">
+            <small
+              class="mb-1 block text-[11px] font-bold uppercase tracking-[1px] text-primary"
+            >
+              Phone
+            </small>
+
+            +00 123 456 7890
+          </div>
+
+          <div class="mb-[25px]">
+            <small
+              class="mb-1 block text-[11px] font-bold uppercase tracking-[1px] text-primary"
+            >
+              Address
+            </small>
+
+            Global Confectionery Manufacturing Center
+          </div>
+        </div>
+
+        <form
+          class="reveal grid grid-cols-1 gap-[18px] sm:grid-cols-2"
+          id="contactForm"
+        >
+          <div class="flex flex-col gap-[7px]">
+            <label class="text-[12px] font-bold"> Full Name </label>
+
+            <input
+              type="text"
+              placeholder="Your name"
+              required
+              class="w-full border border-border bg-white px-[15px] py-[14px] outline-none transition focus:border-primary"
+            />
+          </div>
+
+          <div class="flex flex-col gap-[7px]">
+            <label class="text-[12px] font-bold"> Company Name </label>
+
+            <input
+              type="text"
+              placeholder="Company name"
+              class="w-full border border-border bg-white px-[15px] py-[14px] outline-none transition focus:border-primary"
+            />
+          </div>
+
+          <div class="flex flex-col gap-[7px]">
+            <label class="text-[12px] font-bold"> Email Address </label>
+
+            <input
+              type="email"
+              placeholder="you@company.com"
+              required
+              class="w-full border border-border bg-white px-[15px] py-[14px] outline-none transition focus:border-primary"
+            />
+          </div>
+
+          <div class="flex flex-col gap-[7px]">
+            <label class="text-[12px] font-bold"> Phone Number </label>
+
+            <input
+              type="tel"
+              placeholder="+00 000 000 000"
+              class="w-full border border-border bg-white px-[15px] py-[14px] outline-none transition focus:border-primary"
+            />
+          </div>
+
+          <div class="flex flex-col gap-[7px] sm:col-span-2">
+            <label class="text-[12px] font-bold"> Product Category </label>
+
+            <select
+              class="w-full border border-border bg-white px-[15px] py-[14px] outline-none transition focus:border-primary"
+            >
+              <option>Select category</option>
+              <option>Gummies</option>
+              <option>Soft Candy</option>
+              <option>Hard Candy</option>
+              <option>Sugar-Free</option>
+              <option>Private Label</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-[7px] sm:col-span-2">
+            <label class="text-[12px] font-bold">
+              Tell Us About Your Project
+            </label>
+
+            <textarea
+              placeholder="Tell us about your product requirements..."
+              class="min-h-[150px] w-full resize-y border border-border bg-white px-[15px] py-[14px] outline-none transition focus:border-primary"
+            ></textarea>
+          </div>
+
+          <div class="flex flex-col gap-[7px] sm:col-span-2">
+            <button
+              type="submit"
+              class="inline-flex w-full items-center justify-center rounded border border-transparent bg-primary px-7 py-[15px] text-[14px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-primary-dark"
+            >
+              Send Enquiry
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="bg-[#111] px-0 py-[70px] text-white">
+      <div class="mx-auto w-[92%] max-w-container">
+        <div
+          class="grid grid-cols-1 gap-[30px] border-b border-white/10 pb-[50px] md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-[50px]"
+        >
+          <div>
+            <div class="font-display text-[30px] text-white">
+              Sweet<span class="text-accent">ora</span>
+            </div>
+
+            <p class="mt-[15px] max-w-[320px] text-[14px] text-white/50">
+              Premium confectionery manufacturing built on quality, innovation
+              and trust.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="mb-[18px] text-[13px] font-bold">Company</h4>
+
+            <ul>
+              <li class="mb-[10px]">
+                <a
+                  href="#about"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  About Us
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#manufacturing"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Manufacturing
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#innovation"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Innovation
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#sustainability"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Sustainability
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-[18px] text-[13px] font-bold">Products</h4>
+
+            <ul>
+              <li class="mb-[10px]">
+                <a
+                  href="#products"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Gummies
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#products"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Soft Candy
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#products"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Hard Candy
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#products"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Sugar-Free
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-[18px] text-[13px] font-bold">Connect</h4>
+
+            <ul>
+              <li class="mb-[10px]">
+                <a
+                  href="#contact"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Contact Us
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#private-label"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Private Label
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  LinkedIn
+                </a>
+              </li>
+
+              <li class="mb-[10px]">
+                <a
+                  href="#"
+                  class="text-[13px] text-white/50 transition hover:text-white"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pt-[25px] text-[12px] text-white/35">
+          © 2026 Sweetora Foods. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+      /* =========================
+         MOBILE MENU
+      ========================== */
+
+      const menuBtn = document.getElementById("menuBtn");
+      const navLinks = document.getElementById("navLinks");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("flex");
+      });
+
+      /* Close menu after clicking link */
+
+      document.querySelectorAll("#navLinks a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 1024) {
+            navLinks.classList.add("hidden");
+            navLinks.classList.remove("flex");
+          }
+        });
+      });
+
+      /* =========================
+         SCROLL REVEAL
+      ========================== */
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+        },
+      );
+
+      revealElements.forEach((element) => {
+        observer.observe(element);
+      });
+
+      /* =========================
+         CONTACT FORM
+      ========================== */
+
+      const contactForm = document.getElementById("contactForm");
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        alert("Thank you! Your enquiry has been received.");
+
+        contactForm.reset();
+      });
+    </script>
+  </body>
+</html>

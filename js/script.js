@@ -1,6 +1,7 @@
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const menuIcon = document.getElementById("menuIcon");
+const header = document.getElementById("header");
 
 menuBtn.addEventListener("click", () => {
   const isOpen = !mobileMenu.classList.contains("hidden");
@@ -35,7 +36,13 @@ const sections = document.querySelectorAll("main section[id]");
 const navLinks = document.querySelectorAll(".nav-link");
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
+function updateHeaderOnScroll() {
+  header?.classList.toggle("scrolled", window.scrollY > 0);
+}
+
 window.addEventListener("scroll", () => {
+  updateHeaderOnScroll();
+
   if (
     currentPage === "about.html" ||
     currentPage === "about" ||
@@ -71,6 +78,8 @@ window.addEventListener("scroll", () => {
     });
   }
 });
+
+updateHeaderOnScroll();
 
 // Set initial active state on page load
 if (
@@ -138,58 +147,56 @@ const slides = [
   {
     image: "assets/mango.jpeg",
     category: "Mango",
-    title: "Skweezy-Mango",
-    description: " demo text lorem ipsum dolor sit amet.",
+    title: "Skweezy Mango Juice",
+    description: "Mango-flavoured fruit juice.",
   },
   {
     image: "assets/cola.jpeg",
     category: "Flavors",
-    title: "Creative Brand Identity",
-    description: "lorem ipsum dolor sit amet.",
+    title: "BIB's Cola",
+    description: "Refreshing cola drink.",
   },
   {
     image: "assets/energy.jpeg",
-    category: "energy",
-    title: "energy",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    category: "Energy",
+    title: "Energyza",
+    description: "Energy drink for a refreshing boost.",
   },
   {
     image: "assets/water_2.png",
-    category: "water",
-    title: "water",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    category: "Water",
+    title: "HydroPure Water",
+    description: "Pure drinking water.",
   },
   {
     image: "assets/water_3.png",
     category: "Water",
-    title: "hydropure Water",
-    description: "lorem ipsum dolor sit amet.",
+    title: "HydroPure Water",
+    description: "Pure drinking water.",
   },
   {
     image: "assets/water_1.jpeg",
     category: "Water",
-    title: "pure Water",
-    description: "lorem ipsum dolor sit amet.",
+    title: "HydroPure Water",
+    description: "Pure drinking water.",
   },
   {
     image: "assets/orange_slice.png",
-    category: "orange",
-    title: "orange",
-    description: "lorem ipsum dolor sit amet.",
+    category: "Flavors",
+    title: "Skweezy Orange Juice",
+    description: "Orange-flavoured fruit juice.",
   },
   {
     image: "assets/skweezy_all.png",
-    category: "lorem",
-    title: "lorem",
-    description: "lorem ipsum dolor sit amet.",
+    category: "Flavors",
+    title: "Skweezy Juice Drinks",
+    description: "A selection of Skweezy fruit drinks.",
   },
   {
-    image: "assets/img-slider.jpeg",
-    category: "lorem",
-    title: "lorem",
-    description: "lorem ipsum dolor sit amet.",
+    image: "assets/img-slider.png",
+    category: "Flavors",
+    title: "Bibagry product range",
+    description: "Refreshing drinks from Bibagry Limited.",
   },
 ];
 
@@ -328,7 +335,7 @@ function createCards() {
 
 
           <a
-            href="#"
+            href="gallery.html"
             class="mt-5
                    inline-flex
                    items-center
@@ -619,4 +626,208 @@ document.addEventListener("DOMContentLoaded", function () {
 
     container.appendChild(particle);
   }
+});
+// grid system gallery
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  const modal = document.getElementById("galleryModal");
+  const modalImage = document.getElementById("galleryModalImage");
+
+  const closeButton = document.getElementById("closeGalleryModal");
+  const prevButton = document.getElementById("prevGalleryImage");
+  const nextButton = document.getElementById("nextGalleryImage");
+
+  const counter = document.getElementById("galleryCounter");
+
+  // --------------------------------
+  // Get all gallery images
+  // --------------------------------
+
+  const images = Array.from(galleryItems).map((item) => {
+    const img = item.querySelector("img");
+
+    return {
+      src: img.src,
+      alt: img.alt,
+    };
+  });
+
+  let currentIndex = 0;
+  let isAnimating = false;
+
+  // --------------------------------
+  // Update Counter
+  // --------------------------------
+
+  function updateCounter() {
+    counter.textContent = `${currentIndex + 1} / ${images.length}`;
+  }
+
+  // --------------------------------
+  // Open Modal
+  // --------------------------------
+
+  function openModal(index) {
+    currentIndex = index;
+
+    modalImage.src = images[currentIndex].src;
+    modalImage.alt = images[currentIndex].alt;
+
+    updateCounter();
+
+    modal.classList.remove("hidden");
+
+    requestAnimationFrame(() => {
+      modal.classList.add("flex", "opacity-100");
+
+      modalImage.classList.remove("scale-95", "opacity-0");
+
+      modalImage.classList.add("scale-100", "opacity-100");
+    });
+
+    document.body.style.overflow = "hidden";
+  }
+
+  // --------------------------------
+  // Close Modal
+  // --------------------------------
+
+  function closeModal() {
+    modal.classList.remove("opacity-100");
+
+    modalImage.classList.remove("scale-100", "opacity-100");
+
+    modalImage.classList.add("scale-95", "opacity-0");
+
+    setTimeout(() => {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+
+      document.body.style.overflow = "";
+    }, 300);
+  }
+
+  // --------------------------------
+  // Change Image
+  // --------------------------------
+
+  function changeImage(index, direction) {
+    if (isAnimating) return;
+
+    isAnimating = true;
+
+    // Exit animation
+    modalImage.classList.remove("scale-100", "opacity-100");
+
+    modalImage.classList.add("scale-95", "opacity-0");
+
+    setTimeout(() => {
+      currentIndex = index;
+
+      modalImage.src = images[currentIndex].src;
+      modalImage.alt = images[currentIndex].alt;
+
+      updateCounter();
+
+      // Reset position
+      modalImage.classList.remove("scale-95", "opacity-0");
+
+      modalImage.classList.add("scale-95", "opacity-0");
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          modalImage.classList.remove("scale-95", "opacity-0");
+
+          modalImage.classList.add("scale-100", "opacity-100");
+
+          setTimeout(() => {
+            isAnimating = false;
+          }, 400);
+        });
+      });
+    }, 250);
+  }
+
+  // --------------------------------
+  // Next
+  // --------------------------------
+
+  function nextImage() {
+    const nextIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+
+    changeImage(nextIndex, "next");
+  }
+
+  // --------------------------------
+  // Previous
+  // --------------------------------
+
+  function previousImage() {
+    const previousIndex =
+      currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+
+    changeImage(previousIndex, "prev");
+  }
+
+  // --------------------------------
+  // Gallery Item Click
+  // --------------------------------
+
+  galleryItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      openModal(index);
+    });
+  });
+
+  // --------------------------------
+  // Buttons
+  // --------------------------------
+
+  nextButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    nextImage();
+  });
+
+  prevButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    previousImage();
+  });
+
+  closeButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    closeModal();
+  });
+
+  // --------------------------------
+  // Click Outside
+  // --------------------------------
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  // --------------------------------
+  // Keyboard
+  // --------------------------------
+
+  document.addEventListener("keydown", (event) => {
+    if (modal.classList.contains("hidden")) {
+      return;
+    }
+
+    if (event.key === "Escape") {
+      closeModal();
+    }
+
+    if (event.key === "ArrowRight") {
+      nextImage();
+    }
+
+    if (event.key === "ArrowLeft") {
+      previousImage();
+    }
+  });
 });

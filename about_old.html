@@ -1,0 +1,3380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About BIB's Beverages — our story, mission, and passion for refreshing drinks."
+    />
+    <title>About | BIB's Beverages</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bib: {
+                green: "#3DAE2B",
+                dark: "#111111",
+                lime: "#B8DF5A",
+                cream: "#FFF9EA",
+                orange: "#F7A51A",
+              },
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 18px 60px rgba(17,17,17,.10)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-white text-bib-dark">
+    <!-- HEADER -->
+    <header
+      id="header"
+      class="fixed top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 lg:top-5 lg:left-5 lg:right-5 z-50 bg-white/95 backdrop-blur-xl border border-black/5 rounded-[10px] shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]"
+    >
+      <div
+        class="w-full px-4 sm:px-5 lg:px-7 xl:px-8 h-16 sm:h-[72px] lg:h-20 flex items-center justify-between gap-3 sm:gap-4"
+      >
+        <!-- Logo -->
+        <div class="leading-none flex-shrink-0">
+          <a href="#home" class="flex items-center gap-1 sm:gap-2">
+            <img
+              src="assets/logo.png"
+              alt="Bibagry Limited logo"
+              class="h-10 sm:h-12 lg:h-14 w-auto object-contain flex-shrink-0"
+            />
+
+            <div
+              class="font-display font-black text-xl sm:text-2xl lg:text-3xl tracking-tight whitespace-nowrap"
+            >
+              <span class="text-bib-green">Bibagry</span>
+              <span class="text-black"> Limited</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav
+          class="hidden lg:flex items-center justify-center gap-4 xl:gap-6 2xl:gap-8 text-sm xl:text-[15px] font-semibold flex-1 mx-4"
+        >
+          <a class="nav-link whitespace-nowrap" href="index.html#home">
+            Home
+          </a>
+
+          <a class="nav-link whitespace-nowrap" href="index.html#products">
+            Products
+          </a>
+
+          <a class="nav-link whitespace-nowrap" href="index.html#reviews">
+            Reviews
+          </a>
+
+          <a class="nav-link whitespace-nowrap" href="index.html#company">
+            Company
+          </a>
+
+          <a class="nav-link whitespace-nowrap" href="index.html#leadership">
+            Leadership
+          </a>
+
+          <a class="nav-link whitespace-nowrap" href="index.html#clients">
+            Client
+          </a>
+
+          <a class="nav-link whitespace-nowrap" href="gallery.html">
+            Gallery
+          </a>
+
+          <a class="nav-link active whitespace-nowrap" href="about.html">
+            About
+          </a>
+        </nav>
+
+        <!-- Desktop Contact -->
+        <div class="hidden lg:flex items-center flex-shrink-0">
+          <a
+            href="index.html#contact"
+            class="px-5 xl:px-6 py-2.5 xl:py-3 rounded-full bg-bib-green text-white text-sm font-bold hover:bg-green-700 transition duration-300 whitespace-nowrap"
+          >
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Mobile / Tablet Menu Button -->
+        <button
+          id="menuBtn"
+          type="button"
+          class="lg:hidden flex-shrink-0 w-10 h-10 sm:w-11 sm:h-11 rounded-xl border border-gray-200 bg-white flex items-center justify-center hover:bg-gray-50 transition"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span id="menuIcon" class="text-xl sm:text-2xl leading-none">
+            ☰
+          </span>
+        </button>
+      </div>
+
+      <!-- Mobile / Tablet Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden lg:hidden border-t border-gray-100 bg-white rounded-b-[10px]"
+      >
+        <div
+          class="px-4 sm:px-6 py-4 sm:py-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 text-sm sm:text-base font-semibold"
+        >
+          <a
+            href="index.html#home"
+            class="py-2.5 px-2 rounded-lg hover:bg-gray-50 transition"
+          >
+            Home
+          </a>
+
+          <a
+            href="index.html#products"
+            class="py-2.5 px-2 rounded-lg hover:bg-gray-50 transition"
+          >
+            Products
+          </a>
+
+          <a
+            href="index.html#reviews"
+            class="py-2.5 px-2 rounded-lg hover:bg-gray-50 transition"
+          >
+            Reviews
+          </a>
+
+          <a
+            href="index.html#company"
+            class="py-2.5 px-2 rounded-lg hover:bg-gray-50 transition"
+          >
+            Company
+          </a>
+
+          <a
+            href="index.html#leadership"
+            class="py-2.5 px-2 rounded-lg hover:bg-gray-50 transition"
+          >
+            Leadership
+          </a>
+
+          <a
+            href="#clients"
+            class="py-2.5 px-2 rounded-lg hover:bg-gray-50 transition"
+          >
+            Client
+          </a>
+
+          <a
+            href="gallery.html"
+            class="py-2.5 px-2 rounded-lg hover:bg-gray-50 transition"
+          >
+            Gallery
+          </a>
+
+          <a
+            href="about.html"
+            class="py-2.5 px-2 rounded-lg hover:bg-gray-50 transition"
+          >
+            About
+          </a>
+
+          <!-- Contact only in mobile/tablet menu -->
+          <a
+            href="index.html#contact"
+            class="sm:col-span-2 mt-2 text-center px-5 py-3 rounded-full bg-bib-green text-white font-bold hover:bg-green-700 transition"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT HERO SECTION -->
+      <section
+        class="relative min-h-[680px] overflow-hidden bg-gradient-to-br from-green-50 via-white to-orange-50 pt-28 lg:pt-24"
+      >
+        <!-- Background Image -->
+        <img
+          src="assets/img-slider.jpeg"
+          alt="Bibagry beverages"
+          class="absolute inset-0 h-full w-full object-cover opacity-[0.07]"
+        />
+
+        <!-- Decorative Blurs -->
+        <div
+          class="absolute -left-24 top-32 h-72 w-72 rounded-full bg-bib-green/10 blur-3xl"
+        ></div>
+
+        <div
+          class="absolute -right-24 bottom-10 h-80 w-80 rounded-full bg-orange-300/20 blur-3xl"
+        ></div>
+
+        <div
+          class="absolute right-[12%] top-[18%] h-20 w-20 rounded-full bg-yellow-300/30 blur-2xl"
+        ></div>
+
+        <!-- Floating Orbs -->
+        <span
+          class="fruit-orb absolute left-[7%] top-[25%] h-8 w-8 rounded-full bg-green-500/70 shadow-lg shadow-green-500/20"
+        ></span>
+
+        <span
+          class="fruit-orb absolute left-[45%] top-[18%] h-5 w-5 rounded-full bg-orange-400/80"
+          style="animation-delay: 1s"
+        ></span>
+
+        <span
+          class="fruit-orb absolute right-[8%] top-[22%] h-10 w-10 rounded-full bg-yellow-300/80"
+          style="animation-delay: 2s"
+        ></span>
+
+        <div
+          class="relative z-10 mx-auto flex min-h-[620px] max-w-7xl items-center px-5 lg:px-8"
+        >
+          <div
+            class="grid w-full items-center gap-14 lg:grid-cols-[1.05fr_.95fr] lg:gap-20"
+          >
+            <!-- Content -->
+            <div class="reveal text-center lg:text-left">
+              <!-- Label -->
+              <div
+                class="mb-6 mt-4 inline-flex items-center gap-2 rounded-full border border-bib-green/10 bg-white px-4 py-2 text-xs font-extrabold uppercase tracking-[.2em] text-bib-green shadow-sm"
+              >
+                <span
+                  class="h-2 w-2 rounded-full bg-bib-green shadow-[0_0_0_4px_rgba(34,197,94,0.12)]"
+                ></span>
+                Our Story
+              </div>
+
+              <!-- Heading -->
+              <h1
+                class="max-w-3xl text-5xl font-black leading-[.95] tracking-[-0.04em] text-gray-950 sm:text-6xl lg:text-7xl"
+              >
+                Refreshing lives,
+                <span class="block text-bib-green">building a legacy.</span>
+              </h1>
+
+              <!-- Description -->
+              <p
+                class="mx-auto mt-7 max-w-2xl text-base font-medium leading-7 text-gray-600 sm:text-lg lg:mx-0"
+              >
+                Bibagry Ltd. is a dynamic and innovative manufacturer of
+                non-alcoholic beverages and maize meal, dedicated to delivering
+                high-quality products that meet the diverse needs of consumers
+                in Zambia and beyond.
+              </p>
+
+              <p
+                class="mx-auto mt-4 max-w-2xl text-base font-medium leading-7 text-gray-600 sm:text-lg lg:mx-0"
+              >
+                Established in December 2018, Bibagry has grown into a trusted
+                name in the beverage industry, producing bottled water,
+                carbonated soft drinks, juices, and premium maize meal.
+              </p>
+
+              <!-- CTA -->
+              <div
+                class="mt-9 flex flex-wrap items-center justify-center gap-4 lg:justify-start"
+              >
+                <a
+                  href="#company"
+                  class="inline-flex items-center gap-2 rounded-full bg-bib-green px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-green-600/20 transition hover:-translate-y-0.5 hover:bg-green-700"
+                >
+                  Discover Our Story
+                  <span class="text-lg">→</span>
+                </a>
+
+                <a
+                  href="#products"
+                  class="inline-flex items-center rounded-full border border-gray-200 bg-white px-6 py-3.5 text-sm font-bold text-gray-800 shadow-sm transition hover:border-bib-green hover:text-bib-green"
+                >
+                  Explore Products
+                </a>
+              </div>
+
+              <!-- Stats -->
+              <div
+                class="mx-auto mt-10 flex max-w-xl items-center justify-center gap-7 border-t border-gray-200/70 pt-7 lg:mx-0 lg:justify-start"
+              >
+                <div>
+                  <div class="text-2xl font-black text-bib-green">2018</div>
+                  <div
+                    class="mt-1 text-xs font-semibold uppercase tracking-wider text-gray-500"
+                  >
+                    Established
+                  </div>
+                </div>
+
+                <div class="h-10 w-px bg-gray-200"></div>
+
+                <div>
+                  <div class="text-2xl font-black text-bib-green">Zambia</div>
+                  <div
+                    class="mt-1 text-xs font-semibold uppercase tracking-wider text-gray-500"
+                  >
+                    Proudly Local
+                  </div>
+                </div>
+
+                <div class="h-10 w-px bg-gray-200"></div>
+
+                <div>
+                  <div class="text-2xl font-black text-bib-green">4+</div>
+                  <div
+                    class="mt-1 text-xs font-semibold uppercase tracking-wider text-gray-500"
+                  >
+                    Product Lines
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Visual -->
+            <div class="relative mx-auto w-full max-w-xl reveal">
+              <!-- Main Card -->
+              <div
+                class="relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-white/60 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.12)] backdrop-blur-xl"
+              >
+                <div
+                  class="relative h-[420px] overflow-hidden rounded-[2rem] bg-gray-100"
+                >
+                  <img
+                    src="assets/img-slider.png"
+                    alt="Bibagry products"
+                    class="h-full w-full object-cover transition duration-700 hover:scale-105"
+                  />
+
+                  <!-- Image Overlay -->
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"
+                  ></div>
+
+                  <!-- Card Text -->
+                  <div class="absolute bottom-0 left-0 right-0 p-7 text-white">
+                    <span
+                      class="inline-flex rounded-full bg-white/20 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[.18em] backdrop-blur-md"
+                    >
+                      Since 2018
+                    </span>
+
+                    <h2 class="mt-3 text-3xl font-black tracking-tight">
+                      Made for Zambia.
+                    </h2>
+
+                    <p
+                      class="mt-2 max-w-sm text-sm font-medium leading-6 text-white/80"
+                    >
+                      Quality beverages and food products crafted with care for
+                      communities across Zambia and beyond.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Badge -->
+              <div
+                class="absolute -bottom-5 -left-4 rounded-2xl border border-white bg-white px-5 py-4 shadow-xl sm:-left-8"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="flex h-11 w-11 items-center justify-center rounded-xl bg-bib-green/10 text-xl"
+                  >
+                    🌱
+                  </div>
+
+                  <div>
+                    <div class="text-sm font-black text-gray-900">
+                      Quality First
+                    </div>
+                    <div class="mt-0.5 text-xs font-medium text-gray-500">
+                      Crafted with care
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Circle -->
+              <div
+                class="absolute -right-5 -top-5 flex h-20 w-20 items-center justify-center rounded-full bg-bib-green text-center text-xs font-black uppercase leading-4 text-white shadow-xl shadow-green-600/20"
+              >
+                Pure<br />& Fresh
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR MISSION SECTION -->
+      <!-- <section class="relative overflow-hidden bg-white py-24 lg:py-32">
+        <div class="max-w-[1400px] mx-auto px-5 lg:px-10">
+          <div
+            class="relative min-h-[680px] overflow-hidden rounded-[3rem] bg-bib-cream"
+          >
+            <div
+              class="pointer-events-none absolute -bottom-12 -left-8 select-none text-[14rem] font-black leading-none tracking-[-0.1em] text-bib-green/[0.045] sm:text-[18rem] lg:text-[24rem]"
+            >
+              BIB
+            </div>
+
+            <div
+              class="absolute -right-24 -top-24 h-72 w-72 rounded-full border-[60px] border-bib-lime/10"
+            ></div>
+
+            <div
+              class="absolute -bottom-32 right-[35%] h-72 w-72 rounded-full border-[50px] border-bib-green/[0.06]"
+            ></div>
+
+            <div
+              class="relative z-20 px-7 pt-10 lg:absolute lg:left-14 lg:top-14 lg:max-w-[470px] lg:px-0 lg:pt-0"
+            >
+              <p class="text-sm font-bold text-bib-green">OUR MISSION</p>
+
+              <h2
+                class="mt-5 text-5xl font-black leading-[0.92] tracking-tight text-gray-950 sm:text-6xl lg:text-7xl"
+              >
+                Our
+                <span class="text-bib-green"> Mission </span>
+              </h2>
+
+              <p class="mt-7 text-lg leading-8 text-gray-600">
+                We will entrench Bibagry as Zambia’s beverages of Choice by
+                offering a dynamic portfolio of brands that Refreshes the nation
+                and inspires Moments of optimism and happiness
+              </p>
+
+              <p class="mt-4 text-lg leading-8 text-gray-600">
+                We're committed to using only the finest ingredients,
+                sustainable practices, and innovative flavors to create
+                beverages that matter—beverages that refresh, energize, and
+                delight.
+              </p>
+            </div>
+
+            <div
+              class="absolute left-1/2 top-[52%] z-10 h-[390px] w-[390px] -translate-x-1/2 -translate-y-1/2 sm:h-[480px] sm:w-[480px] lg:left-[67%] lg:h-[560px] lg:w-[560px]"
+            >
+              <div
+                class="absolute inset-0 rounded-full border border-bib-green/10"
+              ></div>
+
+              <div
+                class="absolute inset-8 rounded-full border border-bib-green/10"
+              ></div>
+
+              <div
+                class="absolute inset-16 rounded-full bg-bib-green shadow-2xl"
+              ></div>
+
+              <div
+                class="absolute inset-[105px] rounded-full bg-bib-lime sm:inset-[125px]"
+              ></div>
+
+              <div
+                class="absolute inset-0 z-20 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <div
+                    class="text-7xl font-black leading-none tracking-[-0.08em] text-bib-green sm:text-8xl"
+                  >
+                    B
+                  </div>
+
+                  <div
+                    class="mt-1 text-[10px] font-black uppercase tracking-[0.35em] text-bib-green"
+                  >
+                    Bibagry
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="absolute left-2 top-24 z-30 flex h-24 w-24 -rotate-12 items-center justify-center rounded-full bg-white shadow-xl"
+              >
+                <div class="text-center">
+                  <p class="text-2xl font-black text-bib-green">5+</p>
+
+                  <p
+                    class="text-[9px] font-bold uppercase tracking-wider text-gray-400"
+                  >
+                    Flavors
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="absolute bottom-12 right-0 z-30 flex h-28 w-28 rotate-6 items-center justify-center rounded-full bg-bib-lime shadow-xl"
+              >
+                <div class="text-center">
+                  <p class="text-2xl font-black text-bib-green">50K+</p>
+
+                  <p
+                    class="text-[9px] font-bold uppercase tracking-wider text-bib-green/60"
+                  >
+                    Happy Customers
+                  </p>
+                </div>
+              </div>
+
+              <span
+                class="absolute right-16 top-10 h-4 w-4 rounded-full bg-bib-lime"
+              ></span>
+
+              <span
+                class="absolute bottom-24 left-16 h-3 w-3 rounded-full bg-white"
+              ></span>
+            </div>
+
+            <div
+              class="absolute bottom-7 left-7 right-7 z-40 rounded-[1.75rem] bg-white p-6 shadow-xl lg:left-14 lg:right-auto lg:w-[390px] lg:p-7"
+            >
+              <div class="flex items-start justify-between gap-5">
+                <div>
+                  <p
+                    class="text-xs font-black uppercase tracking-[0.2em] text-gray-400"
+                  >
+                    What drives us
+                  </p>
+
+                  <p
+                    class="mt-3 text-2xl font-black leading-tight text-gray-950"
+                  >
+                    Quality.
+                    <br />
+                    Innovation.
+                    <br />
+                    Happiness.
+                  </p>
+                </div>
+
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-bib-green text-xl font-black text-bib-lime"
+                >
+                  +
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute right-8 top-1/2 hidden -translate-y-1/2 rotate-90 lg:block"
+            >
+              <span
+                class="text-[10px] font-black uppercase tracking-[0.4em] text-bib-green/40"
+              >
+                Refreshing Zambia • Inspiring Moments
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div class="rounded-2xl bg-gray-50 p-6">
+              <p class="text-4xl font-black text-bib-green">100%</p>
+
+              <p
+                class="mt-2 text-xs font-bold uppercase tracking-wider text-gray-400"
+              >
+                Natural Ingredients
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-gray-50 p-6">
+              <p class="text-4xl font-black text-bib-green">5+</p>
+
+              <p
+                class="mt-2 text-xs font-bold uppercase tracking-wider text-gray-400"
+              >
+                Flavors Available
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-gray-50 p-6">
+              <p class="text-4xl font-black text-bib-green">50K+</p>
+
+              <p
+                class="mt-2 text-xs font-bold uppercase tracking-wider text-gray-400"
+              >
+                Happy Customers
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-gray-50 p-6">
+              <p class="text-4xl font-black text-bib-green">5+yrs</p>
+
+              <p
+                class="mt-2 text-xs font-bold uppercase tracking-wider text-gray-400"
+              >
+                Industry Experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="reveal">
+              <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+                Our <span class="text-bib-green">Mission</span>
+              </h2>
+              <p class="mt-6 text-lg text-gray-700 leading-8">
+                We will entrench Bibagry as Zambia’s beverages of Choice by
+                offering a dynamic portfolio of brands that Refreshes the nation
+                and inspires Moments of optimism and happiness
+              </p>
+              <p class="mt-4 text-lg text-gray-700 leading-8">
+                We're committed to using only the finest ingredients,
+                sustainable practices, and innovative flavors to create
+                beverages that matter—beverages that refresh, energize, and
+                delight.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-2 gap-6 reveal"
+              style="animation-delay: 0.2s"
+            >
+              <div
+                class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border border-bib-lime/20"
+              >
+                <div class="text-4xl font-black text-bib-green">100%</div>
+                <p class="mt-3 text-sm font-semibold text-gray-700">
+                  Natural Ingredients
+                </p>
+              </div>
+              <div
+                class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border border-bib-lime/20"
+              >
+                <div class="text-4xl font-black text-bib-green">5+</div>
+                <p class="mt-3 text-sm font-semibold text-gray-700">
+                  Flavors Available
+                </p>
+              </div>
+              <div
+                class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border border-bib-lime/20"
+              >
+                <div class="text-4xl font-black text-bib-green">50K+</div>
+                <p class="mt-3 text-sm font-semibold text-gray-700">
+                  Happy Customers
+                </p>
+              </div>
+              <div
+                class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border border-bib-lime/20"
+              >
+                <div class="text-4xl font-black text-bib-green">5+yrs</div>
+                <p class="mt-3 text-sm font-semibold text-gray-700">
+                  Industry Experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- VISION, CARD, SECTION -->
+
+      <section class="py-20 lg:py-28 bg-bib-cream/90">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="text-center mb-14 reveal">
+            <p
+              class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+            >
+              Our Vision
+            </p>
+            <h2 class="mt-3 text-4xl lg:text-5xl font-black text-bib-dark">
+              Vision, Values & Goals
+            </h2>
+            <p class="mt-6 text-gray-600 max-w-3xl mx-auto leading-8">
+              We will entrench Bibagry as Zambia’s beverages of Choice by
+              offering a dynamic portfolio of brands that Refreshes the nation
+              and inspires Moments of optimism and happiness
+            </p>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-3">
+            <article
+              class="rounded-[2rem] bg-white p-8 shadow-soft border border-bib-green/10 reveal"
+            >
+              <div class="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-2xl font-black text-bib-green">OUR VISION</h3>
+                  <p class="text-gray-700 leading-7">
+                    Vision For Sustainable Growth
+                  </p>
+                </div>
+                <div
+                  class="mb-5 flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl bg-[#dcdcdc] text-2xl font-bold text-white sm:mb-6"
+                >
+                  <span class="text-xl">🌟</span>
+                </div>
+              </div>
+
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  We commit to the vision of our Company and in so doing, we
+                  will control our own destiny.
+                </li>
+                <li>
+                  We will jealously guard the image and reputation of our
+                  Company in all our dealings.
+                </li>
+                <li>
+                  We will be persistent in our pursuit of competitive advantage,
+                  acting always with the highest integrity in so doing.
+                </li>
+                <li>
+                  We will take responsibility for our personal actions thereby
+                  ensuring that our commitments are met.
+                </li>
+                <li>
+                  We will at all times manage our company's business, its assets
+                  and resources responsibly as our own.
+                </li>
+                <li>We will have fun while striving to excel.</li>
+              </ul>
+            </article>
+
+            <article
+              class="rounded-[2rem] bg-white p-8 shadow-soft border border-bib-green/10 reveal"
+            >
+              <div class="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-2xl font-black text-bib-orange">OUR VALUE</h3>
+                </div>
+                <div
+                  class="h-14 w-14 shrink-0 rounded-3xl border border-bib-orange/20 bg-bib-orange/10 flex items-center justify-center sm:h-16 sm:w-16"
+                >
+                  <span class="text-xl">💚</span>
+                </div>
+              </div>
+
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  <span class="font-bold">People:</span> Will be inspired to be
+                  the best they can be.
+                </li>
+                <li>
+                  <span class="font-bold">Productivity:</span> Be a highly
+                  efficient, lean and progressive company.
+                </li>
+                <li>
+                  <span class="font-bold">Portfolio:</span> Offer our consumers
+                  a refreshing and affordable experience.
+                </li>
+                <li>
+                  <span class="font-bold">Partners:</span> Nurture a winning
+                  network of partners and build mutual loyalty.
+                </li>
+                <li>
+                  <span class="font-bold">Planet:</span> Be a responsible
+                  corporate citizen respectful of our environment.
+                </li>
+              </ul>
+            </article>
+
+            <article
+              class="rounded-[2rem] bg-white p-8 shadow-soft border border-bib-green/10 reveal"
+            >
+              <div class="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-2xl font-black text-bib-dark">GOALS</h3>
+                </div>
+                <div
+                  class="h-16 w-16 shrink-0 rounded-3xl bg-bib-dark/10 border border-bib-dark/15 flex items-center justify-center"
+                >
+                  <span class="text-xl">🎯</span>
+                </div>
+              </div>
+
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  Our goal is to be the biggest FMCG company in Southern Africa,
+                  known not only for our size of our business but also the
+                  quality of the products that we produce.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DISTRIBUTION NETWORK SECTION -->
+      <section class="py-20 lg:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+            <div class="reveal">
+              <p
+                class="text-bib-green font-extrabold uppercase tracking-[.25em] text-xs"
+              >
+                Our Reach
+              </p>
+              <h2 class="mt-3 text-4xl lg:text-5xl font-black leading-tight">
+                Our Distribution Network
+              </h2>
+              <p class="mt-6 text-gray-700 leading-8 max-w-2xl">
+                BIB's Beverages delivers freshness across Southern Africa
+                through a strong network of partners and nationwide logistics.
+                From our Zambia headquarters to retail shelves in DRC, Malawi,
+                Namibia, and Botswana, we make sure every bottle arrives cold
+                and ready to enjoy.
+              </p>
+
+              <div class="mt-10 grid gap-4 sm:grid-cols-2">
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-soft border border-gray-200"
+                >
+                  <h3 class="text-lg font-black">Zambia HQ</h3>
+                  <p class="mt-3 text-gray-600 text-sm leading-6">
+                    Central logistics and operations hub serving the region with
+                    fast, reliable delivery.
+                  </p>
+                </div>
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-soft border border-gray-200"
+                >
+                  <h3 class="text-lg font-black">Regional Markets</h3>
+                  <p class="mt-3 text-gray-600 text-sm leading-6">
+                    Growing retail presence in DRC, Malawi, Namibia, and
+                    Botswana with consistent shelf availability.
+                  </p>
+                </div>
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-soft border border-gray-200"
+                >
+                  <h3 class="text-lg font-black">Fresh Delivery</h3>
+                  <p class="mt-3 text-gray-600 text-sm leading-6">
+                    Daily shipments and temperature-controlled handling keep our
+                    beverages tasting crisp and delicious.
+                  </p>
+                </div>
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-soft border border-gray-200"
+                >
+                  <h3 class="text-lg font-black">Partner Network</h3>
+                  <p class="mt-3 text-gray-600 text-sm leading-6">
+                    Strong partnerships with distributors, wholesalers, and
+                    retailers ensure fast expansion and local support.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative reveal">
+              <div
+                class="overflow-hidden rounded-[2.5rem] bg-white shadow-soft h-[280px] sm:h-[350px] md:h-[400px] lg:h-auto"
+              >
+                <img
+                  src="assets/map.png"
+                  alt="Distribution network map"
+                  class="h-full w-full object-cover lg:min-h-[460px] lg:object-cover"
+                />
+              </div>
+              <!-- <div
+                class="absolute inset-x-0 top-10 mx-auto flex flex-wrap justify-center gap-3 px-5"
+              >
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-bib-green/10 text-xl"
+                    >🇿🇲</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">Zambia</p>
+                    <p class="text-xs text-gray-500">Headquarters</p>
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-orange-100 text-xl"
+                    >🇨🇩</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">DRC</p>
+                    <p class="text-xs text-gray-500">Distribution</p>
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-yellow-100 text-xl"
+                    >🇲🇼</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">Malawi</p>
+                    <p class="text-xs text-gray-500">Retail partners</p>
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-sky-100 text-xl"
+                    >🇳🇦</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">Namibia</p>
+                    <p class="text-xs text-gray-500">Market reach</p>
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-3 rounded-full bg-white/90 px-4 py-3 shadow-sm border border-gray-200"
+                >
+                  <span
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-cyan-100 text-xl"
+                    >🇧🇼</span
+                  >
+                  <div>
+                    <p class="text-sm font-bold">Botswana</p>
+                    <p class="text-xs text-gray-500">Supply network</p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR VALUES SECTION -->
+      <section class="py-20 lg:py-28 bg-bib-cream/30">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+              Our <span class="text-bib-green">Values</span>
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              These principles guide everything we do
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- <div
+              class="p-10 rounded-2xl bg-white shadow-soft reveal hover:shadow-lg transition"
+              style="animation-delay: 0.1s"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-bib-green to-bib-lime flex items-center justify-center text-2xl font-bold text-white mb-6"
+              >
+                🌿
+              </div>
+              <h3 class="text-2xl font-black mb-3">Quality</h3>
+              <p class="text-gray-700 leading-7">
+                We use only premium, natural ingredients sourced from trusted
+                suppliers to ensure exceptional taste and nutrition in every
+                bottle.
+              </p>
+            </div> -->
+
+            <div
+              class="p-10 rounded-2xl bg-white shadow-soft reveal hover:shadow-lg transition"
+              style="animation-delay: 0.2s"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-2xl font-black mb-3">CORE VALUES:</h3>
+                <div
+                  class="mb-5 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#dcdcdc] text-xl font-bold text-white sm:mb-6 sm:h-16 sm:w-16 sm:text-2xl"
+                >
+                  ❤️
+                </div>
+              </div>
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  <span class="font-bold">1. Commitment to Vision:</span> We are
+                  dedicated to our company's vision, taking proactive steps to
+                  control our destiny and achieve our goals.
+                </li>
+                <li>
+                  <span class="font-bold">2. Integrity and Reputation:</span> We
+                  prioritize the image and reputation of our company, ensuring
+                  that all dealings are conducted with the utmost integrity.
+                </li>
+                <li>
+                  <span class="font-bold">3. Pursuit of Excellence:</span> We
+                  are relentless in our pursuit of competitive advantage, always
+                  striving to improve and innovate.
+                </li>
+                <li>
+                  <span class="font-bold">4. Accountability:</span> We take
+                  personal responsibility for our actions, ensuring that our
+                  commitments are met and our objectives achieved.
+                </li>
+                <li>
+                  <span class="font-bold">5. Resource Management:</span> We
+                  manage our business, assets, and resources responsibly,
+                  treating them as our own.
+                </li>
+                <li>
+                  <span class="font-bold">6. Enjoyment in Excellence:</span> We
+                  believe in fostering a positive work environment where we can
+                  have fun while striving for excellence.
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="p-10 rounded-2xl bg-white shadow-soft reveal hover:shadow-lg transition"
+              style="animation-delay: 0.3s"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-2xl font-black mb-3">CUSTOMER VALUES</h3>
+                <div
+                  class="mb-5 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#00757c] text-xl font-bold text-white sm:mb-6 sm:h-16 sm:w-16 sm:text-2xl lg:h-16 lg:w-16"
+                >
+                  🤝
+                </div>
+              </div>
+              <ul class="space-y-3 text-gray-600 text-sm leading-7">
+                <li>
+                  <span class="font-bold"
+                    >1. Understanding Customer Needs:</span
+                  >
+                  We continually enhance our knowledge of our customers'
+                  businesses and aspirations to better serve them.
+                </li>
+                <li>
+                  <span class="font-bold"
+                    >2. Competitive Value Proposition:</span
+                  >
+                  We ensure that our offerings remain competitive within the
+                  industry, providing our customers with the best value.
+                </li>
+                <li>
+                  <span class="font-bold">3. Delightful Service:</span>
+                  We are committed to delivering exceptional service that
+                  delights our customers, ensuring mutual success.
+                </li>
+                <li>
+                  <span class="font-bold">4. Maximizing Opportunities:</span>
+                  We leverage our relationships with customers to maximize
+                  marketing opportunities and enhance brand visibility.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  SUPPLIER VALUES SECTION -->
+      <section
+        class="relative isolate overflow-hidden bg-gradient-to-br from-[#063F43] via-[#07575A] to-[#063B50] py-20 sm:py-24 lg:py-28"
+      >
+        <!-- Decorative Background -->
+        <div class="pointer-events-none absolute inset-0 overflow-hidden">
+          <div
+            class="absolute -left-40 top-28 h-[520px] w-[520px] rounded-full border-[95px] border-[#47757B]/40 sm:-left-48 sm:h-[650px] sm:w-[650px]"
+          ></div>
+
+          <div
+            class="absolute -left-52 top-44 h-[480px] w-[480px] rounded-full bg-[#164D6B]/60 sm:-left-60 sm:top-52 sm:h-[600px] sm:w-[600px]"
+          ></div>
+
+          <div
+            class="absolute -right-56 -top-72 h-[620px] w-[620px] rounded-full border-[85px] border-[#1F696D]/45 sm:-right-72 sm:-top-80 sm:h-[760px] sm:w-[760px]"
+          ></div>
+
+          <div
+            class="absolute -bottom-40 right-[-120px] h-[400px] w-[400px] rounded-full bg-[#0D7778]/25 blur-3xl"
+          ></div>
+        </div>
+        <!-- Bottom Decorative Background -->
+        <div class="pointer-events-none absolute inset-0 overflow-hidden">
+          <div class="absolute -right-64 -bottom-64">
+            <div
+              class="h-[620px] w-[620px] rounded-full bg-gradient-to-br from-[#164D6B]/70 via-[#1F696D]/40 to-transparent blur-sm sm:h-[760px] sm:w-[760px]"
+            ></div>
+
+            <div
+              class="absolute inset-20 rounded-full border-[70px] border-[#47757B]/20 sm:inset-24 sm:border-[90px]"
+            ></div>
+          </div>
+        </div>
+
+        <!-- SUPPLIER VALUES Content -->
+        <div
+          class="relative z-10 mx-auto max-w-7xl px-5 text-left lg:px-8 text-white"
+        >
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+            SUPPLIER <span class="text-bib-green">VALUES</span>
+          </h2>
+
+          <ul class="space-y-3 text-white text-sm leading-7 mt-6">
+            <li>
+              <span class="font-bold">Long-Term Relationships:</span>We aim to
+              build long-term, mutually beneficial relationships with our
+              suppliers.
+            </li>
+            <li>
+              <span class="font-bold">Preferential Treatment:</span>We leverage
+              our relationships to secure preferential treatment in cost,
+              service, quality, and innovation.
+            </li>
+            <li>
+              <span class="font-bold">Timely Payments:</span>We commit to paying
+              our suppliers on time, every time, to maintain trust and
+              reliability.
+            </li>
+          </ul>
+        </div>
+        <!-- COMMUNITY & GOVERNMENT VALUES Content -->
+        <div
+          class="relative z-10 mx-auto max-w-7xl px-5 text-left lg:px-8 text-right text-white mt-20"
+        >
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+            COMMUNITY & GOVERNMENT <span class="text-bib-green">VALUES</span>
+          </h2>
+
+          <ul class="space-y-3 text-white text-sm leading-7 mt-6">
+            <li>
+              <span class="font-bold">Corporate Citizenship:</span>We strive to
+              be a trusted corporate citizen in the communities we serve,
+              contributing positively to their development.
+            </li>
+            <li>
+              <span class="font-bold">Enduring Relationships:</span>We develop
+              lasting relationships with the community, supporting their
+              aspirations whenever possible.
+            </li>
+            <li>
+              <span class="font-bold">Positive Economic Impact:</span>We work to
+              ensure that the government recognizes the positive impact of our
+              business on the economy.
+            </li>
+            <li>
+              <span class="font-bold">Environmental Responsibility:</span>We
+              conduct our business in ways that protect and preserve the
+              environment for future generations
+            </li>
+          </ul>
+        </div>
+        <!-- QUALITY ASSURANCE Content -->
+        <div
+          class="relative z-10 mx-auto max-w-7xl px-5 text-left lg:px-8 text-white mt-20"
+        >
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+            QUALITY <span class="text-bib-green">ASSURANCE</span>
+          </h2>
+
+          <ul class="space-y-3 text-white text-sm leading-7 mt-6">
+            <li>
+              Quality is the cornerstone of Bibagry Ltd. Our rigorous quality
+              control processes ensure that every product leaving our facility
+              meets the highest safety and quality standards. We adhere to
+              international food safety regulations and continuously invest in
+              training our staff to uphold these standards, ensuring our
+              customers receive only the best.
+            </li>
+          </ul>
+        </div>
+        <!-- QUALITY ASSURANCE Content -->
+        <div
+          class="relative z-10 mx-auto max-w-7xl px-5 text-left lg:px-8 text-right text-white mt-20"
+        >
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+            SUSTAINABILITY <span class="text-bib-green">COMMITMENT</span>
+          </h2>
+
+          <ul class="space-y-3 text-white text-sm leading-7 mt-6">
+            <li>
+              Bibagry Ltd. is dedicated to sustainable practices in our
+              manufacturing processes. We prioritize environmentally friendly
+              methods, from sourcing raw materials to packaging our products.
+              Our goal is to minimize our carbon footprint while contributing
+              positively to the communities we serve.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="relative overflow-hidden bg-[#063F43] py-20 sm:py-24 lg:py-32"
+      >
+        <!-- ========================================= -->
+        <!-- BACKGROUND DECORATION -->
+        <!-- ========================================= -->
+
+        <div class="pointer-events-none absolute inset-0 overflow-hidden">
+          <div
+            class="absolute -left-72 top-0 h-[700px] w-[700px] rounded-full border-[100px] border-[#47757B]/20"
+          ></div>
+
+          <div
+            class="absolute -right-80 top-[25%] h-[750px] w-[750px] rounded-full border-[110px] border-[#1F696D]/20"
+          ></div>
+
+          <div
+            class="absolute -bottom-80 left-1/3 h-[700px] w-[700px] rounded-full bg-[#164D6B]/30 blur-[100px]"
+          ></div>
+
+          <div class="absolute right-0 top-0 h-full w-px bg-white/[0.04]"></div>
+        </div>
+
+        <div class="relative z-10 mx-auto max-w-7xl px-5 lg:px-8">
+          <!-- ========================================= -->
+          <!-- SUPPLIER VALUES -->
+          <!-- ========================================= -->
+
+          <div class="relative mb-24 lg:mb-32">
+            <!-- Large Background Number -->
+            <div
+              class="pointer-events-none absolute -left-5 -top-16 select-none text-[150px] font-black leading-none text-white/[0.025] sm:text-[200px] lg:text-[260px]"
+            >
+              01
+            </div>
+
+            <div
+              class="relative grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20"
+            >
+              <!-- Heading -->
+              <div>
+                <div class="mb-5 flex items-center gap-4">
+                  <span class="h-px w-12 bg-bib-green"></span>
+
+                  <span
+                    class="text-xs font-bold uppercase tracking-[0.25em] text-white/40"
+                  >
+                    01
+                  </span>
+                </div>
+
+                <h2
+                  class="text-4xl font-black leading-[1] text-white sm:text-5xl lg:text-6xl"
+                >
+                  SUPPLIER
+                  <span class="text-bib-green">VALUES</span>
+                </h2>
+              </div>
+
+              <!-- Content -->
+              <div
+                class="rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 backdrop-blur-sm sm:p-9 lg:p-10"
+              >
+                <ul class="space-y-5 text-sm leading-7 text-white/75">
+                  <li
+                    class="border-b border-white/10 pb-5 last:border-0 last:pb-0"
+                  >
+                    <span class="font-bold text-white"
+                      >Long-Term Relationships:</span
+                    >We aim to build long-term, mutually beneficial
+                    relationships with our suppliers.
+                  </li>
+
+                  <li
+                    class="border-b border-white/10 pb-5 last:border-0 last:pb-0"
+                  >
+                    <span class="font-bold text-white"
+                      >Preferential Treatment:</span
+                    >We leverage our relationships to secure preferential
+                    treatment in cost, service, quality, and innovation.
+                  </li>
+
+                  <li>
+                    <span class="font-bold text-white">Timely Payments:</span>We
+                    commit to paying our suppliers on time, every time, to
+                    maintain trust and reliability.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================================= -->
+          <!-- COMMUNITY & GOVERNMENT VALUES -->
+          <!-- ========================================= -->
+
+          <div class="relative mb-24 lg:mb-32">
+            <div
+              class="pointer-events-none absolute -right-5 -top-16 select-none text-[150px] font-black leading-none text-white/[0.025] sm:text-[200px] lg:text-[260px]"
+            >
+              02
+            </div>
+
+            <div
+              class="relative grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20"
+            >
+              <!-- Content -->
+              <div
+                class="order-2 rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 backdrop-blur-sm sm:p-9 lg:order-1 lg:p-10"
+              >
+                <ul
+                  class="space-y-5 text-right text-sm leading-7 text-white/75"
+                >
+                  <li
+                    class="border-b border-white/10 pb-5 last:border-0 last:pb-0"
+                  >
+                    <span class="font-bold text-white"
+                      >Corporate Citizenship:</span
+                    >We strive to be a trusted corporate citizen in the
+                    communities we serve, contributing positively to their
+                    development.
+                  </li>
+
+                  <li
+                    class="border-b border-white/10 pb-5 last:border-0 last:pb-0"
+                  >
+                    <span class="font-bold text-white"
+                      >Enduring Relationships:</span
+                    >We develop lasting relationships with the community,
+                    supporting their aspirations whenever possible.
+                  </li>
+
+                  <li
+                    class="border-b border-white/10 pb-5 last:border-0 last:pb-0"
+                  >
+                    <span class="font-bold text-white"
+                      >Positive Economic Impact:</span
+                    >We work to ensure that the government recognizes the
+                    positive impact of our business on the economy.
+                  </li>
+
+                  <li>
+                    <span class="font-bold text-white"
+                      >Environmental Responsibility:</span
+                    >We conduct our business in ways that protect and preserve
+                    the environment for future generations
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Heading -->
+              <div class="order-1 text-right lg:order-2">
+                <div class="mb-5 flex items-center justify-end gap-4">
+                  <span
+                    class="text-xs font-bold uppercase tracking-[0.25em] text-white/40"
+                  >
+                    02
+                  </span>
+
+                  <span class="h-px w-12 bg-bib-green"></span>
+                </div>
+
+                <h2
+                  class="text-4xl font-black leading-[1] text-white sm:text-5xl lg:text-6xl"
+                >
+                  COMMUNITY & GOVERNMENT
+                  <span class="text-bib-green">VALUES</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================================= -->
+          <!-- QUALITY ASSURANCE -->
+          <!-- ========================================= -->
+
+          <div class="relative mb-24 lg:mb-32">
+            <div
+              class="pointer-events-none absolute -left-5 -top-16 select-none text-[150px] font-black leading-none text-white/[0.025] sm:text-[200px] lg:text-[260px]"
+            >
+              03
+            </div>
+
+            <div
+              class="relative grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20"
+            >
+              <!-- Heading -->
+              <div>
+                <div class="mb-5 flex items-center gap-4">
+                  <span class="h-px w-12 bg-bib-green"></span>
+
+                  <span
+                    class="text-xs font-bold uppercase tracking-[0.25em] text-white/40"
+                  >
+                    03
+                  </span>
+                </div>
+
+                <h2
+                  class="text-4xl font-black leading-[1] text-white sm:text-5xl lg:text-6xl"
+                >
+                  QUALITY
+                  <span class="text-bib-green">ASSURANCE</span>
+                </h2>
+              </div>
+
+              <!-- Content -->
+              <div
+                class="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.03] p-7 backdrop-blur-sm sm:p-9 lg:p-10"
+              >
+                <div
+                  class="absolute left-0 top-8 h-16 w-1 rounded-r-full bg-bib-green"
+                ></div>
+
+                <ul class="text-sm leading-8 text-white/75 lg:text-base">
+                  <li>
+                    Quality is the cornerstone of Bibagry Ltd. Our rigorous
+                    quality control processes ensure that every product leaving
+                    our facility meets the highest safety and quality standards.
+                    We adhere to international food safety regulations and
+                    continuously invest in training our staff to uphold these
+                    standards, ensuring our customers receive only the best.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================================= -->
+          <!-- SUSTAINABILITY COMMITMENT -->
+          <!-- ========================================= -->
+
+          <div class="relative">
+            <div
+              class="pointer-events-none absolute -right-5 -top-16 select-none text-[150px] font-black leading-none text-white/[0.025] sm:text-[200px] lg:text-[260px]"
+            >
+              04
+            </div>
+
+            <div
+              class="relative grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20"
+            >
+              <!-- Content -->
+              <div
+                class="order-2 rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.03] p-7 text-right backdrop-blur-sm sm:p-9 lg:order-1 lg:p-10"
+              >
+                <div
+                  class="absolute right-0 mt-[-10px] h-16 w-1 rounded-l-full bg-bib-green"
+                ></div>
+
+                <ul class="text-sm leading-8 text-white/75 lg:text-base">
+                  <li>
+                    Bibagry Ltd. is dedicated to sustainable practices in our
+                    manufacturing processes. We prioritize environmentally
+                    friendly methods, from sourcing raw materials to packaging
+                    our products. Our goal is to minimize our carbon footprint
+                    while contributing positively to the communities we serve.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Heading -->
+              <div class="order-1 text-right lg:order-2">
+                <div class="mb-5 flex items-center justify-end gap-4">
+                  <span
+                    class="text-xs font-bold uppercase tracking-[0.25em] text-white/40"
+                  >
+                    04
+                  </span>
+
+                  <span class="h-px w-12 bg-bib-green"></span>
+                </div>
+
+                <h2
+                  class="text-4xl font-black leading-[1] text-white sm:text-5xl lg:text-6xl"
+                >
+                  SUSTAINABILITY
+                  <span class="text-bib-green">COMMITMENT</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  SUPPLIER VALUES SECTION END -->
+      <!-- ASSOCIATE VALUES -->
+      <!-- <section class="bg-bib-cream py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="max-w-4xl">
+      <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+        ASSOCIATE <span class="text-bib-green">VALUES</span>
+      </h2>
+    </div>
+
+    <div class="mt-16 grid gap-x-16 gap-y-12 md:grid-cols-2 lg:mt-20">
+      <div class="group relative">
+        <div class="mb-5 flex items-center gap-4">
+          <span
+            class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+          >
+            01
+          </span>
+          <div class="h-px flex-1 bg-bib-dark/10"></div>
+        </div>
+
+        <h3 class="font-display text-xl font-bold text-bib-dark lg:text-2xl">
+          Preferred Employer
+        </h3>
+
+        <p class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base">
+          We strive to be the preferred employer in our industry,
+          embracing diversity and rewarding performance with competitive
+          compensation.
+        </p>
+      </div>
+
+      <div class="group relative">
+        <div class="mb-5 flex items-center gap-4">
+          <span
+            class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+          >
+            02
+          </span>
+          <div class="h-px flex-1 bg-bib-dark/10"></div>
+        </div>
+
+        <h3 class="font-display text-xl font-bold text-bib-dark lg:text-2xl">
+          Team Collaboration
+        </h3>
+
+        <p class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base">
+          We work together as a team, treating each other with dignity and
+          respect, valuing everyone’s ideas and contributions.
+        </p>
+      </div>
+
+      <div class="group relative">
+        <div class="mb-5 flex items-center gap-4">
+          <span
+            class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+          >
+            03
+          </span>
+          <div class="h-px flex-1 bg-bib-dark/10"></div>
+        </div>
+
+        <h3 class="font-display text-xl font-bold text-bib-dark lg:text-2xl">
+          Empowerment
+        </h3>
+
+        <p class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base">
+          We empower our managers to lead effectively while providing the
+          necessary support and assistance.
+        </p>
+      </div>
+
+      <div class="group relative">
+        <div class="mb-5 flex items-center gap-4">
+          <span
+            class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+          >
+            04
+          </span>
+          <div class="h-px flex-1 bg-bib-dark/10"></div>
+        </div>
+
+        <h3 class="font-display text-xl font-bold text-bib-dark lg:text-2xl">
+          Role Modeling
+        </h3>
+
+        <p class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base">
+          We lead by example, striving to be role models in all our
+          actions and decisions.
+        </p>
+      </div>
+
+      <div class="group relative">
+        <div class="mb-5 flex items-center gap-4">
+          <span
+            class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+          >
+            05
+          </span>
+          <div class="h-px flex-1 bg-bib-dark/10"></div>
+        </div>
+
+        <h3 class="font-display text-xl font-bold text-bib-dark lg:text-2xl">
+          High Standards
+        </h3>
+
+        <p class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base">
+          We demand high performance standards and maintain transparent
+          communication at all times.
+        </p>
+      </div>
+
+      <div class="group relative">
+        <div class="mb-5 flex items-center gap-4">
+          <span
+            class="font-display text-4xl font-extrabold text-bib-green/30 transition-colors duration-300 group-hover:text-bib-green"
+          >
+            06
+          </span>
+          <div class="h-px flex-1 bg-bib-dark/10"></div>
+        </div>
+
+        <h3 class="font-display text-xl font-bold text-bib-dark lg:text-2xl">
+          Safe Learning Environment
+        </h3>
+
+        <p class="mt-3 max-w-xl font-body text-sm leading-7 text-bib-dark/65 lg:text-base">
+          We foster a safe learning environment, encouraging growth and
+          learning from mistakes without penalization.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->
+      <section class="relative overflow-hidden bg-bib-cream py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <!-- Heading -->
+          <div class="mb-14 max-w-3xl lg:mb-20 reveal">
+            <h2
+              class="text-4xl font-black leading-tight text-bib-dark sm:text-5xl lg:text-6xl"
+            >
+              ASSOCIATE <span class="text-bib-green">VALUES</span>
+            </h2>
+          </div>
+
+          <!-- Values -->
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <!-- 01 -->
+            <div
+              class="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-white p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.10)] reveal"
+              style="animation-delay: 0.1s"
+            >
+              <!-- Big Number -->
+              <div
+                class="absolute -right-3 -top-8 text-[150px] font-black leading-none text-bib-green/[0.07] transition-all duration-500 group-hover:scale-110 group-hover:text-bib-green/[0.12]"
+              >
+                01
+              </div>
+
+              <!-- Accent -->
+              <div
+                class="absolute left-0 top-0 h-1.5 w-0 bg-bib-green transition-all duration-500 group-hover:w-full"
+              ></div>
+
+              <div class="relative flex h-full flex-col justify-end">
+                <div
+                  class="mb-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-bib-green text-sm font-black text-white shadow-lg shadow-bib-green/20"
+                >
+                  01
+                </div>
+
+                <div class="mt-20">
+                  <h3 class="text-2xl font-bold text-bib-dark lg:text-3xl">
+                    Preferred Employer
+                  </h3>
+
+                  <p class="mt-4 text-sm leading-7 text-bib-dark/60">
+                    We strive to be the preferred employer in our industry,
+                    embracing diversity and rewarding performance with
+                    competitive compensation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div
+              class="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-bib-dark p-8 text-white shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.18)] reveal"
+              style="animation-delay: 0.2s"
+            >
+              <div
+                class="absolute -right-5 -top-8 text-[150px] font-black leading-none text-white/[0.04] transition-all duration-500 group-hover:scale-110 group-hover:text-bib-green/[0.12]"
+              >
+                02
+              </div>
+
+              <div
+                class="absolute bottom-0 left-0 h-1.5 w-0 bg-bib-green transition-all duration-500 group-hover:w-full"
+              ></div>
+
+              <div class="relative flex h-full flex-col justify-end">
+                <div
+                  class="mb-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-bib-green text-sm font-black text-white"
+                >
+                  02
+                </div>
+
+                <div class="mt-20">
+                  <h3 class="text-2xl font-bold lg:text-3xl">
+                    Team Collaboration
+                  </h3>
+
+                  <p class="mt-4 text-sm leading-7 text-white/60">
+                    We work together as a team, treating each other with dignity
+                    and respect, valuing everyone’s ideas and contributions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div
+              class="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-white p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.10)] reveal"
+              style="animation-delay: 0.3s"
+            >
+              <div
+                class="absolute -right-3 -top-8 text-[150px] font-black leading-none text-bib-green/[0.07] transition-all duration-500 group-hover:scale-110 group-hover:text-bib-green/[0.12]"
+              >
+                03
+              </div>
+
+              <div
+                class="absolute left-0 top-0 h-1.5 w-0 bg-bib-green transition-all duration-500 group-hover:w-full"
+              ></div>
+
+              <div class="relative flex h-full flex-col justify-end">
+                <div
+                  class="mb-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-bib-green text-sm font-black text-white"
+                >
+                  03
+                </div>
+
+                <div class="mt-20">
+                  <h3 class="text-2xl font-bold text-bib-dark lg:text-3xl">
+                    Empowerment
+                  </h3>
+
+                  <p class="mt-4 text-sm leading-7 text-bib-dark/60">
+                    We empower our managers to lead effectively while providing
+                    the necessary support and assistance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div
+              class="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-white p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.10)] reveal"
+              style="animation-delay: 0.4s"
+            >
+              <div
+                class="absolute -right-3 -top-8 text-[150px] font-black leading-none text-bib-green/[0.07] transition-all duration-500 group-hover:scale-110 group-hover:text-bib-green/[0.12]"
+              >
+                04
+              </div>
+
+              <div
+                class="absolute left-0 top-0 h-1.5 w-0 bg-bib-green transition-all duration-500 group-hover:w-full"
+              ></div>
+
+              <div class="relative flex h-full flex-col justify-end">
+                <div
+                  class="mb-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-bib-green text-sm font-black text-white"
+                >
+                  04
+                </div>
+
+                <div class="mt-20">
+                  <h3 class="text-2xl font-bold text-bib-dark lg:text-3xl">
+                    Role Modeling
+                  </h3>
+
+                  <p class="mt-4 text-sm leading-7 text-bib-dark/60">
+                    We lead by example, striving to be role models in all our
+                    actions and decisions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 05 -->
+            <div
+              class="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-bib-green p-8 text-white shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.18)] reveal"
+              style="animation-delay: 0.5s"
+            >
+              <div
+                class="absolute -right-5 -top-8 text-[150px] font-black leading-none text-white/[0.10] transition-all duration-500 group-hover:scale-110"
+              >
+                05
+              </div>
+
+              <div
+                class="absolute bottom-0 left-0 h-1.5 w-0 bg-white transition-all duration-500 group-hover:w-full"
+              ></div>
+
+              <div class="relative flex h-full flex-col justify-end">
+                <div
+                  class="mb-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-sm font-black text-bib-green"
+                >
+                  05
+                </div>
+
+                <div class="mt-20">
+                  <h3 class="text-2xl font-bold lg:text-3xl">High Standards</h3>
+
+                  <p class="mt-4 text-sm leading-7 text-white/75">
+                    We demand high performance standards and maintain
+                    transparent communication at all times.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 06 -->
+            <div
+              class="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-white p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.10)] reveal"
+              style="animation-delay: 0.6s"
+            >
+              <div
+                class="absolute -right-3 -top-8 text-[150px] font-black leading-none text-bib-green/[0.07] transition-all duration-500 group-hover:scale-110 group-hover:text-bib-green/[0.12]"
+              >
+                06
+              </div>
+
+              <div
+                class="absolute left-0 top-0 h-1.5 w-0 bg-bib-green transition-all duration-500 group-hover:w-full"
+              ></div>
+
+              <div class="relative flex h-full flex-col justify-end">
+                <div
+                  class="mb-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-bib-green text-sm font-black text-white"
+                >
+                  06
+                </div>
+
+                <div class="mt-20">
+                  <h3 class="text-2xl font-bold text-bib-dark lg:text-3xl">
+                    Safe Learning Environment
+                  </h3>
+
+                  <p class="mt-4 text-sm leading-7 text-bib-dark/60">
+                    We foster a safe learning environment, encouraging growth
+                    and learning from mistakes without penalization.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ASSOCIATE VALUES END  -->
+      <!-- <section
+        class="relative overflow-hidden bg-bib-dark py-20 sm:py-24 lg:py-28"
+      >
+
+        <div
+          class="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-bib-orange/10 blur-[120px]"
+        ></div>
+        <div
+          class="pointer-events-none absolute -right-40 top-10 h-96 w-96 rounded-full bg-bib-green/10 blur-[120px]"
+        ></div>
+
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+      
+
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="mt-3 text-4xl lg:text-5xl font-black text-white">
+              Our Guiding <span class="text-bib-green">Principles</span>
+            </h2>
+            <p class="mt-6 text-slate-400 max-w-2xl mx-auto leading-8">
+              Whilst growing at an exponential rate our integrity and
+              responsibility to our suppliers, customers and consumers are never
+              allowed to falter. We are committed to the following:
+            </p>
+          </div>
+
+     
+          <div class="relative mt-20 lg:mt-24">
+          
+            <div
+              class="absolute left-[10%] right-[10%] top-[53px] hidden h-px bg-gradient-to-r from-bib-green/30 via-white/20 to-bib-orange/40 lg:block"
+            ></div>
+
+            <div
+              class="grid grid-cols-1 gap-14 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5"
+            >
+         
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="5"
+                      y="4"
+                      width="14"
+                      height="17"
+                      rx="2"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                    />
+
+                    <path
+                      d="M9 4.5V3.5C9 2.95 9.45 2.5 10 2.5H14C14.55 2.5 15 2.95 15 3.5V4.5"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+
+                    <path
+                      d="M8 9H16"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+
+                    <path
+                      d="M8 12.5H11"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+
+                    <path
+                      d="M10 16L11.8 17.8L16 13.6"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    1
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Quality control
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 21V19C16 16.79 14.21 15 12 15H6C3.79 15 2 16.79 2 19V21"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="9"
+                      cy="8"
+                      r="3.5"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                    />
+                    <path
+                      d="M17 11L19 13L22 9.5"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    2
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Leadership and Accountability
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam
+                </p>
+              </div>
+
+           
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2.5L14.5 7.5L20 8.3L16 12.2L17 17.7L12 15.1L7 17.7L8 12.2L4 8.3L9.5 7.5L12 2.5Z"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 6.5L12.8 9L15.5 9.1L13.4 10.7L14.1 13.2L12 11.8L9.9 13.2L10.6 10.7L8.5 9.1L11.2 9L12 6.5Z"
+                      fill="#FFFFFF"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    3
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Commitment to service excellence
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam
+                </p>
+              </div>
+
+         
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5.5C4 4.67 4.67 4 5.5 4H18.5C19.33 4 20 4.67 20 5.5V14.5C20 15.33 19.33 16 18.5 16H11L7 20V16H5.5C4.67 16 4 15.33 4 14.5V5.5Z"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 9.5H16M8 12H13"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    4
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Listening to our customers
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam
+                </p>
+              </div>
+
+           
+              <div class="group relative text-center">
+                <div
+                  class="relative mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-slate-600 bg-slate-800/80 shadow-[0_0_0_8px_rgba(255,255,255,0.02)] transition duration-300 group-hover:-translate-y-2 group-hover:border-bib-green/60"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3L20 6V11.5C20 16.5 16.8 20 12 21C7.2 20 4 16.5 4 11.5V6L12 3Z"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.5 12L10.8 14.3L15.5 9.6"
+                      stroke="#FFFFFF"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span
+                    class="absolute -right-2 -top-2 flex h-9 w-9 items-center justify-center rounded-full bg-bib-green text-sm font-bold text-white ring-4 ring-bib-dark"
+                  >
+                    5
+                  </span>
+                </div>
+
+                <h3 class="font-display text-lg font-bold text-white">
+                  Safety
+                </h3>
+
+                <p
+                  class="mx-auto mt-4 max-w-[210px] font-body text-sm leading-6 text-slate-400"
+                >
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section
+        class="relative overflow-hidden bg-bib-dark py-20 sm:py-24 lg:py-28"
+      >
+        <!-- Background Effects -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-[450px] w-[450px] rounded-full bg-bib-green/10 blur-[140px]"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute bottom-0 right-0 h-[450px] w-[450px] rounded-full bg-bib-orange/10 blur-[140px]"
+        ></div>
+
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          <div
+            class="grid gap-14 lg:grid-cols-[0.8fr_1.5fr] lg:items-start lg:gap-20"
+          >
+            <!-- LEFT CONTENT -->
+            <div class="lg:sticky lg:top-24">
+              <span
+                class="inline-flex items-center gap-2 rounded-full border-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-slate-400"
+              >
+                What guides us
+              </span>
+
+              <h2
+                class="mt-6 text-4xl font-black leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"
+              >
+                Our Guiding
+                <span class="text-bib-green">Principles</span>
+              </h2>
+
+              <p class="mt-7 max-w-lg text-base leading-8 text-slate-400">
+                Whilst growing at an exponential rate our integrity and
+                responsibility to our suppliers, customers and consumers are
+                never allowed to falter.
+              </p>
+
+              <p class="mt-5 max-w-lg text-base leading-8 text-slate-400">
+                We are committed to the principles that define how we operate,
+                serve our customers and build lasting relationships.
+              </p>
+
+              <!-- Decorative Element -->
+              <div class="mt-10 flex items-center gap-4">
+                <div class="h-px w-16 bg-bib-green"></div>
+                <span
+                  class="text-xs font-bold uppercase tracking-[0.2em] text-slate-500"
+                >
+                  Our commitment
+                </span>
+              </div>
+            </div>
+
+            <!-- RIGHT PRINCIPLES -->
+            <div class="space-y-4">
+              <!-- ITEM 01 -->
+              <div
+                class="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] transition-all duration-500 hover:border-bib-green/30 hover:bg-white/[0.05]"
+              >
+                <div class="flex items-center gap-5 p-5 sm:p-6">
+                  <div
+                    class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-bib-green text-xl font-black text-white shadow-lg shadow-bib-green/10"
+                  >
+                    01
+                  </div>
+
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-lg font-bold text-white sm:text-xl">
+                      Quality Control
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-6 text-slate-400">
+                      We maintain rigorous standards to ensure consistency,
+                      reliability and excellence in everything we deliver.
+                    </p>
+                  </div>
+
+                  <div
+                    class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 text-slate-500 transition-all duration-300 group-hover:border-bib-green/40 group-hover:text-bib-green sm:flex"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M13 6L19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 02 -->
+              <div
+                class="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] transition-all duration-500 hover:border-bib-green/30 hover:bg-white/[0.05]"
+              >
+                <div class="flex items-center gap-5 p-5 sm:p-6">
+                  <div
+                    class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-slate-800/70 text-xl font-black text-white transition-all duration-300 group-hover:border-bib-green/40 group-hover:bg-bib-green/10"
+                  >
+                    02
+                  </div>
+
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-lg font-bold text-white sm:text-xl">
+                      Leadership & Accountability
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-6 text-slate-400">
+                      We take ownership of our decisions, lead with integrity
+                      and remain accountable to the people we serve.
+                    </p>
+                  </div>
+
+                  <div
+                    class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 text-slate-500 transition-all duration-300 group-hover:border-bib-green/40 group-hover:text-bib-green sm:flex"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M13 6L19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 03 -->
+              <div
+                class="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] transition-all duration-500 hover:border-bib-green/30 hover:bg-white/[0.05]"
+              >
+                <div class="flex items-center gap-5 p-5 sm:p-6">
+                  <div
+                    class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-slate-800/70 text-xl font-black text-white transition-all duration-300 group-hover:border-bib-green/40 group-hover:bg-bib-green/10"
+                  >
+                    03
+                  </div>
+
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-lg font-bold text-white sm:text-xl">
+                      Commitment to Service Excellence
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-6 text-slate-400">
+                      We continuously raise the bar, creating experiences that
+                      deliver genuine value to every customer.
+                    </p>
+                  </div>
+
+                  <div
+                    class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 text-slate-500 transition-all duration-300 group-hover:border-bib-green/40 group-hover:text-bib-green sm:flex"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M13 6L19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 04 -->
+              <div
+                class="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] transition-all duration-500 hover:border-bib-orange/30 hover:bg-white/[0.05]"
+              >
+                <div class="flex items-center gap-5 p-5 sm:p-6">
+                  <div
+                    class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-slate-800/70 text-xl font-black text-white transition-all duration-300 group-hover:border-bib-orange/40 group-hover:bg-bib-orange/10"
+                  >
+                    04
+                  </div>
+
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-lg font-bold text-white sm:text-xl">
+                      Listening to Our Customers
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-6 text-slate-400">
+                      We listen, learn and respond to feedback so our products
+                      and services continue to evolve.
+                    </p>
+                  </div>
+
+                  <div
+                    class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 text-slate-500 transition-all duration-300 group-hover:border-bib-orange/40 group-hover:text-bib-orange sm:flex"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M13 6L19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 05 -->
+              <div
+                class="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] transition-all duration-500 hover:border-bib-green/30 hover:bg-white/[0.05]"
+              >
+                <div class="flex items-center gap-5 p-5 sm:p-6">
+                  <div
+                    class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-slate-800/70 text-xl font-black text-white transition-all duration-300 group-hover:border-bib-green/40 group-hover:bg-bib-green/10"
+                  >
+                    05
+                  </div>
+
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-lg font-bold text-white sm:text-xl">
+                      Safety
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-6 text-slate-400">
+                      Safety remains fundamental to our operations, our people,
+                      our customers and the communities around us.
+                    </p>
+                  </div>
+
+                  <div
+                    class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 text-slate-500 transition-all duration-300 group-hover:border-bib-green/40 group-hover:text-bib-green sm:flex"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M13 6L19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- JOURNEY SECTION -->
+      <!-- <section class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+              Our <span class="text-bib-green">Journey</span>
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              From a small dream to a beloved brand
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border-2 border-bib-green/20 reveal"
+              style="animation-delay: 0.1s"
+            >
+              <div class="text-5xl font-black text-bib-green mb-3">2018</div>
+              <h4 class="font-bold text-lg mb-2">Founded</h4>
+              <p class="text-gray-600 text-sm leading-6">
+                BIB's Beverages was born with a vision to revolutionize the
+                beverage industry.
+              </p>
+            </div>
+
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border-2 border-bib-green/20 reveal"
+              style="animation-delay: 0.2s"
+            >
+              <div class="text-5xl font-black text-bib-green mb-3">2022</div>
+              <h4 class="font-bold text-lg mb-2">Expansion</h4>
+              <p class="text-gray-600 text-sm leading-6">
+                We expanded our product line to 5+ unique flavors loved by
+                customers.
+              </p>
+            </div>
+
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border-2 border-bib-green/20 reveal"
+              style="animation-delay: 0.3s"
+            >
+              <div class="text-5xl font-black text-bib-green mb-3">2024</div>
+              <h4 class="font-bold text-lg mb-2">Milestone</h4>
+              <p class="text-gray-600 text-sm leading-6">
+                Reached 50,000+ happy customers across multiple regions.
+              </p>
+            </div>
+
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-br from-bib-cream to-white border-2 border-bib-green/20 reveal"
+              style="animation-delay: 0.4s"
+            >
+              <div class="text-5xl font-black text-bib-green mb-3">2026</div>
+              <h4 class="font-bold text-lg mb-2">Today</h4>
+              <p class="text-gray-600 text-sm leading-6">
+                Continuing to innovate and refresh moments worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="relative overflow-hidden bg-white py-24 lg:py-32">
+        <!-- ========================================= -->
+        <!-- BACKGROUND DECORATION -->
+        <!-- ========================================= -->
+
+        <div
+          class="pointer-events-none absolute -left-48 top-20 h-[500px] w-[500px] rounded-full bg-bib-green/[0.06] blur-[130px]"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute -right-48 bottom-0 h-[500px] w-[500px] rounded-full bg-bib-orange/[0.05] blur-[130px]"
+        ></div>
+
+        <div class="relative mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12">
+          <!-- ========================================= -->
+          <!-- HEADER -->
+          <!-- ========================================= -->
+
+          <div
+            class="mb-16 flex flex-col justify-between gap-8 lg:mb-20 lg:flex-row lg:items-end"
+          >
+            <!-- Heading -->
+            <div class="max-w-3xl reveal">
+              <div class="mb-5 flex items-center gap-3">
+                <span class="h-px w-10 bg-bib-green"></span>
+
+                <span
+                  class="text-xs font-bold uppercase tracking-[0.25em] text-gray-500"
+                >
+                  The BIB Story
+                </span>
+              </div>
+
+              <h2
+                class="text-5xl font-black leading-[0.95] tracking-[-0.04em] text-gray-900 sm:text-6xl lg:text-7xl"
+              >
+                Our <span class="text-bib-green">Journey</span>
+              </h2>
+            </div>
+
+            <!-- Description -->
+            <div class="max-w-md lg:pb-1 reveal">
+              <p class="text-base leading-7 text-gray-500">
+                From a small dream to a growing brand, every chapter has brought
+                new opportunities, new challenges and new reasons to keep moving
+                forward.
+              </p>
+            </div>
+          </div>
+
+          <!-- ========================================= -->
+          <!-- STORY STRIP -->
+          <!-- ========================================= -->
+
+          <div
+            class="mb-8 flex items-center justify-between border-y border-gray-200 py-5"
+          >
+            <span
+              class="text-xs font-bold uppercase tracking-[0.2em] text-gray-400"
+            >
+              A story in four chapters
+            </span>
+
+            <div class="hidden items-center gap-3 sm:flex">
+              <span class="text-xs font-semibold text-gray-400"> 2018 </span>
+
+              <div class="h-px w-16 bg-gray-300"></div>
+
+              <span class="text-xs font-semibold text-bib-green"> 2026 </span>
+            </div>
+          </div>
+
+          <!-- ========================================= -->
+          <!-- JOURNEY CARDS -->
+          <!-- ========================================= -->
+
+          <div class="grid gap-4 lg:grid-cols-[1.15fr_1fr_1fr_1.15fr]">
+            <!-- ========================================= -->
+            <!-- 2018 - FOUNDED -->
+            <!-- ========================================= -->
+
+            <article
+              class="group relative min-h-[460px] overflow-hidden rounded-[2rem] bg-gray-950 p-7 text-white transition-all duration-500 hover:-translate-y-2 sm:p-9 reveal"
+              style="animation-delay: 0.1s"
+            >
+              <!-- Glow -->
+              <div
+                class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-bib-green/20 blur-[90px] transition duration-500 group-hover:bg-bib-green/30"
+              ></div>
+
+              <!-- Top -->
+              <div class="relative flex items-start justify-between gap-4">
+                <span
+                  class="text-sm font-bold uppercase tracking-[0.2em] text-bib-green"
+                >
+                  Chapter 01
+                </span>
+
+                <span
+                  class="text-right text-[10px] font-semibold uppercase tracking-[0.2em] text-gray-500"
+                >
+                  The Beginning
+                </span>
+              </div>
+
+              <!-- Year -->
+              <div
+                class="relative mt-16 whitespace-nowrap text-[4.5rem] font-black leading-none tracking-[-0.06em] text-white/[0.08] sm:text-[6rem] lg:text-[6.3rem]"
+              >
+                2018
+              </div>
+
+              <!-- Content -->
+              <div class="relative mt-7">
+                <div
+                  class="mb-4 h-1 w-10 rounded-full bg-bib-green transition-all duration-300 group-hover:w-16"
+                ></div>
+
+                <h3 class="text-2xl font-black sm:text-3xl">Founded</h3>
+
+                <p class="mt-4 max-w-sm text-sm leading-7 text-gray-400">
+                  BIB's Beverages was born with a vision to revolutionize the
+                  beverage industry and create refreshing moments people could
+                  enjoy.
+                </p>
+              </div>
+
+              <!-- Number -->
+              <div
+                class="absolute bottom-7 right-8 text-sm font-bold text-white/20"
+              >
+                01
+              </div>
+            </article>
+
+            <!-- ========================================= -->
+            <!-- 2022 - EXPANSION -->
+            <!-- ========================================= -->
+
+            <article
+              class="group relative min-h-[460px] overflow-hidden rounded-[2rem] border border-gray-200 bg-bib-cream p-7 transition-all duration-500 hover:-translate-y-2 hover:border-bib-green/30 sm:p-9 reveal"
+              style="animation-delay: 0.2s"
+            >
+              <!-- Top -->
+              <div class="flex items-start justify-between gap-4">
+                <span
+                  class="text-sm font-bold uppercase tracking-[0.2em] text-bib-green"
+                >
+                  Chapter 02
+                </span>
+
+                <span
+                  class="text-right text-[10px] font-semibold uppercase tracking-[0.2em] text-gray-400"
+                >
+                  Expansion
+                </span>
+              </div>
+
+              <!-- Year -->
+              <div
+                class="mt-16 whitespace-nowrap text-[4.5rem] font-black leading-none tracking-[-0.06em] text-gray-900/[0.07] sm:text-[6rem] lg:text-[6.3rem]"
+              >
+                2022
+              </div>
+
+              <!-- Content -->
+              <div class="mt-7">
+                <div
+                  class="mb-4 h-1 w-10 rounded-full bg-bib-green transition-all duration-300 group-hover:w-16"
+                ></div>
+
+                <h3 class="text-2xl font-black text-gray-900 sm:text-3xl">
+                  Expansion
+                </h3>
+
+                <p class="mt-4 text-sm leading-7 text-gray-600">
+                  We expanded our product line to 5+ unique flavours, giving
+                  customers more ways to discover and enjoy BIB.
+                </p>
+              </div>
+
+              <!-- Decorative Circle -->
+              <div
+                class="absolute -bottom-16 -right-16 h-40 w-40 rounded-full border-[25px] border-bib-green/10 transition duration-500 group-hover:scale-110"
+              ></div>
+
+              <!-- Number -->
+              <div
+                class="absolute bottom-7 right-8 text-sm font-bold text-gray-900/10"
+              >
+                02
+              </div>
+            </article>
+
+            <!-- ========================================= -->
+            <!-- 2024 - MILESTONE -->
+            <!-- ========================================= -->
+
+            <article
+              class="group relative min-h-[460px] overflow-hidden rounded-[2rem] border border-gray-200 bg-white p-7 shadow-[0_20px_60px_rgba(0,0,0,0.06)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(0,0,0,0.1)] sm:p-9 reveal"
+              style="animation-delay: 0.3s"
+            >
+              <!-- Top -->
+              <div class="flex items-start justify-between gap-4">
+                <span
+                  class="text-sm font-bold uppercase tracking-[0.2em] text-bib-orange"
+                >
+                  Chapter 03
+                </span>
+
+                <span
+                  class="text-right text-[10px] font-semibold uppercase tracking-[0.2em] text-gray-400"
+                >
+                  Milestone
+                </span>
+              </div>
+
+              <!-- Year -->
+              <div
+                class="mt-16 whitespace-nowrap text-[4.5rem] font-black leading-none tracking-[-0.06em] text-bib-orange/[0.10] sm:text-[6rem] lg:text-[6.3rem]"
+              >
+                2024
+              </div>
+
+              <!-- Content -->
+              <div class="mt-7">
+                <div
+                  class="mb-4 h-1 w-10 rounded-full bg-bib-orange transition-all duration-300 group-hover:w-16"
+                ></div>
+
+                <h3 class="text-2xl font-black text-gray-900 sm:text-3xl">
+                  50K+ Customers
+                </h3>
+
+                <p class="mt-4 text-sm leading-7 text-gray-600">
+                  Reaching more than 50,000 happy customers across multiple
+                  regions marked a defining milestone in the BIB story.
+                </p>
+              </div>
+
+              <!-- Bottom Accent -->
+              <div
+                class="absolute bottom-0 left-0 h-1.5 w-full bg-gradient-to-r from-bib-orange to-transparent"
+              ></div>
+
+              <!-- Number -->
+              <div
+                class="absolute bottom-7 right-8 text-sm font-bold text-gray-900/10"
+              >
+                03
+              </div>
+            </article>
+
+            <!-- ========================================= -->
+            <!-- 2026 - TODAY -->
+            <!-- ========================================= -->
+
+            <article
+              class="group relative min-h-[460px] overflow-hidden rounded-[2rem] bg-bib-green p-7 text-white transition-all duration-500 hover:-translate-y-2 sm:p-9 reveal"
+              style="animation-delay: 0.4s"
+            >
+              <!-- Decorative Rings -->
+              <div
+                class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full border-[70px] border-white/[0.08] transition duration-700 group-hover:scale-110"
+              ></div>
+
+              <div
+                class="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full border-[50px] border-white/[0.06]"
+              ></div>
+
+              <!-- Top -->
+              <div class="relative flex items-start justify-between gap-4">
+                <span
+                  class="text-sm font-bold uppercase tracking-[0.2em] text-white/80"
+                >
+                  Chapter 04
+                </span>
+
+                <span
+                  class="rounded-full bg-white/15 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em]"
+                >
+                  Present
+                </span>
+              </div>
+
+              <!-- Year -->
+              <div
+                class="relative mt-16 whitespace-nowrap text-[4.5rem] font-black leading-none tracking-[-0.06em] text-white/20 sm:text-[6rem] lg:text-[6.3rem]"
+              >
+                2026
+              </div>
+
+              <!-- Content -->
+              <div class="relative mt-7">
+                <div
+                  class="mb-4 h-1 w-10 rounded-full bg-white transition-all duration-300 group-hover:w-16"
+                ></div>
+
+                <h3 class="text-2xl font-black sm:text-3xl">
+                  The Journey Continues
+                </h3>
+
+                <p class="mt-4 max-w-sm text-sm leading-7 text-white/75">
+                  Continuing to innovate, grow and refresh moments for our
+                  customers while building the future of BIB.
+                </p>
+              </div>
+
+              <!-- Number -->
+              <div
+                class="absolute bottom-7 right-8 text-sm font-bold text-white/20"
+              >
+                04
+              </div>
+            </article>
+          </div>
+
+          <!-- ========================================= -->
+          <!-- BOTTOM STATEMENT -->
+          <!-- ========================================= -->
+
+          <div
+            class="mt-14 flex flex-col gap-6 border-t border-gray-200 pt-8 sm:flex-row sm:items-center sm:justify-between reveal"
+          >
+            <p
+              class="max-w-2xl text-xl font-bold leading-8 tracking-tight text-gray-900"
+            >
+              “Every milestone is a reminder of where we started — and
+              inspiration for where we're going next.”
+            </p>
+
+            <div class="flex shrink-0 items-center gap-3">
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-bib-green/10"
+              >
+                <span class="h-2.5 w-2.5 rounded-full bg-bib-green"></span>
+              </div>
+
+              <div>
+                <div
+                  class="text-xs font-bold uppercase tracking-wider text-gray-900"
+                >
+                  BIB's Beverages
+                </div>
+
+                <div class="mt-1 text-xs text-gray-400">Since 2018</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA SECTION -->
+      <section class="relative overflow-hidden bg-gray-950 py-20 lg:py-28">
+        <!-- ========================================= -->
+        <!-- BACKGROUND GLOWS -->
+        <!-- ========================================= -->
+
+        <div
+          class="pointer-events-none absolute -left-40 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-bib-green/20 blur-[130px]"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute -right-40 top-0 h-80 w-80 rounded-full bg-bib-orange/10 blur-[120px]"
+        ></div>
+
+        <!-- Decorative Grid -->
+        <div
+          class="pointer-events-none absolute inset-0 opacity-[0.035]"
+          style="
+            background-image:
+              linear-gradient(rgba(255, 255, 255, 1) 1px, transparent 1px),
+              linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 1) 1px,
+                transparent 1px
+              );
+            background-size: 70px 70px;
+          "
+        ></div>
+
+        <div class="relative mx-auto max-w-6xl px-5 sm:px-8 lg:px-10">
+          <!-- ========================================= -->
+          <!-- MAIN CTA -->
+          <!-- ========================================= -->
+
+          <div
+            class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.035] px-6 py-14 text-center backdrop-blur-sm sm:px-10 sm:py-16 lg:px-16 lg:py-20 reveal"
+          >
+            <!-- Inner Glow -->
+            <div
+              class="pointer-events-none absolute left-1/2 top-0 h-56 w-[500px] -translate-x-1/2 rounded-full bg-bib-green/10 blur-[100px]"
+            ></div>
+
+            <!-- Decorative Corner -->
+            <div
+              class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full border-[25px] border-bib-green/10"
+            ></div>
+
+            <div
+              class="pointer-events-none absolute -bottom-20 -left-20 h-48 w-48 rounded-full border-[30px] border-white/[0.03]"
+            ></div>
+
+            <!-- ========================================= -->
+            <!-- EYEBROW -->
+            <!-- ========================================= -->
+
+            <div class="relative mb-6 flex items-center justify-center gap-3">
+              <span class="h-px w-8 bg-bib-green"></span>
+
+              <span
+                class="text-xs font-bold uppercase tracking-[0.25em] text-bib-green"
+              >
+                Stay Connected
+              </span>
+
+              <span class="h-px w-8 bg-bib-green"></span>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- HEADING -->
+            <!-- ========================================= -->
+
+            <h2
+              class="relative text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+              Join Our
+              <span class="text-bib-green">Community</span>
+            </h2>
+
+            <!-- ========================================= -->
+            <!-- DESCRIPTION -->
+            <!-- ========================================= -->
+
+            <p
+              class="relative mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg"
+            >
+              Discover why thousands love BIB's Beverages. Experience the
+              difference of real taste, genuine refreshment and moments worth
+              sharing.
+            </p>
+
+            <!-- ========================================= -->
+            <!-- BUTTONS -->
+            <!-- ========================================= -->
+
+            <div
+              class="relative mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row"
+            >
+              <!-- Primary -->
+              <a
+                href="index.html#products"
+                class="group inline-flex min-w-[190px] items-center justify-center gap-3 rounded-full bg-bib-green px-7 py-4 text-sm font-bold text-white shadow-[0_12px_35px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-green-500 hover:shadow-[0_18px_45px_rgba(0,0,0,0.35)]"
+              >
+                Explore Products
+
+                <svg
+                  class="transition-transform duration-300 group-hover:translate-x-1"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M5 12H19M13 6L19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+
+              <!-- Secondary -->
+              <a
+                href="index.html#contact"
+                class="group inline-flex min-w-[170px] items-center justify-center gap-3 rounded-full border border-white/15 bg-white/[0.04] px-7 py-4 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.08]"
+              >
+                Get In Touch
+
+                <svg
+                  class="transition-transform duration-300 group-hover:translate-x-1"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M5 12H19M13 6L19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- TRUST / MINI STATS -->
+            <!-- ========================================= -->
+
+            <div
+              class="relative mx-auto mt-12 flex max-w-2xl flex-col items-center justify-center gap-6 border-t border-white/[0.08] pt-8 sm:flex-row sm:gap-10"
+            >
+              <div class="text-center">
+                <div class="text-lg font-black text-white">50K+</div>
+
+                <div
+                  class="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-gray-500"
+                >
+                  Happy Customers
+                </div>
+              </div>
+
+              <div class="hidden h-8 w-px bg-white/10 sm:block"></div>
+
+              <div class="text-center">
+                <div class="text-lg font-black text-white">5+</div>
+
+                <div
+                  class="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-gray-500"
+                >
+                  Unique Flavours
+                </div>
+              </div>
+
+              <div class="hidden h-8 w-px bg-white/10 sm:block"></div>
+
+              <div class="text-center">
+                <div class="text-lg font-black text-white">Since 2018</div>
+
+                <div
+                  class="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-gray-500"
+                >
+                  Refreshing Moments
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="relative overflow-hidden bg-[#07110B] text-white">
+      <!-- Top Brand Line -->
+      <div
+        class="h-1 w-full bg-gradient-to-r from-bib-green via-bib-lime to-bib-green"
+      ></div>
+
+      <!-- Decorative Glow -->
+      <div
+        class="pointer-events-none absolute -right-40 top-10 h-[450px] w-[450px] rounded-full bg-bib-green/10 blur-3xl"
+      ></div>
+
+      <div
+        class="pointer-events-none absolute -left-40 bottom-0 h-[350px] w-[350px] rounded-full bg-bib-lime/5 blur-3xl"
+      ></div>
+
+      <!-- =========================
+       MAIN FOOTER
+  ========================== -->
+      <div class="relative mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
+        <div class="grid gap-12 lg:grid-cols-[1.5fr_0.8fr_1fr_1fr]">
+          <!-- =========================
+           BRAND
+      ========================== -->
+          <div>
+            <!-- Logo -->
+            <a href="#home" class="inline-block">
+              <div class="text-4xl font-black tracking-tight">
+                BIB<span class="text-bib-green">'s</span>
+              </div>
+
+              <div
+                class="mt-1 text-[9px] font-bold tracking-[.4em] text-gray-500"
+              >
+                BEVERAGES
+              </div>
+            </a>
+
+            <p class="mt-6 max-w-md text-sm leading-7 text-gray-400">
+              Bibagry Limited was founded in 2018 and is wholly owned by Kassco
+              Limited. With a multi-million dollar investment into
+              state-of-the-art machinery and technology and extensive technical
+              expertise, Bibagry’s high-performance plant in Kamfinsa is capable
+              of producing more than 36,000 bottles per hour.
+            </p>
+
+            <!-- Social -->
+            <div class="mt-7 flex items-center gap-3">
+              <!-- Facebook -->
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#1877F2] hover:bg-[#1877F2]"
+              >
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M14.5 8H17V4.5C16.57 4.45 15.1 4.3 13.35 4.3
+                C9.7 4.3 7.2 6.53 7.2 10.62V13.5H3.5V17.4H7.2V24H11.7V17.4H15.25L15.8 13.5H11.7V11.05
+                C11.7 9.93 12 8.75 14.5 8Z"
+                  />
+                </svg>
+              </a>
+
+              <!-- X -->
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-black"
+              >
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.24-8.28L2.8 2h6.4l4.42 5.85L18.9 2zm-1.1 17.8h1.73L8.27 4.08H6.41L17.8 19.8z"
+                  />
+                </svg>
+              </a>
+
+              <!-- YouTube -->
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#FF0000] hover:bg-[#FF0000]"
+              >
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.9V8.1l6.5 3.9-6.5 3.9z"
+                  />
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#0A66C2] hover:bg-[#0A66C2]"
+              >
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M5 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 10h4v11H3V10zm6 0h3.8v1.5h.1c.5-.9 1.7-1.9 3.6-1.9 3.9 0 4.5 2.6 4.5 6v5.4h-4v-4.8c0-1.1 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5V21H9V10z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#515BD4]"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1.2"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- =========================
+           QUICK LINKS
+      ========================== -->
+          <div>
+            <h4 class="text-sm font-bold text-white">Quick Links</h4>
+
+            <div class="mt-6 space-y-3">
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#home"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Home
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#products"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Products
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#gallery"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Gallery
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#company"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                About Company
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#leadership"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Leadership
+              </a>
+
+              <a
+                class="group flex items-center gap-2 text-sm text-gray-500 transition hover:text-bib-lime"
+                href="#clients"
+              >
+                <span
+                  class="h-px w-0 bg-bib-green transition-all duration-300 group-hover:w-4"
+                ></span>
+                Our Clients
+              </a>
+            </div>
+          </div>
+
+          <!-- =========================
+           PRODUCTS
+      ========================== -->
+          <div>
+            <h4 class="text-sm font-bold text-white">Our Products</h4>
+
+            <div class="mt-6 space-y-3 text-sm text-gray-500">
+              <p class="transition hover:text-bib-lime cursor-default">
+                Skweezy Juices
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Smoove Drinks
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                HydroPure Water
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Bib's Cola
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Energyza Energy Drink
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Tangawizi Ginger Drink
+              </p>
+
+              <p class="transition hover:text-bib-lime cursor-default">
+                Sembe Mealie Meal
+              </p>
+            </div>
+          </div>
+
+          <!-- =========================
+           CONTACT
+      ========================== -->
+          <div>
+            <h4 class="text-sm font-bold text-white">Contact Us</h4>
+
+            <div class="mt-6 space-y-4 text-sm text-gray-500">
+              <p class="flex gap-3">
+                <span class="text-bib-green">☎</span>
+                <span>+260 972229868</span>
+              </p>
+
+              <p class="flex gap-3">
+                <span class="text-bib-green">☎</span>
+                <span>+260 779728877</span>
+              </p>
+
+              <p class="flex gap-3 break-all">
+                <span class="text-bib-green">✉</span>
+                <span>welcome@bibagary.com</span>
+              </p>
+
+              <p class="flex gap-3 leading-6">
+                <span class="text-bib-green">⌖</span>
+                <span>
+                  Plot 6028, Kamfinsa Road,<br />
+                  Kitwe, Zambia
+                </span>
+              </p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="mt-7">
+              <p class="text-sm font-semibold text-white">
+                Subscribe for updates
+              </p>
+
+              <div class="mt-3 flex gap-2">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  class="min-w-0 flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-gray-600 transition focus:border-bib-green focus:bg-white/[0.08]"
+                />
+
+                <button
+                  class="rounded-xl bg-bib-green px-4 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-green-700"
+                >
+                  Join
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+         FOOTER CTA
+    ========================== -->
+        <div
+          class="mt-16 flex flex-col gap-5 overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-r from-bib-green/20 to-transparent p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7"
+        >
+          <div>
+            <p
+              class="text-xs font-bold uppercase tracking-[.25em] text-bib-lime"
+            >
+              Stay refreshed
+            </p>
+
+            <p class="mt-2 text-lg font-black text-white sm:text-xl">
+              Great taste. Quality. Every bottle.
+            </p>
+          </div>
+
+          <a
+            href="#contact"
+            class="inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-bib-dark transition hover:-translate-y-1 hover:bg-bib-lime"
+          >
+            Get In Touch
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- =========================
+       COPYRIGHT
+  ========================== -->
+      <div class="border-t border-white/10">
+        <div
+          class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-6 text-xs text-gray-600 sm:flex-row sm:items-center sm:justify-between lg:px-8"
+        >
+          <p>© 2026 BIB's Beverages. All Rights Reserved.</p>
+
+          <div class="flex gap-5">
+            <a href="#" class="transition hover:text-gray-300">
+              Privacy Policy
+            </a>
+
+            <a href="#" class="transition hover:text-gray-300">
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FLOATING ICONS -->
+    <!-- Back to Top Button (Left) -->
+    <button
+      id="backToTop"
+      class="fixed left-6 bottom-6 lg:left-8 lg:bottom-8 w-12 h-12 lg:w-14 lg:h-14 bg-bib-green text-white rounded-full shadow-soft flex items-center justify-center hover:bg-green-700 transition opacity-0 invisible transform scale-0"
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      <svg
+        class="w-6 h-6 lg:w-7 lg:h-7"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- WhatsApp Button (Right) -->
+    <a
+      href="https://wa.me/260971692077?text=Hi%20BIB's%20Beverages"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed right-6 bottom-6 lg:right-8 lg:bottom-8 w-12 h-12 lg:w-14 lg:h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-soft flex items-center justify-center transition p-2"
+      aria-label="Contact us on WhatsApp"
+      title="Contact us on WhatsApp"
+      style="margin-left: auto; z-index: 40"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="">
+        <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+        <path
+          fill="white"
+          d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"
+        />
+      </svg>
+    </a>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
